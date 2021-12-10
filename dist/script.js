@@ -1,5 +1,5 @@
 const { Motion, spring } = ReactMotion,
-nav = ["Home", "About", "Portfolio", "Contact"],
+nav = ["About Me", "Portfolio", "Contact"],
 contact = [
 { link: "https://www.linkedin.com/in/mateo-aguilar-058b791a8/", icon: "bi bi-linkedin" },
 { link: "https://github.com/mateo-agl", icon: "bi bi-github" },
@@ -9,9 +9,8 @@ contact = [
 penLink = "https://codepen.io/mateoagl/",
 thmbLink = "https://raw.githubusercontent.com/mateo-agl/images/main/",
 replitLink = "https://replit.com/@mateo-agl/",
-gitHubLink = "https://github.com/mateo-agl/";
-
-const apps = [
+gitHubLink = "https://github.com/mateo-agl/",
+apps = [
 { pen: "GRmaeNj", name: "Heat Map" },
 { pen: "rNweqVw", name: "Choropleth Map" },
 { pen: "gORLEyP", name: "Tree Map" },
@@ -25,30 +24,22 @@ const apps = [
 { repl: "issuetracker?v=1", name: "Issue Tracker" },
 { repl: "library?v=1", name: "Library" },
 { repl: "stockchecker?v=1", name: "Stock Checker" },
-{ repl: "messageboard?v=1", name: "Message Board" }];
+{ repl: "messageboard?v=1", name: "Message Board" }],
 
-
-const portfolio = apps.map(
-a => a.pen ?
-{
-  appLink: penLink + "full/" + a.pen,
-  codeLink: penLink + "pen/" + a.pen,
+portfolio = apps.map(
+a => ({
+  appLink: a.pen ? penLink + "full/" + a.pen : replitLink + a.repl,
+  codeLink: a.pen ? penLink + "pen/" + a.pen : gitHubLink + a.repl.slice(0, -4),
   thumbnail: thmbLink + a.name.toLowerCase().replace(/\W/g, "-") + "-thumbnail.png",
-  name: a.name } :
-
-{
-  appLink: replitLink + a.repl,
-  codeLink: gitHubLink + a.repl.slice(0, -4),
-  thumbnail: thmbLink + a.name.toLowerCase().replace(/\W/g, "-") + "-thumbnail.png",
-  name: a.name });
+  name: a.name }));
 
 
 
 const App = () => {
-  const [data, setData] = React.useState({ nav, portfolio, contact, slide: "Home" });
+  const [data, setData] = React.useState({ nav, portfolio, contact, slide: "" });
   React.useEffect(() => {
-    const html = document.lastChild;
-    data.slide === "Portfolio" ?
+    const html = document.firstElementChild;
+    data.slide === "Portfolio" || window.innerHeight < 295 ?
     html.setAttribute('style', 'overflow-y: auto') :
     html.setAttribute('style', 'overflow-y: hidden');
   });
@@ -94,7 +85,7 @@ React.createElement("li", {
     props.data.slide = n;
     props.setData({ ...props.data });
   } }, /*#__PURE__*/
-React.createElement("a", { href: "#section-" + (i + 1), className: "nav-link p-3" }, n)))))));
+React.createElement("a", { href: "#section-" + (i + 2), className: "nav-link p-3" }, n)))))));
 
 
 
@@ -107,8 +98,7 @@ React.createElement("a", { href: "#section-" + (i + 1), className: "nav-link p-3
 const Welcome = () => /*#__PURE__*/
 React.createElement("section", { id: "section-1", className: "row vh-100 vw-100 align-items-center position-absolute" }, /*#__PURE__*/
 React.createElement("div", { className: "col" }, /*#__PURE__*/
-React.createElement("h1", null, "WELCOME TO MY PAGE"), /*#__PURE__*/
-React.createElement("h5", null, "I'm Mateo Aguilar, a Web Developer passionate about creating interactive applications.")));
+React.createElement("h1", null, "Hello, I'm Mateo, a Full Stack Web Developer.")));
 
 
 
@@ -117,7 +107,7 @@ const About = (props) => /*#__PURE__*/
 React.createElement("section", { id: "section-2", className: "row vh-100 align-items-center position-absolute" }, /*#__PURE__*/
 React.createElement("div", { className: "col" }, /*#__PURE__*/
 React.createElement("h2", null, "About me..."), /*#__PURE__*/
-React.createElement("p", null, "I'm a self-taught Web Developer. Started to learn about web development since last year, watching videos, reading technical pages and learning from freeCodeCamp courses. I have a good manage of JavaScript, HTML and CSS. I also have experience with frameworks like React, Redux, jQuery, Sass and Bootstrap.")));
+React.createElement("p", null, "I started to learn about web development since last year, watching videos, reading technical pages and learning from freeCodeCamp courses. I have a good manage of JavaScript, HTML and CSS. I also have experience with frameworks like React, Redux, jQuery, Sass and Bootstrap.")));
 
 
 
@@ -203,7 +193,7 @@ const Contact = props => {
     React.createElement("section", {
       id: "section-4",
       className: "row vw-100 vh-100 align-items-center position-absolute" }, /*#__PURE__*/
-    React.createElement("div", { className: "col mt-5" }, /*#__PURE__*/
+    React.createElement("div", { className: "col my-5 px-5 py-3" }, /*#__PURE__*/
     React.createElement("h2", null, "Contact Me"),
 
     props.contact.map(
@@ -214,8 +204,8 @@ const Contact = props => {
 
 
     React.createElement("form", { className: "container-sm", onSubmit: onSubmit }, /*#__PURE__*/
-    React.createElement("div", { className: "row justify-content-center" }, /*#__PURE__*/
-    React.createElement("div", { className: "col-xl-3 col-lg-1 p-0" }, /*#__PURE__*/
+    React.createElement("div", { className: "row justify-content-between" }, /*#__PURE__*/
+    React.createElement("div", { className: "col-xl-1 col-xl-3" }, /*#__PURE__*/
     React.createElement("input", {
       type: "text",
       className: "form-control",
@@ -226,7 +216,7 @@ const Contact = props => {
       maxLength: "100",
       required: true })), /*#__PURE__*/
 
-    React.createElement("div", { className: "col-xl-3 col-lg-1 p-0" }, /*#__PURE__*/
+    React.createElement("div", { className: "col-xl-1 col-xl-3" }, /*#__PURE__*/
     React.createElement("input", {
       type: "text",
       className: "form-control",
@@ -237,7 +227,7 @@ const Contact = props => {
       maxLength: "200",
       required: true })), /*#__PURE__*/
 
-    React.createElement("div", { className: "col-xl-3 col-lg-1 p-0" }, /*#__PURE__*/
+    React.createElement("div", { className: "col-xl-1 col-xl-3" }, /*#__PURE__*/
     React.createElement("input", {
       type: "email",
       className: "form-control",
@@ -250,7 +240,7 @@ const Contact = props => {
 
 
     React.createElement("textarea", {
-      className: "form-control w-50 mx-auto",
+      className: "form-control",
       name: "message",
       placeholder: "Message",
       value: toSend.message,
