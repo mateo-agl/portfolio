@@ -1,5 +1,5 @@
 const { Motion, spring } = ReactMotion,
-nav = ["About Me", "Portfolio", "Contact"],
+nav = ["Home", "About Me", "Portfolio", "Contact"],
 contact = [
 { link: "https://www.linkedin.com/in/mateo-aguilar-058b791a8/", icon: "bi bi-linkedin" },
 { link: "https://github.com/mateo-agl", icon: "bi bi-github" },
@@ -37,14 +37,8 @@ a => ({
 
 const App = () => {
   const [data, setData] = React.useState({ nav, portfolio, contact, slide: "" });
-  React.useEffect(() => {
-    const body = document.querySelector('body');
-    data.slide === "Portfolio" || window.innerHeight < 400 ?
-    body.setAttribute("style", "overflow-y: auto") :
-    body.setAttribute("style", "overflow-y: hidden");
-  });
   return /*#__PURE__*/(
-    React.createElement("div", { className: "container-fluid text-center w-100 h-100 position-relative" }, /*#__PURE__*/
+    React.createElement("div", { id: "cont", className: "container-fluid text-center" }, /*#__PURE__*/
     React.createElement(Motion, { defaultStyle: { opacity: 0 }, style: { opacity: spring(1) } },
 
     (style) => /*#__PURE__*/
@@ -79,13 +73,8 @@ React.createElement("ul", { className: "navbar-nav" },
 
 props.data.nav.map(
 (n, i) => /*#__PURE__*/
-React.createElement("li", {
-  className: "nav-item",
-  onClick: () => {
-    props.data.slide = n;
-    props.setData({ ...props.data });
-  } }, /*#__PURE__*/
-React.createElement("a", { href: "#section-" + (i + 2), className: "nav-link p-3" }, n)))))));
+React.createElement("li", { className: "nav-item" }, /*#__PURE__*/
+React.createElement("a", { href: "#section-" + (i + 1), className: "nav-link p-3" }, n)))))));
 
 
 
@@ -96,7 +85,7 @@ React.createElement("a", { href: "#section-" + (i + 2), className: "nav-link p-3
 
 
 const Welcome = () => /*#__PURE__*/
-React.createElement("section", { id: "section-1", className: "row vw-100 vh-100 align-items-center position-absolute" }, /*#__PURE__*/
+React.createElement("section", { id: "section-1", className: "row vw-100 vh-100 align-items-center" }, /*#__PURE__*/
 React.createElement("div", { className: "col" }, /*#__PURE__*/
 React.createElement("h1", null, "Hello, I'm Mateo, a Full Stack Web Developer.")));
 
@@ -104,10 +93,10 @@ React.createElement("h1", null, "Hello, I'm Mateo, a Full Stack Web Developer.")
 
 
 const About = (props) => /*#__PURE__*/
-React.createElement("section", { id: "section-2", className: "row vw-100 vh-100 align-items-center position-absolute" }, /*#__PURE__*/
+React.createElement("section", { id: "section-2", className: "row vw-100 vh-100 align-items-center" }, /*#__PURE__*/
 React.createElement("div", { className: "col" }, /*#__PURE__*/
 React.createElement("h2", null, "About me..."), /*#__PURE__*/
-React.createElement("p", null, "I started to learn about web development since last year, watching videos, reading technical pages and learning from freeCodeCamp courses. I have a good manage of JavaScript, HTML and CSS. I also have experience with frameworks like React, Redux, jQuery, Sass and Bootstrap.")));
+React.createElement("p", null, "I was introduced to programming in highschool and started to learn about web development more than a year ago, making courses and searching about popular languages and frameworks, using them in my personal projects. In a work environment i'm very independent and organized, i compromise with the team, like to participate and learn quick. I also like planning, organize, improve something done, learning and do new things.")));
 
 
 
@@ -115,7 +104,7 @@ React.createElement("p", null, "I started to learn about web development since l
 const Portfolio = props => {
   [state, setState] = React.useState({ hover: false, key: "" });
   return /*#__PURE__*/(
-    React.createElement("section", { id: "section-3", className: "row vw-100 vh-100 position-absolute" }, /*#__PURE__*/
+    React.createElement("section", { id: "section-3", className: "row" }, /*#__PURE__*/
     React.createElement("div", { className: "col mt-5" }, /*#__PURE__*/
     React.createElement("div", { className: "row m-4 justify-content-center" },
 
@@ -185,7 +174,7 @@ const Contact = props => {
   return /*#__PURE__*/(
     React.createElement("section", {
       id: "section-4",
-      className: "row vw-100 vh-100 align-items-center position-absolute" }, /*#__PURE__*/
+      className: "row vw-100 vh-100 align-items-center" }, /*#__PURE__*/
     React.createElement("div", { className: "col w-60 my-5 py-3" }, /*#__PURE__*/
     React.createElement("h2", null, "Contact Me"),
 
@@ -199,7 +188,7 @@ const Contact = props => {
     React.createElement("form", { style: { maxWidth: "500px" }, className: "d-flex flex-column mx-auto", onSubmit: onSubmit }, /*#__PURE__*/
     React.createElement("input", {
       type: "text",
-      className: "form-control",
+      className: "form-control my-1",
       name: "from_name",
       placeholder: "Name",
       value: toSend.from_name,
@@ -208,7 +197,7 @@ const Contact = props => {
       required: true }), /*#__PURE__*/
     React.createElement("input", {
       type: "text",
-      className: "form-control",
+      className: "form-control my-1",
       name: "subject",
       placeholder: "Subject",
       value: toSend.subject,
@@ -217,7 +206,7 @@ const Contact = props => {
       required: true }), /*#__PURE__*/
     React.createElement("input", {
       type: "email",
-      className: "form-control",
+      className: "form-control my-1",
       name: "reply_to",
       placeholder: "Email",
       value: toSend.reply_to,
@@ -225,7 +214,7 @@ const Contact = props => {
       maxLength: "200",
       required: true }), /*#__PURE__*/
     React.createElement("textarea", {
-      className: "form-control",
+      className: "form-control my-1",
       name: "message",
       placeholder: "Message",
       value: toSend.message,
