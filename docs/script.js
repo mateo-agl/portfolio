@@ -38,13 +38,13 @@ a => ({
 const App = () => {
   const [data, setData] = React.useState({ nav, portfolio, contact, slide: "" });
   React.useEffect(() => {
-    const html = document.firstElementChild;
-    data.slide === "Portfolio" || window.innerHeight < 295 ?
-    html.setAttribute('style', 'overflow-y: auto') :
-    html.setAttribute('style', 'overflow-y: hidden');
+    const body = document.querySelector('body');
+    data.slide === "Portfolio" || window.innerHeight < 400 ?
+    body.setAttribute("style", "overflow-y: auto") :
+    body.setAttribute("style", "overflow-y: hidden");
   });
   return /*#__PURE__*/(
-    React.createElement("div", { id: "container", className: "container-fluid text-center" }, /*#__PURE__*/
+    React.createElement("div", { className: "container-fluid text-center w-100 h-100 position-relative" }, /*#__PURE__*/
     React.createElement(Motion, { defaultStyle: { opacity: 0 }, style: { opacity: spring(1) } },
 
     (style) => /*#__PURE__*/
@@ -96,7 +96,7 @@ React.createElement("a", { href: "#section-" + (i + 2), className: "nav-link p-3
 
 
 const Welcome = () => /*#__PURE__*/
-React.createElement("section", { id: "section-1", className: "row vh-100 vw-100 align-items-center position-absolute" }, /*#__PURE__*/
+React.createElement("section", { id: "section-1", className: "row vw-100 vh-100 align-items-center position-absolute" }, /*#__PURE__*/
 React.createElement("div", { className: "col" }, /*#__PURE__*/
 React.createElement("h1", null, "Hello, I'm Mateo, a Full Stack Web Developer.")));
 
@@ -104,7 +104,7 @@ React.createElement("h1", null, "Hello, I'm Mateo, a Full Stack Web Developer.")
 
 
 const About = (props) => /*#__PURE__*/
-React.createElement("section", { id: "section-2", className: "row vh-100 align-items-center position-absolute" }, /*#__PURE__*/
+React.createElement("section", { id: "section-2", className: "row vw-100 vh-100 align-items-center position-absolute" }, /*#__PURE__*/
 React.createElement("div", { className: "col" }, /*#__PURE__*/
 React.createElement("h2", null, "About me..."), /*#__PURE__*/
 React.createElement("p", null, "I started to learn about web development since last year, watching videos, reading technical pages and learning from freeCodeCamp courses. I have a good manage of JavaScript, HTML and CSS. I also have experience with frameworks like React, Redux, jQuery, Sass and Bootstrap.")));
@@ -115,7 +115,7 @@ React.createElement("p", null, "I started to learn about web development since l
 const Portfolio = props => {
   [state, setState] = React.useState({ hover: false, key: "" });
   return /*#__PURE__*/(
-    React.createElement("section", { id: "section-3", className: "row position-absolute" }, /*#__PURE__*/
+    React.createElement("section", { id: "section-3", className: "row vw-100 vh-100 position-absolute" }, /*#__PURE__*/
     React.createElement("div", { className: "col mt-5" }, /*#__PURE__*/
     React.createElement("div", { className: "row m-4 justify-content-center" },
 
@@ -177,23 +177,16 @@ const Contact = props => {
     'template_hugptro',
     toSend,
     'user_LJGGYMoZAiXX9QAcZO4cw').
-
-    then(response => {
-      window.alert("Mail sent");
-    }).
-    catch(err => {
-      window.alert("Failed to send mail");
-    });
+    then(response => window.alert("Mail sent")).
+    catch(err => window.alert("Failed to send mail"));
   };
 
-  const handleChange = e => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
+  const handleChange = e => setToSend({ ...toSend, [e.target.name]: e.target.value });
   return /*#__PURE__*/(
     React.createElement("section", {
       id: "section-4",
       className: "row vw-100 vh-100 align-items-center position-absolute" }, /*#__PURE__*/
-    React.createElement("div", { className: "col my-5 px-5 py-3" }, /*#__PURE__*/
+    React.createElement("div", { className: "col w-60 my-5 py-3" }, /*#__PURE__*/
     React.createElement("h2", null, "Contact Me"),
 
     props.contact.map(
@@ -203,9 +196,7 @@ const Contact = props => {
 
 
 
-    React.createElement("form", { className: "container-sm", onSubmit: onSubmit }, /*#__PURE__*/
-    React.createElement("div", { className: "row justify-content-between" }, /*#__PURE__*/
-    React.createElement("div", { className: "col-xl-1 col-xl-3" }, /*#__PURE__*/
+    React.createElement("form", { style: { maxWidth: "500px" }, className: "d-flex flex-column mx-auto", onSubmit: onSubmit }, /*#__PURE__*/
     React.createElement("input", {
       type: "text",
       className: "form-control",
@@ -214,9 +205,7 @@ const Contact = props => {
       value: toSend.from_name,
       onChange: handleChange,
       maxLength: "100",
-      required: true })), /*#__PURE__*/
-
-    React.createElement("div", { className: "col-xl-1 col-xl-3" }, /*#__PURE__*/
+      required: true }), /*#__PURE__*/
     React.createElement("input", {
       type: "text",
       className: "form-control",
@@ -225,9 +214,7 @@ const Contact = props => {
       value: toSend.subject,
       onChange: handleChange,
       maxLength: "200",
-      required: true })), /*#__PURE__*/
-
-    React.createElement("div", { className: "col-xl-1 col-xl-3" }, /*#__PURE__*/
+      required: true }), /*#__PURE__*/
     React.createElement("input", {
       type: "email",
       className: "form-control",
@@ -236,9 +223,7 @@ const Contact = props => {
       value: toSend.reply_to,
       onChange: handleChange,
       maxLength: "200",
-      required: true }))), /*#__PURE__*/
-
-
+      required: true }), /*#__PURE__*/
     React.createElement("textarea", {
       className: "form-control",
       name: "message",
@@ -246,7 +231,7 @@ const Contact = props => {
       value: toSend.message,
       onChange: handleChange,
       required: true }), /*#__PURE__*/
-    React.createElement("button", { type: "submit", className: "btn btn-light border" }, "Submit")))));
+    React.createElement("button", { type: "submit", className: "btn btn-light border mx-auto" }, "Submit")))));
 
 
 
