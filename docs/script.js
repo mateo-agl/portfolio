@@ -1,5 +1,5 @@
 const { Motion, spring } = ReactMotion,
-nav = ["Home", "About Me", "Portfolio", "Contact"],
+nav = ["Home", "About Me", "What I do", "Portfolio", "Contact"],
 contact = [
 { link: "https://www.linkedin.com/in/mateo-aguilar-058b791a8/", icon: "bi bi-linkedin" },
 { link: "https://github.com/mateo-agl", icon: "bi bi-github" },
@@ -8,7 +8,7 @@ contact = [
 
 penLink = "https://codepen.io/mateoagl/",
 thmbLink = "https://raw.githubusercontent.com/mateo-agl/images/main/",
-replitLink = "https://replit.com/@mateo-agl/",
+replitLink = ".mateo-agl.repl.co",
 gitHubLink = "https://github.com/mateo-agl/",
 apps = [
 { pen: "GRmaeNj", name: "Heat Map" },
@@ -20,16 +20,16 @@ apps = [
 { pen: "QWpyrWN", name: "Javascript Calculator" },
 { pen: "MWpgBzZ", name: "Drum Machine" },
 { pen: "KKaLBKb", name: "Markdown Previewer" },
-{ repl: "metricimpconverter?v=1", name: "Metric/Imperial converter" },
-{ repl: "issuetracker?v=1", name: "Issue Tracker" },
-{ repl: "library?v=1", name: "Library" },
-{ repl: "stockchecker?v=1", name: "Stock Checker" },
-{ repl: "messageboard?v=1", name: "Message Board" }],
+{ repl: "metricimpconverter", name: "Metric/Imperial converter" },
+{ repl: "issuetracker", name: "Issue Tracker" },
+{ repl: "library", name: "Library" },
+{ repl: "stockchecker", name: "Stock Checker" },
+{ repl: "messageboard", name: "Message Board" }],
 
 portfolio = apps.map(
 a => ({
-  appLink: a.pen ? penLink + "full/" + a.pen : replitLink + a.repl,
-  codeLink: a.pen ? penLink + "pen/" + a.pen : gitHubLink + a.repl.slice(0, -4),
+  appLink: a.pen ? penLink + "full/" + a.pen : "https://" + a.repl + replitLink,
+  codeLink: a.pen ? penLink + "pen/" + a.pen : gitHubLink + a.repl,
   thumbnail: thmbLink + a.name.toLowerCase().replace(/\W/g, "-") + "-thumbnail.png",
   name: a.name }));
 
@@ -38,19 +38,20 @@ a => ({
 const App = () => {
   const [data, setData] = React.useState({ nav, portfolio, contact, slide: "" });
   return /*#__PURE__*/(
-    React.createElement("div", { id: "cont", className: "container-fluid text-center" }, /*#__PURE__*/
     React.createElement(Motion, { defaultStyle: { opacity: 0 }, style: { opacity: spring(1) } },
 
     (style) => /*#__PURE__*/
-    React.createElement("div", { style: style }, /*#__PURE__*/
+    React.createElement("div", { className: "d-flex justify-content-center text-center", style: style }, /*#__PURE__*/
     React.createElement(Navbar, { data: data, setData: setData }), /*#__PURE__*/
-    React.createElement(Welcome, null))), /*#__PURE__*/
-
-
-
+    React.createElement("div", { className: "col-md-8 mx-4" }, /*#__PURE__*/
+    React.createElement(Welcome, null), /*#__PURE__*/
     React.createElement(About, { data: data, setData: setData }), /*#__PURE__*/
+    React.createElement(WhatIDo, null), /*#__PURE__*/
     React.createElement(Portfolio, { portfolio: data.portfolio }), /*#__PURE__*/
-    React.createElement(Contact, { contact: data.contact })));
+    React.createElement(Contact, { contact: data.contact })))));
+
+
+
 
 
 };
@@ -85,18 +86,59 @@ React.createElement("a", { href: "#section-" + (i + 1), className: "nav-link p-3
 
 
 const Welcome = () => /*#__PURE__*/
-React.createElement("section", { id: "section-1", className: "row vw-100 vh-100 align-items-center" }, /*#__PURE__*/
-React.createElement("div", { className: "col" }, /*#__PURE__*/
-React.createElement("h1", null, "Hello, I'm Mateo, a Full Stack Web Developer.")));
-
+React.createElement("section", { id: "section-1", className: "row vh-100 align-items-center" }, /*#__PURE__*/
+React.createElement("h1", null, "Hello, I'm Mateo, a Full Stack Web Developer."));
 
 
 
 const About = (props) => /*#__PURE__*/
-React.createElement("section", { id: "section-2", className: "row vw-100 vh-100 align-items-center" }, /*#__PURE__*/
-React.createElement("div", { className: "col" }, /*#__PURE__*/
+React.createElement("section", { id: "section-2", className: "row vh-100 align-items-center" }, /*#__PURE__*/
+React.createElement("div", null, /*#__PURE__*/
 React.createElement("h2", null, "About me..."), /*#__PURE__*/
 React.createElement("p", null, "I was introduced to programming in highschool and started to learn about web development more than a year ago, making courses and searching about popular languages and frameworks, using them in my personal projects. In a work environment i'm very independent and organized, i compromise with the team, like to participate and learn quick. I also like planning, organize, improve something done, learning and do new things.")));
+
+
+
+
+const WhatIDo = (props) => /*#__PURE__*/
+React.createElement("section", { id: "section-3", className: "row min-vh-100 align-items-center" }, /*#__PURE__*/
+React.createElement("div", { className: "card-group" }, /*#__PURE__*/
+React.createElement("div", { className: "card" }, /*#__PURE__*/
+React.createElement("div", { className: "card-body" }, /*#__PURE__*/
+React.createElement("i", { className: "bi bi-server fs-1" }), /*#__PURE__*/
+React.createElement("h2", { className: "card-title" }, "Back End"), /*#__PURE__*/
+React.createElement("p", { className: "card-text" }, "I setup and manage servers and databases. Can handle data and also create RESTful APIs microservices.")), /*#__PURE__*/
+
+React.createElement("div", { className: "card-body" }, /*#__PURE__*/
+React.createElement("i", { className: "bi bi-window fs-1" }), /*#__PURE__*/
+React.createElement("h2", { className: "card-title" }, "Front End"), /*#__PURE__*/
+React.createElement("p", { className: "card-text" }, "I build website structures and present data in the form of charts, graphs, and maps. Can add styles and animations, make them responsive and add interactivity."))), /*#__PURE__*/
+
+
+React.createElement("div", { className: "card" }, /*#__PURE__*/
+React.createElement("div", { className: "card-body" }, /*#__PURE__*/
+React.createElement("h2", { className: "card-title" }, "Technologies and tools I use:"), /*#__PURE__*/
+React.createElement("ul", { className: "p-0" }, /*#__PURE__*/
+React.createElement("li", null, "Javascript"), /*#__PURE__*/
+React.createElement("li", null, "HTML"), /*#__PURE__*/
+React.createElement("li", null, "CSS"), /*#__PURE__*/
+React.createElement("li", null, "React"), /*#__PURE__*/
+React.createElement("li", null, "Redux"), /*#__PURE__*/
+React.createElement("li", null, "Bootstrap"), /*#__PURE__*/
+React.createElement("li", null, "D3"), /*#__PURE__*/
+React.createElement("li", null, "Sass"), /*#__PURE__*/
+React.createElement("li", null, "Nodejs"), /*#__PURE__*/
+React.createElement("li", null, "Express"), /*#__PURE__*/
+React.createElement("li", null, "MongoDB"), /*#__PURE__*/
+React.createElement("li", null, "Mongoose"), /*#__PURE__*/
+React.createElement("li", null, "Chai"), /*#__PURE__*/
+React.createElement("li", null, "Mocha"), /*#__PURE__*/
+React.createElement("li", null, "Helmetjs"), /*#__PURE__*/
+React.createElement("li", null, "GitHub"), /*#__PURE__*/
+React.createElement("li", null, "NPM"))))));
+
+
+
 
 
 
@@ -104,44 +146,47 @@ React.createElement("p", null, "I was introduced to programming in highschool an
 const Portfolio = props => {
   [state, setState] = React.useState({ hover: false, key: "" });
   return /*#__PURE__*/(
-    React.createElement("section", { id: "section-3", className: "row" }, /*#__PURE__*/
-    React.createElement("div", { className: "col mt-5" }, /*#__PURE__*/
-    React.createElement("div", { className: "row m-4 justify-content-center" },
+    React.createElement("section", { id: "section-4", className: "row pt-5 justify-content-center" }, /*#__PURE__*/
+    React.createElement("h2", { className: "mt-2" }, "My work"),
 
     props.portfolio.map(
     (p, i) => /*#__PURE__*/
-    React.createElement("div", { className: "col-sm-3 m-2 p-0 position-relative project" }, /*#__PURE__*/
-    React.createElement("div", {
-      className: "w-100 h-100 position-absolute border",
-      onMouseEnter: () => setState({ hover: true, key: i }),
-      onMouseLeave: () => setState({ hover: false, key: "" }) }, /*#__PURE__*/
+    React.createElement("div", { className: "col-xl-4 p-0 m-3 position-relative border" }, /*#__PURE__*/
     React.createElement(Motion, {
       key: i,
-      defaultStyle: { scale: 0 },
-      style: { scale: state.hover && i === state.key ? spring(1) : spring(0) } },
+      defaultStyle: { opacity: 0 },
+      style: { opacity: state.hover && i === state.key ? spring(0.85) : spring(0) } },
 
-    ({ scale }) => /*#__PURE__*/
-    React.createElement("div", { className: "position-absolute top-50 start-50 translate-middle" }, /*#__PURE__*/
+    (style) => /*#__PURE__*/
+    React.createElement("div", {
+      className: "d-flex position-relative",
+      onMouseEnter: () => setState({ hover: true, key: i }),
+      onMouseLeave: () => setState({ hover: false, key: "" }) }, /*#__PURE__*/
+    React.createElement("div", { className: "d-flex flex-column w-100 h-100 thmbnail-hover position-absolute justify-content-center align-items-center", style: style }, /*#__PURE__*/
+    React.createElement("h3", { className: "project-name" }, p.name), /*#__PURE__*/
+    React.createElement("div", null, /*#__PURE__*/
     React.createElement("a", {
-      className: "btn btn-light border rounded-circle my-auto mx-2",
-      style: { transform: `scale(${scale})` },
+      className: "btn btn-secondary border rounded-circle mx-2",
       href: p.appLink,
+      "data-bs-toggle": "tooltip",
+      "data-bs-placement": "top",
+      title: "Visit Website",
       target: "_blank" }, /*#__PURE__*/
-    React.createElement("i", { className: "bi bi-fullscreen fs-2" })), /*#__PURE__*/
+    React.createElement("i", { class: "bi bi-chevron-right fs-3" })), /*#__PURE__*/
 
     React.createElement("a", {
-      className: "btn btn-light border rounded-circle my-auto mx-2",
-      style: { transform: `scale(${scale})` },
+      className: "btn btn-secondary border rounded-circle mx-2",
       href: p.codeLink,
+      "data-bs-toggle": "tooltip",
+      "data-bs-placement": "top",
+      title: "See Code",
       target: "_blank" }, /*#__PURE__*/
-    React.createElement("i", { className: "bi bi-code-slash fs-2" }))))), /*#__PURE__*/
+    React.createElement("i", { className: "bi bi-code-slash fs-3" })))), /*#__PURE__*/
 
 
 
+    React.createElement("img", { src: p.thumbnail, className: "img-fluid", alt: p.name + " thumbnail" })))))));
 
-
-    React.createElement("img", { src: p.thumbnail, className: "img-fluid border-bottom", alt: p.name + " thumbnail" }), /*#__PURE__*/
-    React.createElement("h5", { className: "my-1" }, p.name)))))));
 
 
 
@@ -166,6 +211,7 @@ const Contact = props => {
     'template_hugptro',
     toSend,
     'user_LJGGYMoZAiXX9QAcZO4cw').
+
     then(response => window.alert("Mail sent")).
     catch(err => window.alert("Failed to send mail"));
   };
@@ -173,9 +219,9 @@ const Contact = props => {
   const handleChange = e => setToSend({ ...toSend, [e.target.name]: e.target.value });
   return /*#__PURE__*/(
     React.createElement("section", {
-      id: "section-4",
-      className: "row vw-100 vh-100 align-items-center" }, /*#__PURE__*/
-    React.createElement("div", { className: "col w-60 my-5 py-3" }, /*#__PURE__*/
+      id: "section-5",
+      className: "row vh-100 align-items-center" }, /*#__PURE__*/
+    React.createElement("div", { className: "col w-75 my-5 py-3" }, /*#__PURE__*/
     React.createElement("h2", null, "Contact Me"),
 
     props.contact.map(
@@ -228,3 +274,8 @@ const Contact = props => {
 };
 
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.querySelector('#root'));
+
+let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
