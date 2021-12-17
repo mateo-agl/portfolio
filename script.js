@@ -151,7 +151,7 @@ const Portfolio = props => {
 
     props.portfolio.map(
     (p, i) => /*#__PURE__*/
-    React.createElement("div", { className: "col-xl-4 p-0 m-3 position-relative border" }, /*#__PURE__*/
+    React.createElement("div", { className: "col-xl-3 col-lg-4 p-0 m-2 position-relative border" }, /*#__PURE__*/
     React.createElement(Motion, {
       key: i,
       defaultStyle: { opacity: 0 },
