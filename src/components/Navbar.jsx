@@ -1,6 +1,8 @@
 import React from "react";
 
-export const Navbar = props => (
+const nav = ["Home", "About", "Skills", "Portfolio", "Contact"];
+
+export const Navbar = () => (
     <header className="w-100 position-fixed shadow text-center">
         <nav className="navbar navbar-expand-lg py-0 px-4">
         <button 
@@ -16,7 +18,7 @@ export const Navbar = props => (
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
             {
-                props.nav.map(
+                nav.map(
                 (n, i) =>
                 <li className="nav-item" key={i}>
                     <a 

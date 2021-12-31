@@ -1,8 +1,37 @@
 import React from "react";
 import { useState } from "react";
 import { Motion, spring } from "react-motion";
+import js from "../assets/icons/javascript.svg";
+import html from "../assets/icons/html.svg";
+import css from "../assets/icons/css.svg";
+import mongo from "../assets/icons/mongodb.svg";
+import react from "../assets/icons/react.svg";
+import node from "../assets/icons/node.svg";
+import express from "../assets/icons/express.svg";
+import redux from "../assets/icons/redux.svg";
+import d3 from "../assets/icons/d3.svg";
+import bootstrap from "../assets/icons/bootstrap.svg";
+import sass from "../assets/icons/sass.svg";
+import git from "../assets/icons/git.svg";
+import npm from "../assets/icons/npm.svg";
 
-export const Skills = props => {
+const skills = [
+    { icon: js, name: "Javascript" },
+    { icon: html, name: "HTML" },
+    { icon: css, name: "CSS" },
+    { icon: mongo, name: "MongoDB" },
+    { icon: react, name: "React" },
+    { icon: node, name: "Node" },
+    { icon: express, name: "Express" },
+    { icon: redux, name: "Redux" },
+    { icon: d3, name: "D3" },
+    { icon: bootstrap, name: "Bootstrap" },
+    { icon: sass, name: "SASS" },
+    { icon: git, name: "Git" },
+    { icon: npm, name: "NPM" }
+]
+
+export const Skills = () => {
     const [skillsState, setSkillsState] = useState({hover: false, key: ""});
     return (
         <section id="skills" className="row py-6">
@@ -30,7 +59,7 @@ export const Skills = props => {
                             <h2>Languages and tools</h2>
                             <ul className="row justify-content-center p-0">
                                 {
-                                    props.icons.map(
+                                    skills.map(
                                         (obj, i) =>
                                         <Motion style={{scale: skillsState.hover && i === skillsState.key ? spring(1.2) : spring(1)}} key={i}>
                                             {
