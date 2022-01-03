@@ -8,6 +8,9 @@ import { Portfolio } from "./components/Portfolio.jsx";
 import { Skills } from "./components/Skills.jsx";
 import { Welcome } from "./components/Welcome.jsx";
 import { Footer } from "./components/Footer.jsx";
+import "@fortawesome/fontawesome-free/scss/fontawesome.scss"
+import "@fortawesome/fontawesome-free/scss/brands.scss"
+import "bootstrap-icons/font/bootstrap-icons.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./styles/App.scss";
 
@@ -17,7 +20,7 @@ const App = () => (
       style =>
         <div style={style}>
         <Navbar/>
-        <main className="col-md-10 px-3 mx-auto">
+        <main className="col-md-9 px-3 mx-auto">
           <Welcome/>
           <About/>
           <Skills/>
