@@ -12,7 +12,7 @@ import "@fortawesome/fontawesome-free/scss/fontawesome.scss"
 import "@fortawesome/fontawesome-free/scss/brands.scss"
 import "bootstrap-icons/font/bootstrap-icons.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./styles/App.scss";
+import "./App.scss";
 
 const App = () => (
   <Motion defaultStyle={{opacity: 0}} style={{opacity: spring(1)}}>
