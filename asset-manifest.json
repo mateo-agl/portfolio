@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.73caefed.css",
-    "main.js": "/portfolio/static/js/main.c8a0776a.js",
+    "main.css": "/portfolio/static/css/main.2d60efdd.css",
+    "main.js": "/portfolio/static/js/main.379a89d5.js",
+    "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.c06423397f6a504b1baf.png",
+    "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.4bafc9a1606046c7d6ab.png",
     "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.c90f83fd0c6c34dd638f.ttf",
     "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
     "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.123e8cfb2b8bcdef2c3a.woff2",
     "static/media/bootstrap-icons.woff2?": "/portfolio/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
-    "static/media/message-board-thumbnail.png": "/portfolio/static/media/message-board-thumbnail.e70d2f26aa48d5fa89f5.png",
-    "static/media/stock-checker-thumbnail.png": "/portfolio/static/media/stock-checker-thumbnail.f0e6d6c767a72f4a28d4.png",
-    "static/media/issue-tracker-thumbnail.png": "/portfolio/static/media/issue-tracker-thumbnail.b2ae333ebeffd0ad2c6f.png",
-    "static/media/metric-imperial-converter-thumbnail.png": "/portfolio/static/media/metric-imperial-converter-thumbnail.726791d0a0879450ba51.png",
-    "static/media/library-thumbnail.png": "/portfolio/static/media/library-thumbnail.2308cfbb99e0fb44d993.png",
+    "static/media/heat-map-thumbnail.png": "/portfolio/static/media/heat-map-thumbnail.7f87f0aa5cdbb7f9d328.png",
+    "static/media/scatter-plot-thumbnail.png": "/portfolio/static/media/scatter-plot-thumbnail.1c28ae6fa2eedbb4f0fb.png",
+    "static/media/markdown-previewer-thumbnail.png": "/portfolio/static/media/markdown-previewer-thumbnail.0d1085eff0ac49b5a706.png",
+    "static/media/pomodoro-clock-thumbnail.png": "/portfolio/static/media/pomodoro-clock-thumbnail.9fdb6dce013d7e5bc552.png",
+    "static/media/bar-chart-thumbnail.png": "/portfolio/static/media/bar-chart-thumbnail.7ad464796ec65381ad94.png",
+    "static/media/drum-machine-thumbnail.png": "/portfolio/static/media/drum-machine-thumbnail.c261c5f5e3119b22f9a1.png",
+    "static/media/javascript-calculator-thumbnail.png": "/portfolio/static/media/javascript-calculator-thumbnail.a17550f81efbfe57da11.png",
     "static/media/sass.svg": "/portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/d3.svg": "/portfolio/static/media/d3.47c9b7cf0f92028dc72410dad6150dff.svg",
     "static/media/node.svg": "/portfolio/static/media/node.2879fa1876f2b0e8ec70c8bae81f8446.svg",
     "static/media/redux.svg": "/portfolio/static/media/redux.0a4a6ca2be44339bedb69de15f66d243.svg",
     "static/media/react.svg": "/portfolio/static/media/react.a060cbe85e50deda1d61452cee9de5b2.svg",
-    "static/media/express.svg": "/portfolio/static/media/express.c43640813873cdc83cda91bfa4baf5a4.svg",
-    "static/media/mongodb.svg": "/portfolio/static/media/mongodb.3beac5ba18197ccbdea6e2f53e18edcf.svg",
     "index.html": "/portfolio/index.html",
     "static/media/javascript.svg": "/portfolio/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/git.svg": "/portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
@@ -25,11 +27,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.73caefed.css.map": "/portfolio/static/css/main.73caefed.css.map",
-    "main.c8a0776a.js.map": "/portfolio/static/js/main.c8a0776a.js.map"
+    "main.2d60efdd.css.map": "/portfolio/static/css/main.2d60efdd.css.map",
+    "main.379a89d5.js.map": "/portfolio/static/js/main.379a89d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.73caefed.css",
-    "static/js/main.c8a0776a.js"
+    "static/css/main.2d60efdd.css",
+    "static/js/main.379a89d5.js"
   ]
 }
