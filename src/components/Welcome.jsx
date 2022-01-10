@@ -11,7 +11,7 @@ export const Welcome = () => (
   <section id="home" className="row vh-100 align-items-center">
     <div className="col">
       <h1 className="fs-0">Welcome to my page, I'm Mateo</h1>
-      <h3>A Full Stack Web Developer.</h3>
+      <h3>A Front End Web Developer.</h3>
       <div className="float-end mt-5">
         {
           links.map(

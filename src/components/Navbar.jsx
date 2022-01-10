@@ -23,7 +23,7 @@ export const Navbar = () => (
                 <li className="nav-item" key={i}>
                     <a 
                     href={"#" + n.toLowerCase()} 
-                    className="nav-link"
+                    className="nav-link fs-5 mx-1"
                     key={i}>
                         {n}
                     </a>

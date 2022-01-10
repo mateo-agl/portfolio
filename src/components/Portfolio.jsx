@@ -1,38 +1,89 @@
 import React from "react";
 import { useState } from "react";
 import { Motion, spring } from "react-motion";
-import messageboard from "../assets/thumbnails/message-board-thumbnail.png";
-import stockchecker from "../assets/thumbnails/stock-checker-thumbnail.png";
-import issuetracker from "../assets/thumbnails/issue-tracker-thumbnail.png";
-import library from "../assets/thumbnails/library-thumbnail.png";
-import metricimpconverter from "../assets/thumbnails/metric-imperial-converter-thumbnail.png";
+import pClock from "../assets/thumbnails/pomodoro-clock-thumbnail.png";
+import treeMap from "../assets/thumbnails/tree-map-thumbnail.png";
+import calc from "../assets/thumbnails/javascript-calculator-thumbnail.png";
+import chorMap from "../assets/thumbnails/choropleth-map-thumbnail.png";
+import heatMap from "../assets/thumbnails/heat-map-thumbnail.png";
+import drum from "../assets/thumbnails/drum-machine-thumbnail.png";
+import markdown from "../assets/thumbnails/markdown-previewer-thumbnail.png";
+import barChart from "../assets/thumbnails/bar-chart-thumbnail.png";
+import scttrPlot from "../assets/thumbnails/scatter-plot-thumbnail.png";
 
 const portfolio = [
-  {appLink: "https://messageboard.mateo-agl.repl.co",
-  thumbnail: messageboard,
-  codeLink: "https://github.com/mateo-agl/messageboard",
-  name: "Message Board",
-  description: "Anonymous message board to interact with anyone without exposing yourself."},
-  {appLink: "https://stockchecker.mateo-agl.repl.co",
-  thumbnail: stockchecker,
-  codeLink: "https://github.com/mateo-agl/stockchecker",
-  name: "Stock Checker",
-  description: "An app that allows you to check stock prices from a Nasdaq API, like them and compare likes between two of them."},
-  {appLink: "https://issuetracker.mateo-agl.repl.co",
-  thumbnail: issuetracker,
-  codeLink: "https://github.com/mateo-agl/issuetracker",
-  name: "Issue Tracker",
-  description: "An issue tracker app that allow teams to post, get and delete issues they find at work."},
-  {appLink: "https://library.mateo-agl.repl.co",
-  thumbnail: library,
-  codeLink: "https://github.com/mateo-agl/library",
-  name: "Library",
-  description: "A personal library where you can store the books you like and add comments."},
-  {appLink: "https://metricimpconverter.mateo-agl.repl.co",
-  thumbnail: metricimpconverter,
-  codeLink: "https://github.com/mateo-agl/metricimpconverter",
-  name: "Metric/Imperial converter",
-  description: "An app that allows you to convert units from the metric system to imperial system and the other way around."},
+  {
+    appLink: "https://codepen.io/mateoagl/full/LYWjPLN",
+    thumbnail: pClock,
+    codeLink: "https://codepen.io/mateoagl/pen/LYWjPLN",
+    name: "Pomodoro Clock",
+    description: "A timer that uses the pomodoro technique to help you with your productivity.",
+    technologies: "React, Redux, Sass, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/gORLEyP",
+    thumbnail: treeMap,
+    codeLink: "https://codepen.io/mateoagl/pen/gORLEyP",
+    name: "Tree Map",
+    description: "Top 100 most valuable kickstarter pledges grouped by category.",
+    technologies: "D3, Sass, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/QWpyrWN",
+    thumbnail: calc,
+    codeLink: "https://codepen.io/mateoagl/pen/QWpyrWN",
+    name: "Javascript Calculator",
+    description: "An standard calculator buit with javascript.",
+    technologies: "React, Sass, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/rNweqVw",
+    thumbnail: chorMap,
+    codeLink: "https://codepen.io/mateoagl/pen/rNweqVw",
+    name: "Choropleth Map",
+    description: "Map of the United States educational attainment by county.",
+    technologies: "D3, TopoJSON, Sass, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
+    thumbnail: heatMap,
+    codeLink: "https://codepen.io/mateoagl/pen/GRmaeNj",
+    name: "Heat Map",
+    description: "A map that shows global temperature from each month from 1753 to 2015 and it's variation.",
+    technologies: "D3, CSS, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/MWpgBzZ",
+    thumbnail: drum,
+    codeLink: "https://codepen.io/mateoagl/pen/MWpgBzZ",
+    name: "Drum Machine",
+    description: "A javascript drum machine.",
+    technologies: "React, CSS, Howler, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/KKaLBKb",
+    thumbnail: markdown,
+    codeLink: "https://codepen.io/mateoagl/pen/KKaLBKb",
+    name: "Markdown Previewer",
+    description: "An app that parses and displays the markdown you write.",
+    technologies: "React, CSS, Markdown, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/oNWeYOa",
+    thumbnail: barChart,
+    codeLink: "https://codepen.io/mateoagl/pen/oNWeYOa",
+    name: "Bar Chart",
+    description: "United States GDP each trimester from 1947 to 2015.",
+    technologies: "D3, CSS, HTML"
+  },
+  {
+    appLink: "https://codepen.io/mateoagl/full/MWmrmRg",
+    thumbnail: scttrPlot,
+    codeLink: "https://codepen.io/mateoagl/pen/MWmrmRg",
+    name: "Scatter Plot",
+    description: "Doping allegations in professional bycicle racing.",
+    technologies: "D3, CSS, HTML"
+  },
 ]
 
 export const Portfolio = () => {
@@ -40,12 +91,12 @@ export const Portfolio = () => {
     return (
       <section id="portfolio" className="row py-6">
         <h2>My recent work</h2><hr/>
-        <div className="col mx-auto border shadow projects">
+        <div className="col-10 mx-auto shadow projects border">
           {
             portfolio.map(
                 (p, i) => 
                 <article 
-                  className="row p-2 position-relative border-bottom"
+                  className="row position-relative p-2 border-bottom"
                   key={i}>
                   <Motion
                     defaultStyle={{opacity: 0.1}} 
@@ -53,7 +104,7 @@ export const Portfolio = () => {
                     {
                       style =>
                       <div
-                        className="col-lg-6 col-md-12 p-0 mx-auto position-relative border"
+                        className="col-xl-6 col-lg-12 p-0 mx-auto position-relative"
                         onMouseEnter={() => setPortState({hover: true, key: i})} 
                         onMouseLeave={() => setPortState({hover: false, key: ""})}>
                         <div 
@@ -74,13 +125,14 @@ export const Portfolio = () => {
                               Code
                             </a>
                         </div>
-                        <img src={p.thumbnail} className="img-fluid" alt={p.name + " thumbnail"}/>
+                        <img src={p.thumbnail} className="img-fluid border" alt={p.name + " thumbnail"}/>
                       </div>
                     }
                   </Motion>
-                  <div className="col-12 col-md position-relative">
+                  <div className="col-12 col-md position-relative p-3">
                     <h3>{p.name}</h3>
-                    <p>{p.description}</p>
+                    <p className="fs-5">{p.description}</p>
+                    <p className="technologies fs-5">Technologies used: {p.technologies}</p>
                   </div>
               </article>
             )

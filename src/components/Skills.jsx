@@ -4,10 +4,8 @@ import { Motion, spring } from "react-motion";
 import js from "../assets/icons/javascript.svg";
 import html from "../assets/icons/html.svg";
 import css from "../assets/icons/css.svg";
-import mongo from "../assets/icons/mongodb.svg";
 import react from "../assets/icons/react.svg";
 import node from "../assets/icons/node.svg";
-import express from "../assets/icons/express.svg";
 import redux from "../assets/icons/redux.svg";
 import d3 from "../assets/icons/d3.svg";
 import bootstrap from "../assets/icons/bootstrap.svg";
@@ -19,10 +17,8 @@ const skills = [
     { icon: js, name: "Javascript" },
     { icon: html, name: "HTML" },
     { icon: css, name: "CSS" },
-    { icon: mongo, name: "MongoDB" },
     { icon: react, name: "React" },
     { icon: node, name: "Node" },
-    { icon: express, name: "Express" },
     { icon: redux, name: "Redux" },
     { icon: d3, name: "D3" },
     { icon: bootstrap, name: "Bootstrap" },
@@ -38,23 +34,14 @@ export const Skills = () => {
             <h2>Skills</h2><hr/>
             <div className="col mx-auto">
                 <div className="card-group shadow text-center">
-                    <div className="card-group">
-                        <div className="card m-0 rounded-0">
-                        <div className="card-body">
-                            <i className="bi bi-server fs-1"/>
-                            <h2 className="card-title">Back End</h2>
-                            <p className="card-text">I setup and manage servers and databases. Handle data and also create RESTful APIs microservices.</p>
-                        </div>
-                        </div>
-                        <div className="card m-0 rounded-0">
+                    <div className="card m-0 rounded-0">
                         <div className="card-body">
                             <i className="bi bi-window fs-1"/>
-                            <h2 className="card-title">Front End</h2>
-                            <p className="card-text">I build website structures and present data in the form of charts, graphs, and maps. Add styles and animations, make them responsive and add interactivity.</p>
-                        </div>
+                            <h2>What I do</h2>
+                            <p className="card-text fs-5">I build website structures and present data in the form of charts, graphs, and maps. Add styles and animations, make them responsive and add interactivity.</p>
                         </div>
                     </div>
-                    <div className="card m-0 border-top-0">
+                    <div className="card m-0">
                         <div className="card-body">
                             <h2>Languages and tools</h2>
                             <ul className="row justify-content-center p-0">
