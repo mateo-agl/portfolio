@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1f56dbbc.css",
-    "main.js": "/portfolio/static/js/main.6529354d.js",
+    "main.js": "/portfolio/static/js/main.050b518b.js",
     "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.c06423397f6a504b1baf.png",
     "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.4bafc9a1606046c7d6ab.png",
     "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.c90f83fd0c6c34dd638f.ttf",
@@ -16,6 +16,7 @@
     "static/media/drum-machine-thumbnail.png": "/portfolio/static/media/drum-machine-thumbnail.c261c5f5e3119b22f9a1.png",
     "static/media/babel.svg": "/portfolio/static/media/babel.8dfb15adbf453ced836a3594f41b4861.svg",
     "static/media/javascript-calculator-thumbnail.png": "/portfolio/static/media/javascript-calculator-thumbnail.a17550f81efbfe57da11.png",
+    "static/media/random-quote-machine-thumbnail.png": "/portfolio/static/media/random-quote-machine-thumbnail.3327e1c2ca791bfbe860.png",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.bdd76aa91d5b04354bbc2a1c6a60fb9f.svg",
     "static/media/sass.svg": "/portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/d3.svg": "/portfolio/static/media/d3.47c9b7cf0f92028dc72410dad6150dff.svg",
@@ -31,10 +32,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.1f56dbbc.css.map": "/portfolio/static/css/main.1f56dbbc.css.map",
-    "main.6529354d.js.map": "/portfolio/static/js/main.6529354d.js.map"
+    "main.050b518b.js.map": "/portfolio/static/js/main.050b518b.js.map"
   },
   "entrypoints": [
     "static/css/main.1f56dbbc.css",
-    "static/js/main.6529354d.js"
+    "static/js/main.050b518b.js"
   ]
 }
