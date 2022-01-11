@@ -18,7 +18,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/LYWjPLN",
     name: "Pomodoro Clock",
     description: "A timer that uses the pomodoro technique to help you with your productivity.",
-    technologies: "React, Redux, Sass, HTML"
+    technologies: "React, Redux, Sass, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/gORLEyP",
@@ -26,7 +26,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/gORLEyP",
     name: "Tree Map",
     description: "Top 100 most valuable kickstarter pledges grouped by category.",
-    technologies: "D3, Sass, HTML"
+    technologies: "D3, Sass, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/QWpyrWN",
@@ -34,7 +34,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/QWpyrWN",
     name: "Javascript Calculator",
     description: "An standard calculator buit with javascript.",
-    technologies: "React, Sass, HTML"
+    technologies: "React, Sass, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/rNweqVw",
@@ -42,7 +42,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/rNweqVw",
     name: "Choropleth Map",
     description: "Map of the United States educational attainment by county.",
-    technologies: "D3, TopoJSON, Sass, HTML"
+    technologies: "D3, TopoJSON, Sass, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
@@ -50,7 +50,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/GRmaeNj",
     name: "Heat Map",
     description: "A map that shows global temperature from each month from 1753 to 2015 and it's variation.",
-    technologies: "D3, CSS, HTML"
+    technologies: "D3, CSS, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/MWpgBzZ",
@@ -58,7 +58,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/MWpgBzZ",
     name: "Drum Machine",
     description: "A javascript drum machine.",
-    technologies: "React, CSS, Howler, HTML"
+    technologies: "React, CSS, Howler, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/KKaLBKb",
@@ -66,7 +66,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/KKaLBKb",
     name: "Markdown Previewer",
     description: "An app that parses and displays the markdown you write.",
-    technologies: "React, CSS, Markdown, HTML"
+    technologies: "React, CSS, Markdown, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/oNWeYOa",
@@ -74,7 +74,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/oNWeYOa",
     name: "Bar Chart",
     description: "United States GDP each trimester from 1947 to 2015.",
-    technologies: "D3, CSS, HTML"
+    technologies: "D3, CSS, HTML, Javascript"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/MWmrmRg",
@@ -82,7 +82,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/MWmrmRg",
     name: "Scatter Plot",
     description: "Doping allegations in professional bycicle racing.",
-    technologies: "D3, CSS, HTML"
+    technologies: "D3, CSS, HTML, Javascript"
   },
 ]
 
@@ -111,14 +111,14 @@ export const Portfolio = () => {
                           className="d-flex w-100 h-100 thmbnail-hover position-absolute align-items-center" 
                           style={style}>
                             <a 
-                              className="btn btn-project border rounded-0 ms-auto me-5 fs-4" 
+                              className="btn btn-project px-3 rounded-pill ms-auto me-5 fs-4" 
                               href={p.appLink}
                               target="_blank"
                               rel="noreferrer">
                               Live
                             </a>
                             <a 
-                              className="btn btn-project border rounded-0 me-auto fs-4"
+                              className="btn btn-project px-3 rounded-pill me-auto fs-4"
                               href={p.codeLink}
                               target="_blank"
                               rel="noreferrer">

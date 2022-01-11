@@ -12,6 +12,8 @@ import bootstrap from "../assets/icons/bootstrap.svg";
 import sass from "../assets/icons/sass.svg";
 import git from "../assets/icons/git.svg";
 import npm from "../assets/icons/npm.svg";
+import webpack from "../assets/icons/webpack.svg";
+import babel from "../assets/icons/babel.svg";
 
 const skills = [
     { icon: js, name: "Javascript" },
@@ -24,7 +26,9 @@ const skills = [
     { icon: bootstrap, name: "Bootstrap" },
     { icon: sass, name: "SASS" },
     { icon: git, name: "Git" },
-    { icon: npm, name: "NPM" }
+    { icon: npm, name: "NPM" },
+    { icon: webpack, name: "Webpack" },
+    { icon: babel, name: "Babel" }
 ]
 
 export const Skills = () => {
@@ -32,7 +36,7 @@ export const Skills = () => {
     return (
         <section id="skills" className="row py-6">
             <h2>Skills</h2><hr/>
-            <div className="col mx-auto">
+            <div className="col-10 mx-auto">
                 <div className="card-group shadow text-center">
                     <div className="card m-0 rounded-0">
                         <div className="card-body">

@@ -14,8 +14,8 @@ export const Contact = () => {
         toSend,
         'user_LJGGYMoZAiXX9QAcZO4cw'
       )
-        .then(response => window.alert("Mail sent"))
-        .catch(err => window.alert("Failed to send mail"));
+        .then(() => window.alert("Mail sent"))
+        .catch(() => window.alert("Failed to send mail"));
     };
   
     const handleChange = e => setToSend({ ...toSend, [e.target.name]: e.target.value });
