@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2d60efdd.css",
-    "main.js": "/portfolio/static/js/main.379a89d5.js",
+    "main.js": "/portfolio/static/js/main.e1f897d3.js",
     "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.c06423397f6a504b1baf.png",
     "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.4bafc9a1606046c7d6ab.png",
     "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.c90f83fd0c6c34dd638f.ttf",
@@ -28,10 +28,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.2d60efdd.css.map": "/portfolio/static/css/main.2d60efdd.css.map",
-    "main.379a89d5.js.map": "/portfolio/static/js/main.379a89d5.js.map"
+    "main.e1f897d3.js.map": "/portfolio/static/js/main.e1f897d3.js.map"
   },
   "entrypoints": [
     "static/css/main.2d60efdd.css",
-    "static/js/main.379a89d5.js"
+    "static/js/main.e1f897d3.js"
   ]
 }
