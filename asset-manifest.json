@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9bc88d01.css",
-    "main.js": "/portfolio/static/js/main.bf8f1f4b.js",
+    "main.css": "/portfolio/static/css/main.8b3682f5.css",
+    "main.js": "/portfolio/static/js/main.4494d563.js",
     "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.3114c967e5146b7e930b.png",
     "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.33d4a2dc9a718cc4dd81.png",
     "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
@@ -29,11 +29,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.9bc88d01.css.map": "/portfolio/static/css/main.9bc88d01.css.map",
-    "main.bf8f1f4b.js.map": "/portfolio/static/js/main.bf8f1f4b.js.map"
+    "main.8b3682f5.css.map": "/portfolio/static/css/main.8b3682f5.css.map",
+    "main.4494d563.js.map": "/portfolio/static/js/main.4494d563.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bc88d01.css",
-    "static/js/main.bf8f1f4b.js"
+    "static/css/main.8b3682f5.css",
+    "static/js/main.4494d563.js"
   ]
 }
