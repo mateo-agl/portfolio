@@ -82,7 +82,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/gORLEyP",
     name: "Tree Map",
     description: "Top 100 most valuable kickstarter pledges grouped by category.",
-    technologies: "D3, Sass"
+    technologies: "D3, REST API, Sass"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/QWpyrWN",
@@ -98,7 +98,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/rNweqVw",
     name: "Choropleth Map",
     description: "Map of the United States educational attainment by county.",
-    technologies: "D3, TopoJSON, Sass"
+    technologies: "D3, TopoJSON, REST API, Sass"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/KKaLBKb",
@@ -114,7 +114,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/GRmaeNj",
     name: "Heat Map",
     description: "A map that shows global temperature from each month from 1753 to 2015 and it's variation.",
-    technologies: "D3, CSS"
+    technologies: "D3, REST API, CSS"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/MWpgBzZ",
@@ -130,7 +130,7 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/oNWeYOa",
     name: "Bar Chart",
     description: "United States GDP each trimester from 1947 to 2015.",
-    technologies: "D3, CSS"
+    technologies: "D3, REST API, CSS"
   },
   {
     appLink: "https://codepen.io/mateoagl/full/mdRgWgP",
@@ -146,6 +146,6 @@ const portfolio = [
     codeLink: "https://codepen.io/mateoagl/pen/MWmrmRg",
     name: "Scatter Plot",
     description: "Doping allegations in professional bycicle racing.",
-    technologies: "D3, CSS"
+    technologies: "D3, REST API, CSS"
   },
 ]  
