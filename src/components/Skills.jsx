@@ -15,22 +15,6 @@ import npm from "../assets/icons/npm.svg";
 import webpack from "../assets/icons/webpack.svg";
 import babel from "../assets/icons/babel.svg";
 
-const skills = [
-    { icon: js, name: "Javascript" },
-    { icon: html, name: "HTML" },
-    { icon: css, name: "CSS" },
-    { icon: react, name: "React" },
-    { icon: node, name: "Node" },
-    { icon: redux, name: "Redux" },
-    { icon: d3, name: "D3" },
-    { icon: bootstrap, name: "Bootstrap" },
-    { icon: sass, name: "SASS" },
-    { icon: git, name: "Git" },
-    { icon: npm, name: "NPM" },
-    { icon: webpack, name: "Webpack" },
-    { icon: babel, name: "Babel" }
-]
-
 export const Skills = () => {
     const [skillsState, setSkillsState] = useState({hover: false, key: ""});
     return (
@@ -78,3 +62,19 @@ export const Skills = () => {
         </section>
     )
 }
+
+const skills = [
+    { icon: js, name: "Javascript" },
+    { icon: html, name: "HTML" },
+    { icon: css, name: "CSS" },
+    { icon: react, name: "React" },
+    { icon: node, name: "Node" },
+    { icon: redux, name: "Redux" },
+    { icon: d3, name: "D3" },
+    { icon: bootstrap, name: "Bootstrap" },
+    { icon: sass, name: "SASS" },
+    { icon: git, name: "Git" },
+    { icon: npm, name: "NPM" },
+    { icon: webpack, name: "Webpack" },
+    { icon: babel, name: "Babel" }
+]

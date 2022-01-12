@@ -4,7 +4,6 @@
   "license": "MIT",
   "homepage": "https://mateo-agl.github.io/portfolio",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -16,8 +15,7 @@
     "react-dom": "^17.0.2",
     "react-motion": "^0.5.2",
     "react-scripts": "^5.0.0",
-    "sass": "^1.45.2",
-    "web-vitals": "^2.1.2"
+    "sass": "^1.45.2"
   },
   "scripts": {
     "predeploy": "npm run build",
