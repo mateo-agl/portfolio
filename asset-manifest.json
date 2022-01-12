@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1f56dbbc.css",
-    "main.js": "/portfolio/static/js/main.050b518b.js",
-    "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.c06423397f6a504b1baf.png",
-    "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.4bafc9a1606046c7d6ab.png",
-    "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.c90f83fd0c6c34dd638f.ttf",
+    "main.css": "/portfolio/static/css/main.9bc88d01.css",
+    "main.js": "/portfolio/static/js/main.bf8f1f4b.js",
+    "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.3114c967e5146b7e930b.png",
+    "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.33d4a2dc9a718cc4dd81.png",
     "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
-    "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.123e8cfb2b8bcdef2c3a.woff2",
+    "static/media/heat-map-thumbnail.png": "/portfolio/static/media/heat-map-thumbnail.63b0a47b8443992c917d.png",
     "static/media/bootstrap-icons.woff2?": "/portfolio/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
-    "static/media/heat-map-thumbnail.png": "/portfolio/static/media/heat-map-thumbnail.7f87f0aa5cdbb7f9d328.png",
-    "static/media/scatter-plot-thumbnail.png": "/portfolio/static/media/scatter-plot-thumbnail.1c28ae6fa2eedbb4f0fb.png",
-    "static/media/markdown-previewer-thumbnail.png": "/portfolio/static/media/markdown-previewer-thumbnail.0d1085eff0ac49b5a706.png",
-    "static/media/pomodoro-clock-thumbnail.png": "/portfolio/static/media/pomodoro-clock-thumbnail.9fdb6dce013d7e5bc552.png",
-    "static/media/bar-chart-thumbnail.png": "/portfolio/static/media/bar-chart-thumbnail.7ad464796ec65381ad94.png",
-    "static/media/drum-machine-thumbnail.png": "/portfolio/static/media/drum-machine-thumbnail.c261c5f5e3119b22f9a1.png",
-    "static/media/babel.svg": "/portfolio/static/media/babel.8dfb15adbf453ced836a3594f41b4861.svg",
-    "static/media/javascript-calculator-thumbnail.png": "/portfolio/static/media/javascript-calculator-thumbnail.a17550f81efbfe57da11.png",
-    "static/media/random-quote-machine-thumbnail.png": "/portfolio/static/media/random-quote-machine-thumbnail.3327e1c2ca791bfbe860.png",
+    "static/media/markdown-previewer-thumbnail.png": "/portfolio/static/media/markdown-previewer-thumbnail.8b31f568f8dcfa54ae7f.png",
+    "static/media/bar-chart-thumbnail.png": "/portfolio/static/media/bar-chart-thumbnail.029a9bd1f38bc64a8093.png",
+    "static/media/pomodoro-clock-thumbnail.png": "/portfolio/static/media/pomodoro-clock-thumbnail.523bbf1bf9c78dda688a.png",
+    "static/media/scatter-plot-thumbnail.png": "/portfolio/static/media/scatter-plot-thumbnail.d4c872e0b55773899354.png",
+    "static/media/random-quote-machine-thumbnail.png": "/portfolio/static/media/random-quote-machine-thumbnail.2cf035c6a0e929e57bdd.png",
+    "static/media/drum-machine-thumbnail.png": "/portfolio/static/media/drum-machine-thumbnail.efe22bd1028b8903da08.png",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.bdd76aa91d5b04354bbc2a1c6a60fb9f.svg",
+    "static/media/javascript-calculator-thumbnail.png": "/portfolio/static/media/javascript-calculator-thumbnail.524e1da2fde8d39dbc5a.png",
+    "static/media/babel.svg": "/portfolio/static/media/babel.2a65b28eeb79292fb110459e296632f3.svg",
     "static/media/sass.svg": "/portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/d3.svg": "/portfolio/static/media/d3.47c9b7cf0f92028dc72410dad6150dff.svg",
     "static/media/node.svg": "/portfolio/static/media/node.2879fa1876f2b0e8ec70c8bae81f8446.svg",
@@ -31,11 +29,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.1f56dbbc.css.map": "/portfolio/static/css/main.1f56dbbc.css.map",
-    "main.050b518b.js.map": "/portfolio/static/js/main.050b518b.js.map"
+    "main.9bc88d01.css.map": "/portfolio/static/css/main.9bc88d01.css.map",
+    "main.bf8f1f4b.js.map": "/portfolio/static/js/main.bf8f1f4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f56dbbc.css",
-    "static/js/main.050b518b.js"
+    "static/css/main.9bc88d01.css",
+    "static/js/main.bf8f1f4b.js"
   ]
 }
