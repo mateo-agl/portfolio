@@ -11,6 +11,7 @@ import markdown from "../assets/thumbnails/markdown-previewer-thumbnail.png";
 import barChart from "../assets/thumbnails/bar-chart-thumbnail.png";
 import rQuote from "../assets/thumbnails/random-quote-machine-thumbnail.png"
 import scttrPlot from "../assets/thumbnails/scatter-plot-thumbnail.png";
+import thisPortfolio from "../assets/thumbnails/this-portfolio-thumbnail.png";
 
 export const Portfolio = () => {
   const [portState, setPortState] = useState({hover: false, key: ""});
@@ -37,14 +38,18 @@ export const Portfolio = () => {
                         className="d-flex w-100 h-100 position-absolute align-items-center" 
                         style={style}>
                           <a 
-                            className="btn btn-project px-3 rounded-pill ms-auto me-5 fs-4" 
+                            className={p.name !== "This portfolio" ?
+                            "btn btn-project px-3 rounded-pill ms-auto me-5 fs-3" :
+                            "d-none"} 
                             href={p.appLink}
                             target="_blank"
                             rel="noreferrer">
                             Live
                           </a>
                           <a 
-                            className="btn btn-project px-3 rounded-pill me-auto fs-4"
+                            className={p.name !== "This portfolio" ?
+                            "btn btn-project px-3 rounded-pill me-auto fs-3" :
+                            "btn btn-project px-3 rounded-pill mx-auto fs-3"}
                             href={p.codeLink}
                             target="_blank"
                             rel="noreferrer">
@@ -68,6 +73,13 @@ export const Portfolio = () => {
   )
 }
 const portfolio = [
+  {
+    thumbnail: thisPortfolio,
+    codeLink: "https://github.com/mateo-agl/portfolio",
+    name: "This portfolio",
+    description: "This portfolio was made by me. You can see the code by clicking the button on the image.",
+    technologies: "React, React Motion, Bootstrap, Sass, Email-js"
+  },
   {
     appLink: "https://codepen.io/mateoagl/full/LYWjPLN",
     thumbnail: pClock,
