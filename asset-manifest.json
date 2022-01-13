@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8b3682f5.css",
-    "main.js": "/portfolio/static/js/main.e85039d4.js",
+    "main.js": "/portfolio/static/js/main.3ccf90e8.js",
     "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.3114c967e5146b7e930b.png",
     "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.33d4a2dc9a718cc4dd81.png",
     "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
@@ -9,6 +9,7 @@
     "static/media/bootstrap-icons.woff2?": "/portfolio/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
     "static/media/markdown-previewer-thumbnail.png": "/portfolio/static/media/markdown-previewer-thumbnail.8b31f568f8dcfa54ae7f.png",
     "static/media/bar-chart-thumbnail.png": "/portfolio/static/media/bar-chart-thumbnail.029a9bd1f38bc64a8093.png",
+    "static/media/this-portfolio-thumbnail.png": "/portfolio/static/media/this-portfolio-thumbnail.c77436af18c150728b3c.png",
     "static/media/pomodoro-clock-thumbnail.png": "/portfolio/static/media/pomodoro-clock-thumbnail.523bbf1bf9c78dda688a.png",
     "static/media/scatter-plot-thumbnail.png": "/portfolio/static/media/scatter-plot-thumbnail.d4c872e0b55773899354.png",
     "static/media/random-quote-machine-thumbnail.png": "/portfolio/static/media/random-quote-machine-thumbnail.2cf035c6a0e929e57bdd.png",
@@ -30,10 +31,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.8b3682f5.css.map": "/portfolio/static/css/main.8b3682f5.css.map",
-    "main.e85039d4.js.map": "/portfolio/static/js/main.e85039d4.js.map"
+    "main.3ccf90e8.js.map": "/portfolio/static/js/main.3ccf90e8.js.map"
   },
   "entrypoints": [
     "static/css/main.8b3682f5.css",
-    "static/js/main.e85039d4.js"
+    "static/js/main.3ccf90e8.js"
   ]
 }
