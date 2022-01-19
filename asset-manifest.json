@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8b3682f5.css",
-    "main.js": "/portfolio/static/js/main.bacad05c.js",
-    "static/media/tree-map-thumbnail.png": "/portfolio/static/media/tree-map-thumbnail.33d4a2dc9a718cc4dd81.png",
-    "static/media/choropleth-map-thumbnail.png": "/portfolio/static/media/choropleth-map-thumbnail.3646112b7f072fae4e96.png",
+    "main.css": "/portfolio/static/css/main.b18d32f8.css",
+    "main.js": "/portfolio/static/js/main.d21a505e.js",
+    "static/media/tree-map-thumbnail.jpg": "/portfolio/static/media/tree-map-thumbnail.513fd664284bfc309f0c.jpg",
     "static/media/bootstrap-icons.woff?": "/portfolio/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
-    "static/media/heat-map-thumbnail.png": "/portfolio/static/media/heat-map-thumbnail.63b0a47b8443992c917d.png",
     "static/media/bootstrap-icons.woff2?": "/portfolio/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
-    "static/media/markdown-previewer-thumbnail.png": "/portfolio/static/media/markdown-previewer-thumbnail.8b31f568f8dcfa54ae7f.png",
-    "static/media/bar-chart-thumbnail.png": "/portfolio/static/media/bar-chart-thumbnail.029a9bd1f38bc64a8093.png",
-    "static/media/this-portfolio-thumbnail.png": "/portfolio/static/media/this-portfolio-thumbnail.c77436af18c150728b3c.png",
-    "static/media/pomodoro-clock-thumbnail.png": "/portfolio/static/media/pomodoro-clock-thumbnail.523bbf1bf9c78dda688a.png",
-    "static/media/random-quote-machine-thumbnail.png": "/portfolio/static/media/random-quote-machine-thumbnail.2cf035c6a0e929e57bdd.png",
-    "static/media/scatter-plot-thumbnail.png": "/portfolio/static/media/scatter-plot-thumbnail.03b19b309e54a908b5c6.png",
-    "static/media/drum-machine-thumbnail.png": "/portfolio/static/media/drum-machine-thumbnail.efe22bd1028b8903da08.png",
+    "static/media/heat-map-thumbnail.jpg": "/portfolio/static/media/heat-map-thumbnail.bbcac86e8d97f32928ad.jpg",
+    "static/media/this-portfolio-thumbnail.jpg": "/portfolio/static/media/this-portfolio-thumbnail.154618128fbbc173aa60.jpg",
+    "static/media/choropleth-map-thumbnail.jpg": "/portfolio/static/media/choropleth-map-thumbnail.a2a5c19eecbe3f6d2580.jpg",
+    "static/media/markdown-previewer-thumbnail.jpg": "/portfolio/static/media/markdown-previewer-thumbnail.7bb05c7f5ec85f7fed70.jpg",
+    "static/media/bar-chart-thumbnail.jpg": "/portfolio/static/media/bar-chart-thumbnail.52b45216dbc0f669ccf8.jpg",
+    "static/media/pomodoro-clock-thumbnail.jpg": "/portfolio/static/media/pomodoro-clock-thumbnail.ef55553ce0eec9164ca9.jpg",
+    "static/media/scatter-plot-thumbnail.jpg": "/portfolio/static/media/scatter-plot-thumbnail.e257df864c199d56b741.jpg",
+    "static/media/drum-machine-thumbnail.jpg": "/portfolio/static/media/drum-machine-thumbnail.bc492dfd3ac9fc21439d.jpg",
+    "static/media/random-quote-machine-thumbnail.jpg": "/portfolio/static/media/random-quote-machine-thumbnail.c9a43c7e3b36a3d67e5e.jpg",
+    "static/media/javascript-calculator-thumbnail.jpg": "/portfolio/static/media/javascript-calculator-thumbnail.c58a5e8b92010eeefab8.jpg",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.bdd76aa91d5b04354bbc2a1c6a60fb9f.svg",
-    "static/media/javascript-calculator-thumbnail.png": "/portfolio/static/media/javascript-calculator-thumbnail.524e1da2fde8d39dbc5a.png",
     "static/media/babel.svg": "/portfolio/static/media/babel.82b0e7ddd6f772dbcf07900ce5867e12.svg",
     "static/media/sass.svg": "/portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/d3.svg": "/portfolio/static/media/d3.47c9b7cf0f92028dc72410dad6150dff.svg",
@@ -30,11 +30,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.8b3682f5.css.map": "/portfolio/static/css/main.8b3682f5.css.map",
-    "main.bacad05c.js.map": "/portfolio/static/js/main.bacad05c.js.map"
+    "main.b18d32f8.css.map": "/portfolio/static/css/main.b18d32f8.css.map",
+    "main.d21a505e.js.map": "/portfolio/static/js/main.d21a505e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b3682f5.css",
-    "static/js/main.bacad05c.js"
+    "static/css/main.b18d32f8.css",
+    "static/js/main.d21a505e.js"
   ]
 }
