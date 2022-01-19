@@ -1,45 +1,45 @@
 import React from "react";
 import { useState } from "react";
 import { Motion, spring } from "react-motion";
-import pClock from "../assets/thumbnails/pomodoro-clock-thumbnail.png";
-import treeMap from "../assets/thumbnails/tree-map-thumbnail.png";
-import calc from "../assets/thumbnails/javascript-calculator-thumbnail.png";
-import chorMap from "../assets/thumbnails/choropleth-map-thumbnail.png";
-import heatMap from "../assets/thumbnails/heat-map-thumbnail.png";
-import drum from "../assets/thumbnails/drum-machine-thumbnail.png";
-import markdown from "../assets/thumbnails/markdown-previewer-thumbnail.png";
-import barChart from "../assets/thumbnails/bar-chart-thumbnail.png";
-import rQuote from "../assets/thumbnails/random-quote-machine-thumbnail.png"
-import scttrPlot from "../assets/thumbnails/scatter-plot-thumbnail.png";
-import thisPortfolio from "../assets/thumbnails/this-portfolio-thumbnail.png";
+import pClock from "../assets/thumbnails/pomodoro-clock-thumbnail.jpg";
+import treeMap from "../assets/thumbnails/tree-map-thumbnail.jpg";
+import calc from "../assets/thumbnails/javascript-calculator-thumbnail.jpg";
+import chorMap from "../assets/thumbnails/choropleth-map-thumbnail.jpg";
+import heatMap from "../assets/thumbnails/heat-map-thumbnail.jpg";
+import drum from "../assets/thumbnails/drum-machine-thumbnail.jpg";
+import markdown from "../assets/thumbnails/markdown-previewer-thumbnail.jpg";
+import barChart from "../assets/thumbnails/bar-chart-thumbnail.jpg";
+import rQuote from "../assets/thumbnails/random-quote-machine-thumbnail.jpg"
+import scttrPlot from "../assets/thumbnails/scatter-plot-thumbnail.jpg";
+import thisPortfolio from "../assets/thumbnails/this-portfolio-thumbnail.jpg";
 
 export const Portfolio = () => {
   const [portState, setPortState] = useState({hover: false, key: ""});
   return (
     <section id="portfolio" className="row py-6">
       <h2>My recent work</h2><hr/>
-      <div className="col-xxl-10 col-xl-12 mx-auto shadow projects border">
+      <div className="col-xxl-10 col-xl-12 mx-auto shadow border">
         {
           portfolio.map(
               (p, i) => 
               <article 
-                className="row position-relative p-2 border-bottom"
+                className="row position-relative projects"
                 key={i}>
                 <Motion
-                  defaultStyle={{opacity: 0.1}} 
-                  style={{opacity: portState.hover && i === portState.key ? spring(1) : spring(0.1)}}>
+                  defaultStyle={{opacity: 0}} 
+                  style={{opacity: portState.hover && i === portState.key ? spring(0.9) : spring(0)}}>
                   {
                     style =>
                     <div
-                      className="col-xl-6 p-0 position-relative"
+                      className="col-lg-6 p-0 position-relative border"
                       onMouseEnter={() => setPortState({hover: true, key: i})} 
                       onMouseLeave={() => setPortState({hover: false, key: ""})}>
                       <div 
-                        className="d-flex w-100 h-100 position-absolute align-items-center" 
+                        className="thumbnail d-flex w-100 h-100 position-absolute align-items-center" 
                         style={style}>
                           <a 
                             className={p.name !== "This portfolio" ?
-                            "btn btn-project px-3 rounded-pill ms-auto me-5 fs-3" :
+                            "btn btn-project px-3 rounded-pill ms-auto me-5 fs-2" :
                             "d-none"} 
                             href={p.appLink}
                             target="_blank"
@@ -48,19 +48,19 @@ export const Portfolio = () => {
                           </a>
                           <a 
                             className={p.name !== "This portfolio" ?
-                            "btn btn-project px-3 rounded-pill me-auto fs-3" :
-                            "btn btn-project px-3 rounded-pill mx-auto fs-3"}
+                            "btn btn-project px-3 rounded-pill me-auto fs-2" :
+                            "btn btn-project px-3 rounded-pill mx-auto fs-2"}
                             href={p.codeLink}
                             target="_blank"
                             rel="noreferrer">
                             Code
                           </a>
                       </div>
-                      <img src={p.thumbnail} className="img-fluid d-flex mx-auto border" alt={p.name + " thumbnail"}/>
+                      <img src={p.thumbnail} className="img-fluid" alt={p.name + " thumbnail"}/>
                     </div>
                   }
                 </Motion>
-                <div className="col-xl-6 position-relative p-3">
+                <div className="col-lg-6 position-relative p-3 border">
                   <h3>{p.name}</h3>
                   <p className="fs-5">{p.description}</p>
                   <p className="technologies m-0 fs-5">Technologies used: {p.technologies}</p>
@@ -101,7 +101,7 @@ const portfolio = [
     thumbnail: calc,
     codeLink: "https://codepen.io/mateoagl/pen/QWpyrWN",
     name: "Javascript Calculator",
-    description: "An standard calculator buit with javascript.",
+    description: "An standard calculator built with javascript.",
     technologies: "React, Sass"
   },
   {

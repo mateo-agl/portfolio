@@ -14,7 +14,7 @@ import "./App.scss";
 const App = () => (
   <div>
     <Navbar/>
-    <main className="col-md-9 px-3 mx-auto">
+    <main className="col-md-10 px-3 mx-auto">
       <Welcome/>
       <About/>
       <Skills/>

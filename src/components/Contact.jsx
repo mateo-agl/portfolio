@@ -24,11 +24,11 @@ export const Contact = () => {
         id="contact" 
         className="row py-6">
         <h2>Contact Me</h2><hr/>
-        <div className="col-sm-8 col-lg-6 mx-auto">
+        <div className="col-xxl-6 col-lg-8 mx-auto">
           <form ref={form} className="d-flex flex-column p-5 border rounded-0 shadow" onSubmit={onSubmit}>
             <input
               type='text'
-              className="form-control rounded-0 my-2"
+              className="form-control rounded-0 fs-5 mb-4"
               name='from_name'
               placeholder='Name'
               value={toSend.from_name}
@@ -37,7 +37,7 @@ export const Contact = () => {
               required/>
             <input
               type='email'
-              className="form-control rounded-0 my-2"
+              className="form-control rounded-0 fs-5 mb-4"
               name='reply_to'
               placeholder='Email'
               value={toSend.reply_to}
@@ -46,7 +46,7 @@ export const Contact = () => {
               required/>
             <input
               type='text'
-              className="form-control rounded-0 my-2"
+              className="form-control rounded-0 fs-5 mb-4"
               name='subject'
               placeholder='Subject'
               value={toSend.subject}
@@ -54,7 +54,7 @@ export const Contact = () => {
               maxLength="200"
               required/>
             <textarea
-              className="form-control rounded-0 my-2"
+              className="form-control rounded-0 fs-5 mb-4"
               name='message'
               placeholder='Message'
               value={toSend.message}
@@ -62,7 +62,7 @@ export const Contact = () => {
               required/>
             <button 
             type='submit' 
-            className="btn btn-primary mx-auto rounded-0">
+            className="btn btn-primary mx-auto fs-5 px-4 rounded-0">
               Send
             </button>
           </form>
