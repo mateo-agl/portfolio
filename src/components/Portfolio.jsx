@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Motion, spring } from "react-motion";
 import pClock from "../assets/thumbnails/pomodoro-clock-thumbnail.jpg";
 import treeMap from "../assets/thumbnails/tree-map-thumbnail.jpg";
@@ -17,8 +16,8 @@ export const Portfolio = () => {
   const [portState, setPortState] = useState({hover: false, key: ""});
   return (
     <section id="portfolio" className="row py-6">
-      <h2>My recent work</h2><hr/>
-      <div className="col-xxl-10 col-xl-12 mx-auto shadow border">
+      <h2>My work</h2><hr/>
+      <div className="col-xxl-9 col-xl-12 mx-auto shadow border">
         {
           portfolio.map(
               (p, i) => 
@@ -77,7 +76,7 @@ const portfolio = [
     thumbnail: thisPortfolio,
     codeLink: "https://github.com/mateo-agl/portfolio",
     name: "This portfolio",
-    description: "This portfolio was made by me. You can see the code by clicking the button on the image.",
+    description: "You can see this portfolio's code by clicking the button on the image.",
     technologies: "React, React Motion, Bootstrap, Sass, Email-js"
   },
   {

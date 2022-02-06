@@ -1,7 +1,5 @@
 import React from "react";
 
-const nav = ["Home", "About", "Skills", "Portfolio", "Contact"];
-
 export const Navbar = () => (
     <header className="w-100 position-fixed shadow text-center">
         <nav className="navbar navbar-expand-lg py-0 px-4">
@@ -34,4 +32,6 @@ export const Navbar = () => (
         </div>
         </nav>
     </header>
-)
+);
+
+const nav = ["Home", "About", "Skills", "Portfolio", "Contact"];

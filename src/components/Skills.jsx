@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Motion, spring } from "react-motion";
 import js from "../assets/icons/javascript.svg";
 import html from "../assets/icons/html.svg";
