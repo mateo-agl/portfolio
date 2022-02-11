@@ -17,13 +17,13 @@ export const Portfolio = () => {
   return (
     <section id="portfolio" className="row py-6">
       <h2>My work</h2><hr/>
-      <div className="col-xxl-9 col-xl-12 mx-auto shadow border">
+      <div className="col-xxl-8 col-xl-10 mx-auto shadow border">
         {
           portfolio.map(
-              (p, i) => 
-              <article 
-                className="row position-relative projects"
-                key={i}>
+            (p, i) => 
+            <article 
+              className="row position-relative projects"
+              key={i}>
                 <Motion
                   defaultStyle={{opacity: 0}} 
                   style={{opacity: portState.hover && i === portState.key ? spring(0.9) : spring(0)}}>

@@ -17,17 +17,17 @@ export const Navbar = () => (
             <ul className="navbar-nav">
             {
                 nav.map(
-                (n, i) =>
-                <li className="nav-item" key={i}>
-                    <a 
-                    href={"#" + n.toLowerCase()}
-                    className="nav-link fs-5 mx-1"
-                    key={i}>
-                        {n}
-                    </a>
-                </li>
+                    (n, i) =>
+                    <li className="nav-item" key={i}>
+                        <a 
+                        href={"#" + n.toLowerCase()}
+                        className="nav-link fs-5 mx-1"
+                        key={i}>
+                            {n}
+                        </a>
+                    </li>
                 )
-                }
+            }
             </ul>
         </div>
         </nav>
