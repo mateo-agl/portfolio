@@ -11,13 +11,14 @@ import barChart from "../assets/thumbnails/bar-chart-thumbnail.jpg";
 import rQuote from "../assets/thumbnails/random-quote-machine-thumbnail.jpg"
 import scttrPlot from "../assets/thumbnails/scatter-plot-thumbnail.jpg";
 import thisPortfolio from "../assets/thumbnails/this-portfolio-thumbnail.jpg";
+import messageBoard from "../assets/thumbnails/message-board-thumbnail.jpg";
 
 export const Portfolio = () => {
   const [portState, setPortState] = useState({hover: false, key: ""});
   return (
     <section id="portfolio" className="row py-6">
       <h2>My work</h2><hr/>
-      <div className="col-xxl-8 col-xl-10 mx-auto shadow border">
+      <div className="proj-cont mx-auto shadow border">
         {
           portfolio.map(
             (p, i) => 
@@ -30,7 +31,7 @@ export const Portfolio = () => {
                   {
                     style =>
                     <div
-                      className="col-lg-6 p-0 position-relative border"
+                      className="col-lg-5 p-0 position-relative border"
                       onMouseEnter={() => setPortState({hover: true, key: i})} 
                       onMouseLeave={() => setPortState({hover: false, key: ""})}>
                       <div 
@@ -59,10 +60,10 @@ export const Portfolio = () => {
                     </div>
                   }
                 </Motion>
-                <div className="col-lg-6 position-relative p-3 border">
+                <div className="col-lg-7 position-relative p-2 border">
                   <h3>{p.name}</h3>
                   <p className="fs-5">{p.description}</p>
-                  <p className="technologies m-0 fs-5">Technologies used: {p.technologies}</p>
+                  <p className="technologies m-0">Technologies used: {p.technologies}</p>
                 </div>
             </article>
           )
@@ -72,6 +73,14 @@ export const Portfolio = () => {
   )
 }
 const portfolio = [
+  {
+    appLink: "https://anonymous-message-board.mateo-agl.repl.co/",
+    thumbnail: messageBoard,
+    codeLink: "https://github.com/mateo-agl/anonymous-message-board",
+    name: "Anonymous message board",
+    description: "Anonymous message board to interact with anyone without exposing your identity.",
+    technologies: "React, React-Router, Jquery, CSS, Express, Mongoose, Chai, Helmet"
+  },
   {
     thumbnail: thisPortfolio,
     codeLink: "https://github.com/mateo-agl/portfolio",
