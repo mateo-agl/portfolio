@@ -1,0 +1,26 @@
+.project {
+    height: 516px;
+    border: 1px #8ECAE6 solid;
+}
+
+.thumbnail {
+    height: 300px;
+}
+
+.proj-art {
+    color: #8ECAE6;
+}
+
+.proj-title, .proj-desc {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.technologies {
+    font-family: 'Cousine', monospace;
+    color: #219EBC;
+    font-weight: bold;
+}
+
+.proj-code {
+    width: fit-content;
+}

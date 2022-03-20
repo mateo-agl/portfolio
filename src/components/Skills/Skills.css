@@ -1,0 +1,9 @@
+.skills-cont, .skill {
+    border: 1px #8ECAE6 solid
+}
+
+.skill {
+    color: #8ECAE6;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+}

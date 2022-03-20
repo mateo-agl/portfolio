@@ -1,28 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { About } from "./components/About.jsx";
-import { Contact } from "./components/Contact.jsx";
-import { Navbar } from "./components/Navbar.jsx";
-import { Portfolio } from "./components/Portfolio.jsx";
-import { Skills } from "./components/Skills.jsx";
-import { Welcome } from "./components/Welcome.jsx";
-import { Footer } from "./components/Footer.jsx";
-import "bootstrap-icons/font/bootstrap-icons.css"
+import { About } from "./components/About/About.jsx";
+import { Navbar } from "./components/Navbar/Navbar.jsx";
+import { Projects } from "./components/Projects/Projects.jsx";
+import { Skills } from "./components/Skills/Skills.jsx";
+import { Welcome } from "./components/Welcome/Welcome.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
+import { Links } from "./components/Links/Links.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./App.scss";
+import "./App.css";
 
 const App = () => (
-  <div>
-    <Navbar/>
-    <main className="col-md-10 px-3 mx-auto">
-      <Welcome/>
-      <About/>
-      <Skills/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
-    </main>
-  </div>
+	<>
+		<Navbar/>
+		<main className="col-10 mx-auto">
+			<Welcome/>
+			<About/>
+			<Skills/>
+			<Projects/>
+		</main>
+		<Footer/>
+		<Links/>
+	</>
 );
 
 ReactDOM.render(<App/>, document.querySelector('#root'));

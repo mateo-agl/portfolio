@@ -1,0 +1,19 @@
+.links {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+    padding: 10px;
+    position: fixed;
+    top: calc(50% - 79px);
+}
+
+.icon {
+    fill: #FFB703;
+    height: 36px;
+    width: 36px;
+    transition: .2s;
+}
+
+.icon:hover {
+    fill: #FB8500;
+}

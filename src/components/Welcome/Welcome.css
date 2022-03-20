@@ -1,0 +1,23 @@
+.hello {
+    color: #8ECAE6;
+    font-family: 'Cousine', monospace;
+    font-weight: bold;
+    font-size: 9em;
+}
+
+.desc {
+    font-size: 3em;
+}
+
+.resume-btn {
+    background: #FFB703;
+    text-decoration: none;
+    color: #023047;
+    padding: 15px 36px;
+    font-size: 18px;
+}
+
+.resume-btn:hover {
+    background: #FB8500;
+    color: white;
+}

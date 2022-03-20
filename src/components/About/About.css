@@ -1,0 +1,11 @@
+.avatar {
+    background: #8ECAE6;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about-art {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    color: #8ECAE6;
+}

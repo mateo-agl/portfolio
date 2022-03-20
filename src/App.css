@@ -1,0 +1,51 @@
+* {
+    list-style: none;
+}
+
+a {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: #FFB703;
+    transition: .2s;
+}
+
+a:hover {
+    color: #FB8500;
+}
+
+::-webkit-scrollbar{
+    width: 7.25px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FFB703;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FB8500;
+}
+
+body {
+    background: #023047;
+}
+
+h2 {
+    font-family: 'Cuprum', sans-serif;
+    color: #219EBC;
+    font-size: 36px;
+}
+
+.separator {
+    height: 1px;
+    background: #8ECAE6;
+    margin-bottom: 1em;
+}
+
+#about, #projects, #skills, #contact {
+    padding-top: 102px;
+}
