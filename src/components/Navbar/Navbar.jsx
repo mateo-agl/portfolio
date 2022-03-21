@@ -2,16 +2,16 @@ import React from "react";
 import "./Navbar.css";
 
 export const Navbar = () => (
-	<nav className="navbar navbar-expand-lg fixed-top p-0">
+	<nav className="navbar navbar-expand-lg fixed-top p-0">	
 		<div className="col-11 d-flex mx-auto">
 			<button 
 				aria-controls="offcanvasNavbar"
-				className="navbar-toggler my-2 ms-auto"
+				className="menu-btn navbar-toggler my-4 ms-auto"
 				data-bs-target="#offcanvasNavbar"
 				data-bs-toggle="offcanvas"
 				type="button"
 			>
-				<i className="bi bi-list fs-2"/>
+				<div className="hamburger"/>
 			</button>
 			<div
 				aria-labelledby="offcanvasNavbarLabel"
@@ -19,14 +19,14 @@ export const Navbar = () => (
 				id="offcanvasNavbar"
 				tabIndex="-1"
 			>
-				<div className="offcanvas-header">
+				<div className="offcanvas-header px-4">
 					<button
 						aria-label="Close"
-						className="navbar-toggler my-2 ms-auto"
+						className="menu-btn navbar-toggler my-2 ms-auto me-3"
 						data-bs-dismiss="offcanvas"
 						type="button"
 					>
-						<i className="bi bi-x-lg"/>
+						<div className="close"/>
 					</button>
 				</div>
 				<div className="offcanvas-body p-0">
@@ -34,15 +34,15 @@ export const Navbar = () => (
 						{
 							nav.map(
 								(n, i) =>
-									<li className="nav-item text-center" key={i}>
-										<a 
-											className="nav-btn"
-											href={"#" + n.toLowerCase()}
-											key={i}
-										>
-											{n}
-										</a>
-									</li>
+								<li className="nav-item text-center" key={i}>
+									<a 
+										className="nav-btn"
+										href={"#" + n.toLowerCase()}
+										key={i}
+									>
+										{n}
+									</a>
+								</li>
 							)
 						}
 					</ul>

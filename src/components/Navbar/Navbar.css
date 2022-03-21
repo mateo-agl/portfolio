@@ -1,9 +1,85 @@
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%)
+    }
+    75% {
+        transform: translateY(-100%);
+    }
+}
+
 .navbar {
     background: #023047;
+    animation: 1.6s ease-out slideDown;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        background: none;
+    }
 }
 
 .nav-btn {
     font-size: 18px;
     padding: 1.5em 2em;
     line-height: 76px;
+}
+
+.menu-btn {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    padding: 0 !important;
+}
+
+.menu-btn:enabled {
+    box-shadow: none !important;
+}
+
+.hamburger {
+    width: 24px;
+    height: 2px;
+    background: #FFB703;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #FFB703;
+}
+
+.hamburger::before {
+    top: 0;
+    left: 0;
+}
+
+.hamburger::after {
+    bottom: 0;
+    left: 0;
+}
+
+.close {
+    width: 24px;
+    height: 2px;
+    background: #FFB703;
+    transform: rotate(-45deg);
+}
+
+.close::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: #FFB703;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 0;
+}
+
+.offcanvas {
+    width: fit-content !important;
+    background: #023047 !important;
 }

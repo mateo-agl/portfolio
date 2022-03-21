@@ -4,25 +4,26 @@
     padding: 60px 90px;
 }
 
-.input-cont > h2 {
+.input-cont h2 {
     font-weight: bold;
     font-size: 64px;
 }
 
 .input {
-    background: none;
-    border: 1px #8ECAE6 solid;
-    color: #8ECAE6;
-    font-family: 'Cousine', monospace;
-    font-size: 18px;
-    margin: 10px;
-    padding: .5em;
-    transition: .2s;
+    background: none !important;
+    border: 1px #8ECAE6 solid !important;
+    color: #8ECAE6 !important;
+    font-family: 'Cousine', monospace !important;
+    font-size: 18px !important;
+    transition: .2s !important;
 }
 
 .input:focus {
-    outline: none;
-    border: 1px #FFB703 solid;
+    box-shadow: none !important;
+    border: 1px #FFB703 solid !important;
+    font-family: 'Cousine', monospace !important;
+    font-size: 18px !important;
+    background: none !important;
 }
 
 .send-btn {
@@ -38,6 +39,26 @@
 
 .send-btn:hover {
     background: #FB8500;
+}
+
+@media (max-width: 1024px) {
+    .input-cont {
+        padding: 0;
+        border: none;
+    }
+
+    .input-cont h2 {
+        font-size: 2em;
+    }
+
+    .input-cont div {
+        flex-direction: column;
+    }
+
+    .send-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
 }
 
 .footer-text {

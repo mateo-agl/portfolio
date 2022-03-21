@@ -3,14 +3,16 @@ import avatar from "../../assets/avatar/avatar.svg";
 import "./About.css";
 
 export const About = () => (
-	<section className="col-8 mx-auto" id="about">
+	<section className="col-lg-8 col-md-10 col-sm-12 mx-auto" id="about">
 		<h2>About me...</h2>
 		<div className="row separator"/>
 		<div className="row justify-content-center">
-			<div className="col-4 avatar">
-				<img alt="my avatar" className="w-100" src={avatar}/>
+			<div className="col-xl-4 col-lg-6 col-sm-8 d-flex">
+				<div className="avatar w-100 my-auto">
+					<img alt="my avatar" className="w-100 h-100" src={avatar}/>
+				</div>
 			</div>
-			<article className="about-art col-xl-8 d-flex my-auto">
+			<article className="about-art col-md-8 col-sm-12 d-flex my-auto">
 				<p>{aboutText}</p>
 			</article>
 		</div>

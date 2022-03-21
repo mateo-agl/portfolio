@@ -1,12 +1,36 @@
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+}
+
+@keyframes btnSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    75% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+
 .hello {
     color: #8ECAE6;
     font-family: 'Cousine', monospace;
     font-weight: bold;
     font-size: 9em;
+    animation: .8s ease slideIn;
 }
 
 .desc {
     font-size: 3em;
+    animation: 1s ease slideIn;
 }
 
 .resume-btn {
@@ -14,10 +38,32 @@
     text-decoration: none;
     color: #023047;
     padding: 15px 36px;
-    font-size: 18px;
+    animation: 1.2s ease-in btnSlideIn;
 }
 
 .resume-btn:hover {
     background: #FB8500;
     color: white;
+}
+
+@media (max-width: 1024px) {
+    .hello {
+        font-size: 7em;
+    }
+    .desc {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 676px) {
+    .hello {
+        font-size: 3.25em;
+    }
+    .desc {
+        font-size: 1.25em;
+    }
+    .resume-btn {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
 }

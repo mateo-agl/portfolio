@@ -6,4 +6,9 @@
     color: #8ECAE6;
     font-family: 'Cuprum', sans-serif;
     font-size: 14px;
+    transition: .25s;
+}
+
+.skill:hover {
+    transform: scale(1.2);
 }

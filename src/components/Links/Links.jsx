@@ -10,12 +10,13 @@ export const Links = () => (
 			links.map(
 				(b, i) => 
 					<a
+						className="icon"
 						href={b.link}
 						key={i}
-						rel="noreferrer"
+						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<b.icon className="icon"/>
+						<b.icon/>
 					</a>
 			)
 		}

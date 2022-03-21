@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Motion, spring } from "react-motion";
+import React from "react";
 import pClock from "../../assets/thumbnails/pomodoro-clock.jpg";
 import treeMap from "../../assets/thumbnails/tree-map.jpg";
 import calc from "../../assets/thumbnails/javascript-calculator.jpg";
@@ -10,84 +9,63 @@ import messageBoard from "../../assets/thumbnails/message-board.jpg";
 import barChart from "../../assets/thumbnails/bar-chart.jpg";
 import "./Projects.css";
 
-export const Projects = () => {
-	const [projState, setprojState] = useState({key: ""});
-	return (
-		<section className="col-12 mx-auto" id="projects">
-			<h2>My work</h2>
-			<div className="row separator"/>
-			<div className="row justify-content-center mt-5">
-				{
-					projects.map(
-						(p, i) => 
-						<Motion
-							defaultStyle={
-								{ top: -15, left: -15 }
-							}
-							key={i}
-							style={
-								i === projState.key
-								? { top: spring(0), left: spring(0) }
-								: { top: spring(-15), left: spring(-15) }
-							}
-						>
-							{
-								(style) =>
-								<div
-									className="project col-3 m-4 p-2 shadow position-relative"
-									onMouseEnter={() => setprojState({key: i})} 
-									onMouseLeave={() => setprojState({key: ""})}
-								>
-									<div className="thumbnail position-relative">
-										<a
-											href={p.appLink}
-											rel="noreferrer"
-											target="_blank"
-										>
-											<div
-												className="d-flex position-absolute justify-content-center align-items-center w-100 h-100 overflow-hidden"
-												style={style}
-											>
-												<img
-													alt={p.name + " thumbnail"}
-													className="h-100"
-													src={p.thumbnail}
-												/>
-											</div>
-										</a>
-									</div>
-									<article className="proj-art mb-auto pt-2">
-										<a
-											href={p.appLink}
-											rel="noreferrer"
-											target="_blank"
-										>
-											<h3 className="proj-title">{p.name}</h3>
-										</a>
-										<p className="fs-5 proj-desc">{p.description}</p>
-									</article>
-									<div className="position-absolute w-100 start-0 bottom-0 p-2">
-										<label className="technologies">
-											{p.technologies}
-										</label>
-										<a	
-											className="d-block proj-code ms-auto"
-											href={p.codeLink}
-											rel="noreferrer"
-											target="_blank"
-										>
-											Code
-										</a>
-									</div>
+export const Projects = () => (
+	<section className="col-12 mx-auto" id="projects">
+		<h2>My work</h2>
+		<div className="row separator"/>
+		<div className="row justify-content-center mt-5">
+			{
+				projects.map(
+					(p, i) => 
+					<div 
+						className="project col-auto m-4 p-2 shadow position-relative"
+						key={i}
+					>
+						<div className="thumbnail position-relative">
+							<a
+								href={p.appLink}
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<div className="d-flex position-absolute justify-content-center align-items-center w-100 h-100 overflow-hidden">
+									<img
+										alt={p.name + " thumbnail"}
+										className="h-100"
+										src={p.thumbnail}
+									/>
 								</div>
-							}
-						</Motion>
-					)
-				}
-			</div>
-		</section>
-	);
-};
+							</a>
+						</div>
+						<article className="proj-art mb-auto pt-2">
+							<a
+								href={p.appLink}
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<h3 className="proj-title">{p.name}</h3>
+							</a>
+							<p className="proj-desc">{p.description}</p>
+						</article>
+						<div className="position-absolute w-100 start-0 bottom-0 p-2">
+							<label className="technologies">
+								{p.technologies}
+							</label>
+							<a	
+								className="d-block proj-code ms-auto"
+								href={p.codeLink}
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								Code
+							</a>
+						</div>
+					</div>
+				)
+			}
+		</div>
+	</section>
+);
+
 const projects = [
 	{
 		appLink: "https://anonymous-message-board.mateo-agl.repl.co/",
