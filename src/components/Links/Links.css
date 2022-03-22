@@ -7,14 +7,21 @@
     }
 }
 
-.links {
-    display: grid;
+.fixed-links, .footer-links {
     grid-template-columns: auto;
     gap: 30px;
     padding: 10px;
+}
+
+.fixed-links {
+    display: grid;
     position: fixed;
     top: 35%;
     animation: 1.4s ease-in linkSlideIn;
+}
+
+.footer-links {
+    display: none;
 }
 
 .icon {
@@ -33,5 +40,16 @@
     .icon {
         height: 24px;
         width: 24px;
+    }
+}
+
+@media (max-width: 528px) {
+    .fixed-links {
+        display: none;
+    }
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 24px);
+        position: relative;
     }
 }

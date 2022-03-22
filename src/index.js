@@ -21,7 +21,7 @@ const App = () => (
 			<Projects/>
 		</main>
 		<Footer/>
-		<Links/>
+		<Links linksClass="fixed-links"/>
 	</>
 );
 

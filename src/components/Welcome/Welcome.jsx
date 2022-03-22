@@ -10,7 +10,7 @@ export const Welcome = () => (
 				<h2 className="desc">{desc}</h2>
 			</div>
 			<div className="d-flex float-end">
-				<a className="resume-btn shadow" href={resume} rel="noopener noreferrer" target="_blank">
+				<a className="resume-btn shadow ms-auto" href={resume} rel="noopener noreferrer" target="_blank">
 					RESUME
 				</a>
 			</div>

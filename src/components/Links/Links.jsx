@@ -4,8 +4,8 @@ import { ReactComponent as Linkedin } from "../../assets/icons/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/icons/github.svg";
 import "./Links.css";
 
-export const Links = () => (
-	<div className="links">
+export const Links = (props) => (
+	<div className={props.linksClass}>
 		{
 			links.map(
 				(b, i) => 

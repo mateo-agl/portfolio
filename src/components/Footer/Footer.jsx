@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import { Links } from "../Links/Links";
 import "./Footer.css";
 
 export const Footer = () => {
@@ -20,7 +21,7 @@ export const Footer = () => {
   
 	const handleChange = e => setToSend({ ...toSend, [e.target.name]: e.target.value });
 	return (
-		<footer className="col-xxl-8 col-xsm-12 d-flex flex-column vh-100 mx-auto text-center" id="contact">
+		<footer className="col-xxl-8 col-xsm-12 d-flex flex-column vh-100 mx-auto text-center position-relative" id="contact">
 			<form
 				className="d-flex flex-column my-auto p-5"
 				ref={form}
@@ -84,7 +85,8 @@ export const Footer = () => {
 					</button>
 				</div>
 			</form>
-			<p className="footer-text m-0 py-4">© Mateo Aguilar 2021</p>
+			<Links linksClass="footer-links mx-auto"/>
+			<p className="footer-text m-0 py-4">Built by Mateo Aguilar</p>
 		</footer>
 	);
 };
