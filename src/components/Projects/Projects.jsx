@@ -7,6 +7,7 @@ import heatMap from "../../assets/thumbnails/heat-map.jpg";
 import markdown from "../../assets/thumbnails/markdown-previewer.jpg";
 import messageBoard from "../../assets/thumbnails/message-board.jpg";
 import barChart from "../../assets/thumbnails/bar-chart.jpg";
+import ecomWebsite from "../../assets/thumbnails/ecommerce-website.jpg";
 import "./Projects.css";
 
 export const Projects = () => (
@@ -69,6 +70,14 @@ export const Projects = () => (
 )
 
 const projects = [
+	{
+		appLink: "https://mateo-agl.github.io/ecommerce-website/",
+		thumbnail: ecomWebsite,
+		codeLink: "https://github.com/mateo-agl/ecommerce-website",
+		name: "Ecommerce website",
+		description: "Built entirily with React classes. Users can filter products by category, choose them with especific attributes and add them to their cart.",
+		technologies: "React, React-Router, CSS"
+	},
 	{
 		appLink: "https://anonymous-message-board.mateo-agl.repl.co/",
 		thumbnail: messageBoard,
