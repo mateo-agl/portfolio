@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.098a4bd6.css",
-    "main.js": "/portfolio/static/js/main.cbb908c2.js",
+    "main.js": "/portfolio/static/js/main.794d1ad7.js",
     "static/media/tree-map.jpg": "/portfolio/static/media/tree-map.513fd664284bfc309f0c.jpg",
     "static/media/ecommerce-website.jpg": "/portfolio/static/media/ecommerce-website.0fb777aa63344efa2f11.jpg",
     "static/media/Mateo Aguilar Resume.pdf": "/portfolio/static/media/Mateo Aguilar Resume.6f548434ebdd581b291d.pdf",
@@ -31,10 +31,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.098a4bd6.css.map": "/portfolio/static/css/main.098a4bd6.css.map",
-    "main.cbb908c2.js.map": "/portfolio/static/js/main.cbb908c2.js.map"
+    "main.794d1ad7.js.map": "/portfolio/static/js/main.794d1ad7.js.map"
   },
   "entrypoints": [
     "static/css/main.098a4bd6.css",
-    "static/js/main.cbb908c2.js"
+    "static/js/main.794d1ad7.js"
   ]
 }
