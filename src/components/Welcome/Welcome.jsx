@@ -19,4 +19,4 @@ export const Welcome = () => (
 );
 
 const hello = "Hi, I'm Mateo";
-const desc = "A Front End Web Developer living in Argentina, passionate about creating interactive websites and looking for new challenges!";
+const desc = "A Front End Web Developer living in Argentina, specializing in building websites using React and Node.";

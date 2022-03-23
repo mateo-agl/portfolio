@@ -10,20 +10,22 @@
 }
 
 .input {
-    background: none !important;
-    border: 1px #8ECAE6 solid !important;
-    color: #8ECAE6 !important;
-    font-family: 'Cousine', monospace !important;
-    font-size: 18px !important;
-    transition: .2s !important;
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px #8ECAE6 solid;
+    font-family: 'Cousine', monospace;
+    font-size: 18px;
+    transition: .2s;
+}
+
+.input, .input::placeholder {
+    color: #8ECAE6;
 }
 
 .input:focus {
-    box-shadow: none !important;
-    border: 1px #FFB703 solid !important;
-    font-family: 'Cousine', monospace !important;
-    font-size: 18px !important;
-    background: none !important;
+    outline: none;
+    border: 1px #FFB703 solid;
 }
 
 .send-btn {
@@ -61,7 +63,16 @@
     }
 }
 
+.mail {
+    width: fit-content;
+}
+
 .footer-text {
     color: #8ECAE6;
     font-family: 'Cousine', monospace;
+}
+
+.alert {
+    border: 1px #8ECAE6 solid;
+    border-radius: 0px;
 }

@@ -1,22 +1,44 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 import { Links } from "../Links/Links";
 import "./Footer.css";
 
 export const Footer = () => {
 	const form = useRef();
-	const [toSend, setToSend] = useState({ from_name: '', to_name: '', message: '', reply_to: '' });
+	const [toSend, setToSend] = useState({ from_name: "", to_name: "", message: "", reply_to: "" });
   
 	const onSubmit = e => {
 		e.preventDefault();
 		emailjs.send(
-			'service_osecgz9',
-			'template_hugptro',
+			"service_osecgz9",
+			"template_hugptro",
 			toSend,
-			'user_LJGGYMoZAiXX9QAcZO4cw'
+			"user_LJGGYMoZAiXX9QAcZO4cw"
 		)
-			.then(() => window.alert("Mail sent"))
-			.catch(() => window.alert("Failed to send mail"));
+		.then(
+			() => 
+			Swal.fire({
+				icon: "success",
+				title: "Message sent",
+				showConfirmButton: false,
+				timer: 1500,
+				background: "#023047",
+				color: "#8ECAE6"
+			})
+		)
+		.catch(
+			() => 
+			Swal.fire({
+				icon: "error",
+				title: "Failed to send message",
+				text: "please use the mail below the form",
+				showConfirmButton: false,
+				timer: 3000,
+				background: "#023047",
+				color: "#8ECAE6"
+			})
+		);
 	};
   
 	const handleChange = e => setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -32,24 +54,24 @@ export const Footer = () => {
 					<div className="input-group">
 						<div className="mb-2 mx-2">
 							<input
-								className="input form-control rounded-0 p-2"
+								className="input rounded-0 p-2"
 								maxLength="100"
-								name='from_name'
-								placeholder='Name'
+								name="from_name"
+								placeholder="Name"
 								required
-								type='text'
+								type="text"
 								value={toSend.from_name}
 								onChange={handleChange}
 							/>
 						</div>
 						<div className="mb-2 mx-2">
 							<input
-								className="input form-control rounded-0 p-2"
+								className="input rounded-0 p-2"
 								maxLength="200"
-								name='reply_to'
-								placeholder='Email'
+								name="reply_to"
+								placeholder="Email"
 								required
-								type='email'
+								type="email"
 								value={toSend.reply_to}
 								onChange={handleChange}
 							/>
@@ -57,21 +79,21 @@ export const Footer = () => {
 					</div>
 					<div className="mb-2 mx-2">
 						<input
-							className="input form-control rounded-0 p-2"
+							className="input rounded-0 p-2"
 							maxLength="200"
-							name='subject'
-							placeholder='Subject'
+							name="subject"
+							placeholder="Subject"
 							required
-							type='text'
+							type="text"
 							value={toSend.subject}
 							onChange={handleChange}
 						/>
 					</div>
 					<div className="mb-2 mx-2">
 						<textarea
-							className="input form-control rounded-0 p-2"
-							name='message'
-							placeholder='Message'
+							className="input rounded-0 p-2"
+							name="message"
+							placeholder="Message"
 							required
 							value={toSend.message}
 							onChange={handleChange}
@@ -79,13 +101,14 @@ export const Footer = () => {
 					</div>
 					<button 
 						className="send-btn mx-auto px-4 rounded-0" 
-						type='submit'
+						type="submit"
 					>
 						SEND
 					</button>
 				</div>
 			</form>
 			<Links linksClass="footer-links mx-auto"/>
+			<a className="mail mx-auto" href="mailto:aguilarmateo.1604@gmail.com">aguilarmateo.1604@gmail.com</a>
 			<p className="footer-text m-0 py-4">Built by Mateo Aguilar</p>
 		</footer>
 	);

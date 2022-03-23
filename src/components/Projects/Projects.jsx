@@ -10,7 +10,7 @@ import barChart from "../../assets/thumbnails/bar-chart.jpg";
 import "./Projects.css";
 
 export const Projects = () => (
-	<section className="col-12 mx-auto" id="projects">
+	<section className="col-12 mx-auto position-relative" id="projects">
 		<h2>My work</h2>
 		<div className="row separator"/>
 		<div className="row justify-content-center mt-5">
@@ -18,7 +18,7 @@ export const Projects = () => (
 				projects.map(
 					(p, i) => 
 					<div 
-						className="project col-auto m-4 p-2 shadow position-relative"
+						className="project col-auto d-flex flex-column m-4 p-2 shadow"
 						key={i}
 					>
 						<div className="thumbnail position-relative">
@@ -36,7 +36,7 @@ export const Projects = () => (
 								</div>
 							</a>
 						</div>
-						<article className="proj-art mb-auto pt-2">
+						<article className="proj-art pt-2">
 							<a
 								href={p.appLink}
 								rel="noopener noreferrer"
@@ -44,9 +44,11 @@ export const Projects = () => (
 							>
 								<h3 className="proj-title">{p.name}</h3>
 							</a>
-							<p className="proj-desc">{p.description}</p>
+							<div className="overflow-hidden">
+								<p className="proj-desc">{p.description}</p>
+							</div>
 						</article>
-						<div className="position-absolute w-100 start-0 bottom-0 p-2">
+						<div className="mt-auto">
 							<label className="technologies">
 								{p.technologies}
 							</label>
@@ -64,7 +66,7 @@ export const Projects = () => (
 			}
 		</div>
 	</section>
-);
+)
 
 const projects = [
 	{
@@ -72,7 +74,7 @@ const projects = [
 		thumbnail: messageBoard,
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
-		description: "Anonymous message board to interact with anyone without exposing your identity.",
+		description: "MERN stack project created with functional components. Users can see each others threads and replies and modifie them using their id and password",
 		technologies: "React, React-Router, CSS, Express, Mongoose"
 	},
 	{
@@ -88,7 +90,7 @@ const projects = [
 		thumbnail: pClock,
 		codeLink: "https://codepen.io/mateoagl/pen/LYWjPLN",
 		name: "Pomodoro Clock",
-		description: "A timer that uses the pomodoro technique to help you with your productivity.",
+		description: "A timer that uses the pomodoro technique to help you be more productive.",
 		technologies: "React, Redux, Sass"
 	},
 	{

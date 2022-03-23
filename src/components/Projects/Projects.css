@@ -1,11 +1,12 @@
 .project {
-    height: 516px;
+    height: 600px;
     width: 404px !important;
     border: 1px #8ECAE6 solid;
 }
 
 .thumbnail {
-    height: calc(100% / 1.75);
+    height: calc(100% * .6);
+    width: 100%;
     top: -15px;
     left: -15px;
     transition: .2s;
@@ -24,6 +25,10 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.proj-desc {
+    font-size: 18px;
+}
+
 .technologies {
     font-family: 'Cousine', monospace;
     color: #219EBC;
@@ -36,15 +41,26 @@
 
 @media (max-width: 420px) {
     .project {
-        height: calc(516px / 1.5) !important;
-        width: calc(404px / 1.5) !important;
+        height: 450px;
+    }
+
+    .thumbnail {
+        height: calc(100% * .5);
     }
 
     .proj-title {
-        font-size: 16px;
+        font-size: 18px;
     }
     
-    .technologies, .proj-desc {
+    .proj-desc {
+        font-size: 16px;
+    }
+
+    .proj-code {
         font-size: 14px;
+    }
+
+    .technologies {
+        font-size: 12px;
     }
 }
