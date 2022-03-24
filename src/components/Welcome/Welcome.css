@@ -24,12 +24,12 @@
     color: #8ECAE6;
     font-family: 'Cousine', monospace;
     font-weight: bold;
-    font-size: 9em;
+    font-size: 6em;
     animation: .8s ease slideIn;
 }
 
 .desc {
-    font-size: 3em;
+    font-size: 4em;
     animation: 1s ease slideIn;
 }
 

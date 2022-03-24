@@ -19,4 +19,4 @@ export const About = () => (
 	</section>
 );
 
-const aboutText = "I'm a React and Node Front End developer. I started learning web development in 2020 and finished different freeCodeCamp's courses about web design, front end development and the fundamentals of back end and APIs. I've been building different types of interactive applications using React and other tools from JavaScript's echosystem for more than one year. I am in constant learning, trying to make new things and correct errors, with the expectative to be part of a development team soon.";
+const aboutText = "I'm a React Front End developer. I started learning web development in 2020 and finished different freeCodeCamp's courses about web design, front end development and the fundamentals of back end and APIs. I've been building different types of interactive applications using React and other tools from JavaScript's echosystem for more than one year. I am in constant learning, trying to make new things and correct errors, with the expectative to be part of a development team soon.";

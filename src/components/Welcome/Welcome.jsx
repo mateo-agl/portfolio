@@ -18,5 +18,5 @@ export const Welcome = () => (
 	</section>
 );
 
-const hello = "Hi, I'm Mateo";
-const desc = "A Front End Web Developer living in Argentina, specializing in building websites using React and Node.";
+const hello = "Hi, I'm Mateo Aguilar";
+const desc = "A Front End developer living in Argentina, specializing in React.";
