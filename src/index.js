@@ -11,18 +11,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 
-const App = () => (
-	<>
-		<Navbar/>
-		<main className="col-10 mx-auto">
-			<Welcome/>
-			<About/>
-			<Skills/>
-			<Projects/>
-		</main>
-		<Footer/>
-		<Links linksClass="fixed-links"/>
-	</>
-);
+const App = () => {
+	return (
+		<>
+			<Navbar/>
+			<main className="col-10 mx-auto">
+				<Welcome/>
+				<About/>
+				<Skills/>
+				<Projects/>
+			</main>
+			<Footer/>
+			<Links linksClass="fixed-links"/>
+		</>
+	)
+}
 
 ReactDOM.render(<App/>, document.querySelector('#root'));
+
+window.onscroll = () => {
+	const reveals = document.querySelectorAll(".reveal");
+	reveals.forEach(ele => {
+		const windowHeight = window.innerHeight;
+		const revealHeight = ele.getBoundingClientRect().top + 400;
+		if (revealHeight < windowHeight) {
+			ele.classList.add("active");
+		}
+	});
+}

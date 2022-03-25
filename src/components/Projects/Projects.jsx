@@ -11,61 +11,67 @@ import ecomWebsite from "../../assets/thumbnails/ecommerce-website.jpg";
 import "./Projects.css";
 
 export const Projects = () => (
-	<section className="col-12 mx-auto position-relative" id="projects">
+	<section
+		className="reveal col-12 mx-auto position-relative"
+		id="projects"
+	>
 		<h2>My work</h2>
 		<div className="row separator"/>
-		<div className="row justify-content-center mt-5">
-			{
-				projects.map(
-					(p, i) => 
-					<div 
-						className="project col-auto d-flex flex-column m-4 p-2 shadow"
-						key={i}
-					>
-						<div className="thumbnail position-relative">
-							<a
-								href={p.appLink}
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								<div className="d-flex position-absolute justify-content-center align-items-center w-100 h-100 overflow-hidden">
-									<img
-										alt={p.name + " thumbnail"}
-										className="h-100"
-										src={p.thumbnail}
-									/>
-								</div>
-							</a>
-						</div>
-						<article className="proj-art pt-2">
-							<a
-								href={p.appLink}
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								<h3 className="proj-title">{p.name}</h3>
-							</a>
-							<div className="overflow-hidden">
-								<p className="proj-desc">{p.description}</p>
+		<div className="projects-cont row mt-5 justify-content-center">
+			<ul className="projects-grid p-0 m-0">
+				{
+					projects.map(
+						(p, i) => 
+						<li 
+							className="project d-flex flex-column p-2"
+							key={i}
+						>
+							<div className="thumbnail position-relative">
+								<a
+									href={p.appLink}
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<div className="d-flex position-absolute justify-content-center align-items-center w-100 h-100 overflow-hidden">
+										<img
+											alt={p.name + " thumbnail"}
+											className="h-100"
+											src={p.thumbnail}
+										/>
+									</div>
+								</a>
 							</div>
-						</article>
-						<div className="mt-auto">
-							<label className="technologies">
-								{p.technologies}
-							</label>
-							<a	
-								className="d-block proj-code ms-auto"
-								href={p.codeLink}
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								Code
-							</a>
-						</div>
-					</div>
-				)
-			}
+							<article className="proj-art pt-2">
+								<a
+									href={p.appLink}
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									<h3 className="proj-title">{p.name}</h3>
+								</a>
+								<div className="overflow-hidden">
+									<p className="proj-desc">{p.description}</p>
+								</div>
+							</article>
+							<div className="mt-auto">
+								<label className="technologies">
+									{p.technologies}
+								</label>
+								<a	
+									className="d-block proj-code ms-auto"
+									href={p.codeLink}
+									rel="noopener noreferrer"
+									target="_blank"
+								>
+									Code
+								</a>
+							</div>
+						</li>
+					)
+				}
+			</ul>
 		</div>
+		
 	</section>
 )
 
@@ -84,7 +90,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
 		description: "MERN stack project created with functional components. Users can see each others threads and replies and modifie them using their id and password",
-		technologies: "React, React-Router, CSS, Express, Mongoose"
+		technologies: "React, React-Router, CSS, Express, Mongoose, REST API"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/GRmaeNj",

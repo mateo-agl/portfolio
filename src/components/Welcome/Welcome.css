@@ -43,24 +43,24 @@
 
 .resume-btn:hover {
     background: #FB8500;
-    color: white;
+    color: #023047;
 }
 
 @media (max-width: 1024px) {
     .hello {
-        font-size: 7em;
+        font-size: 3em;
     }
     .desc {
         font-size: 2em;
     }
 }
 
-@media (max-width: 676px) {
+@media (max-width: 512px) {
     .hello {
-        font-size: 3.25em;
+        font-size: 2em;
     }
     .desc {
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
     .resume-btn {
         font-size: 14px;

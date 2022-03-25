@@ -24,20 +24,17 @@
     display: none;
 }
 
-.icon {
-    fill: #FFB703;
+.link {
     height: 36px;
     width: 36px;
-    transition: .2s;
 }
 
-.icon:hover {
-    fill: #FB8500;
+.link:hover {
     transform: translateY(-15%);
 }
 
-@media (max-width: 1024px) {
-    .icon {
+@media (max-width: 575px) {
+    .link {
         height: 24px;
         width: 24px;
     }

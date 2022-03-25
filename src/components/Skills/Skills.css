@@ -1,8 +1,17 @@
-.skills-cont, .skill {
+.skill, .skills-cont {
     border: 1px #8ECAE6 solid
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 80px);
+    width: fit-content !important;
+    gap: 15px;
+}
+
 .skill {
+    width: 80px;
+    height: 80px;
     color: #8ECAE6;
     font-family: 'Cuprum', sans-serif;
     font-size: 14px;
@@ -11,4 +20,9 @@
 
 .skill:hover {
     transform: scale(1.2);
+}
+
+.skill img {
+    height: 48px;
+    width: 48px;
 }

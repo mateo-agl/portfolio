@@ -13,6 +13,15 @@ a:hover {
     color: #FB8500;
 }
 
+svg {
+    fill: #FFB703;
+    transition: .2s;
+}
+
+svg:hover {
+    fill: #FB8500;
+}
+
 ::-webkit-scrollbar{
     width: 7.25px;
 }
@@ -46,6 +55,17 @@ h2 {
     margin-bottom: 1em;
 }
 
-#about, #projects, #skills, #contact {
-    padding-top: 102px;
+.reveal {
+    opacity: 0;
+    transform: translateX(-15%);
+    transition: .4s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#projects, #skills, #contact {
+    padding-top: 200px !important;
 }

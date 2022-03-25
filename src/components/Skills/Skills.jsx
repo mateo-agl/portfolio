@@ -15,22 +15,33 @@ import babel from "../../assets/icons/babel.svg";
 import "./Skills.css";
 
 export const Skills = () => (
-	<section className="col-lg-8 col-md-10 col-sm-12 mx-auto" id="skills">
+	<section
+		className="reveal col-lg-8 col-md-10 col-sm-12 mx-auto"
+		id="skills"
+	>
 		<h2>Skills</h2>
 		<div className="row separator"/>
-		<div className="row justify-content-center p-1 skills-cont">
-			{
-				skills.map(
-					(obj, i) =>
-					<div
-						className="col-auto d-flex flex-column m-2 skill"
-						key={i}
-					>
-						<img alt={obj.name + " icon"} className="m-auto" height="48px" src={obj.icon} width="48px"/>
-						<label className="text-center">{obj.name}</label>
-					</div>
-				)
-			}
+		<div className="skills-cont row justify-content-center p-3">
+			<ul className="skills-grid p-0 m-0">
+				{
+					skills.map(
+						(obj, i) =>
+						<li
+							className="p-1 skill"
+							key={i}
+						>
+							<img
+								className="d-block m-auto"
+								src={obj.icon}
+								alt={obj.name + " icon"}
+							/>
+							<label className="d-block text-center">
+								{obj.name}
+							</label>
+						</li>
+					)
+				}
+			</ul>
 		</div>
 	</section>
 );

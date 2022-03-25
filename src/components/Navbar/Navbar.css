@@ -18,13 +18,41 @@
     }
 }
 
-.nav-btn {
-    font-size: 18px;
+.nav-item {
     padding: 1.5em 2em;
-    line-height: 76px;
 }
 
-.menu-btn {
+.nav-btn {
+    display: block;
+    font-size: 18px;
+}
+
+.nav-btn::after {
+    content: "";
+    display: block;
+    background: #FB8500;
+    height: 3px;
+    width: 0%;
+    transition: .2s;
+}
+
+.nav-btn:hover::after {
+    width: 100%;
+}
+
+.selected {
+    color: #FB8500;
+}
+
+.selected::after {
+    content: "";
+    display: block;
+    background: #FB8500;
+    height: 3px;
+    width: 100%;
+}
+
+.navbar-toggler {
     position: relative;
     width: 24px;
     height: 24px;
@@ -33,11 +61,12 @@
     padding: 0 !important;
 }
 
-.menu-btn:enabled {
+.navbar-toggler:enabled {
     box-shadow: none !important;
 }
 
 .hamburger {
+    display: block;
     width: 24px;
     height: 2px;
     background: #FFB703;
@@ -77,6 +106,19 @@
     position: absolute;
     transform: rotate(90deg);
     left: 0;
+}
+
+.hamburger,
+.hamburger *,
+.close,
+.close::after {
+    transition: .2s;
+}
+
+button:hover ::after,
+button:hover ::before,
+button:hover div {
+    background: #FB8500;
 }
 
 .offcanvas {

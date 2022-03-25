@@ -10,13 +10,13 @@ export const Links = (props) => (
 			links.map(
 				(b, i) => 
 					<a
-						className="icon"
+						className="link"
 						href={b.link}
 						key={i}
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<b.icon/>
+						<b.icon className="link-icon"/>
 					</a>
 			)
 		}

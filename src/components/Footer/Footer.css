@@ -37,6 +37,7 @@
     padding: 15px 36px;
     font-size: 18px;
     border: none;
+    transition: .2s;
 }
 
 .send-btn:hover {

@@ -3,7 +3,10 @@ import avatar from "../../assets/avatar/avatar.svg";
 import "./About.css";
 
 export const About = () => (
-	<section className="col-lg-8 col-md-10 col-sm-12 mx-auto" id="about">
+	<section 
+		className="reveal col-lg-8 col-md-10 col-sm-12 mx-auto"
+		id="about"
+	>
 		<h2>About me...</h2>
 		<div className="row separator"/>
 		<div className="row justify-content-center">
