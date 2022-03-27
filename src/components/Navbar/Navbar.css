@@ -8,7 +8,6 @@
 }
 
 .navbar {
-    background: #023047;
     animation: 1.6s ease-out slideDown;
 }
 
@@ -19,7 +18,7 @@
 }
 
 .nav-item {
-    padding: 1.5em 2em;
+    padding: 1em 2em;
 }
 
 .nav-btn {

@@ -48,7 +48,7 @@ export const Footer = () => {
 			id="contact"
 		>
 			<form
-				className="d-flex flex-column my-auto p-5"
+				className="d-flex flex-column my-auto"
 				ref={form}
 				onSubmit={onSubmit}
 			>

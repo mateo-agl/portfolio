@@ -57,15 +57,12 @@ h2 {
 
 .reveal {
     opacity: 0;
-    transform: translateX(-15%);
+    transform: translateX(-5%);
     transition: .4s;
+    padding-top: 10%;
 }
 
 .reveal.active {
     opacity: 1;
     transform: translateX(0);
-}
-
-#projects, #skills, #contact {
-    padding-top: 200px !important;
 }
