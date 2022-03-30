@@ -6,7 +6,7 @@ import "./Footer.css";
 
 export const Footer = () => {
 	const form = useRef();
-	const [toSend, setToSend] = useState({ from_name: "", to_name: "", message: "", reply_to: "" });
+	const [toSend, setToSend] = useState({ from_name: "", subject: "", message: "", reply_to: "" });
   
 	const onSubmit = e => {
 		e.preventDefault();
@@ -40,7 +40,7 @@ export const Footer = () => {
 			})
 		);
 	};
-  
+	
 	const handleChange = e => setToSend({ ...toSend, [e.target.name]: e.target.value });
 	return (
 		<footer
