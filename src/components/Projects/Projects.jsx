@@ -90,7 +90,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
 		description: "MERN stack project created with functional components. Users can see each others threads and replies and modifie them using their id and password",
-		technologies: "React, React-Router, CSS, Express, Mongoose, REST API"
+		technologies: "React, React-Router, CSS, Express, Mongoose, Axios"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
