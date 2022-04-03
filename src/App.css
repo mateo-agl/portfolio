@@ -57,7 +57,7 @@ h2 {
 
 .reveal {
     opacity: 0;
-    transform: translateX(-5%);
+    transform: translateX(-2.5%);
     transition: .4s;
     padding-top: 10%;
 }
