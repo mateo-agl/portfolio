@@ -85,7 +85,7 @@ const projects = [
 		technologies: "React, React-Router, CSS"
 	},
 	{
-		appLink: "https://anonymous-message-board.mateo-agl.repl.co/",
+		appLink: "https://byemry.sse.codesandbox.io",
 		thumbnail: messageBoard,
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
