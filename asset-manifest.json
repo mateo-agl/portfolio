@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b84b16c7.css",
+    "main.css": "/portfolio/static/css/main.c565046c.css",
     "main.js": "/portfolio/static/js/main.076f79af.js",
     "static/media/Mateo Aguilar Resume.pdf": "/portfolio/static/media/Mateo Aguilar Resume.0c48212313bbf757e390.pdf",
     "static/media/tree-map.jpg": "/portfolio/static/media/tree-map.513fd664284bfc309f0c.jpg",
@@ -30,11 +30,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.b84b16c7.css.map": "/portfolio/static/css/main.b84b16c7.css.map",
+    "main.c565046c.css.map": "/portfolio/static/css/main.c565046c.css.map",
     "main.076f79af.js.map": "/portfolio/static/js/main.076f79af.js.map"
   },
   "entrypoints": [
-    "static/css/main.b84b16c7.css",
+    "static/css/main.c565046c.css",
     "static/js/main.076f79af.js"
   ]
 }
