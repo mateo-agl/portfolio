@@ -23,17 +23,18 @@
 .hello, .name {
     font-family: 'Cousine', monospace;
     font-weight: bold;
-    animation: .8s ease slideIn;
 }
 
 .hello {
     color: #219EBC;
     font-size: 3em;
+    animation: .8s ease slideIn;
 }
 
 .name {
     color: #8ECAE6;
     font-size: 6em;
+    animation: .9s ease slideIn;
 }
 
 .desc {
