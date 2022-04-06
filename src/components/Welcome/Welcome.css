@@ -20,12 +20,20 @@
     }
 }
 
-.hello {
-    color: #8ECAE6;
+.hello, .name {
     font-family: 'Cousine', monospace;
     font-weight: bold;
-    font-size: 6em;
     animation: .8s ease slideIn;
+}
+
+.hello {
+    color: #219EBC;
+    font-size: 3em;
+}
+
+.name {
+    color: #8ECAE6;
+    font-size: 6em;
 }
 
 .desc {
@@ -39,6 +47,7 @@
     color: #023047;
     padding: 15px 36px;
     animation: 1.2s ease-in btnSlideIn;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .resume-btn:hover {
@@ -47,8 +56,8 @@
 }
 
 @media (max-width: 1024px) {
-    .hello {
-        font-size: 3em;
+    .name {
+        font-size: 4em;
     }
     .desc {
         font-size: 2em;
@@ -58,6 +67,9 @@
 @media (max-width: 512px) {
     .hello {
         font-size: 2em;
+    }
+    .name {
+        font-size: 3em;
     }
     .desc {
         font-size: 1.2em;

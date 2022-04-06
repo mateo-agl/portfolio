@@ -8,17 +8,17 @@
 }
 
 .navbar {
+    opacity: .8;
     animation: 1.6s ease-out slideDown;
+    transition: .2s;
 }
 
-@media (max-width: 991px) {
-    .navbar {
-        background: none;
-    }
+.navbar:hover {
+    opacity: 1;
 }
 
 .nav-item {
-    padding: 1em 2em;
+    padding: .8em 2em;
 }
 
 .nav-btn {
@@ -123,4 +123,14 @@ button:hover div {
 .offcanvas {
     width: fit-content !important;
     background: #023047 !important;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        opacity: 1;
+    }
+
+    .nav-item {
+        padding: calc(100% / 3) 2em;
+    }
 }

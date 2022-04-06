@@ -9,13 +9,16 @@ export const Welcome = () => (
 				<h1 className="hello">
 					{hello}
 				</h1>
+				<h1 className="name">
+					{name}
+				</h1>
 				<h2 className="desc">
 					{desc}
 				</h2>
 			</div>
 			<div className="d-flex float-end">
 				<a
-					className="resume-btn shadow ms-auto"
+					className="resume-btn ms-auto"
 					href={resume}
 					rel="noopener noreferrer"
 					target="_blank"
@@ -27,5 +30,6 @@ export const Welcome = () => (
 	</section>
 );
 
-const hello = "Hi, I'm Mateo Aguilar";
+const hello = "Hi, I'm";
+const name = "Mateo Aguilar";
 const desc = "A Front End developer living in Argentina, specializing in React.";
