@@ -130,7 +130,15 @@ button:hover div {
         opacity: 1;
     }
 
+    .navbar-nav {
+        height: 100%;
+    }
+
     .nav-item {
-        padding: calc(100% / 3) 2em;
+        display: flex;
+        height: calc(100% / 4);
+        padding: 0 2em;
+        align-items: center;
+        justify-content: center;
     }
 }
