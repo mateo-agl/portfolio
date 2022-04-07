@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eab2773d.css",
-    "main.js": "/portfolio/static/js/main.bd0be7b5.js",
-    "static/media/Mateo Aguilar Resume.pdf": "/portfolio/static/media/Mateo Aguilar Resume.0c48212313bbf757e390.pdf",
+    "main.js": "/portfolio/static/js/main.18d9f4b3.js",
     "static/media/tree-map.jpg": "/portfolio/static/media/tree-map.513fd664284bfc309f0c.jpg",
     "static/media/ecommerce-website.jpg": "/portfolio/static/media/ecommerce-website.0fb777aa63344efa2f11.jpg",
+    "static/media/Mateo Aguilar Resume.pdf": "/portfolio/static/media/Mateo Aguilar Resume.4c6bf113c06b670a962e.pdf",
     "static/media/heat-map.jpg": "/portfolio/static/media/heat-map.bbcac86e8d97f32928ad.jpg",
     "static/media/message-board.jpg": "/portfolio/static/media/message-board.a95e81bdc7d46d81a577.jpg",
     "static/media/choropleth-map.jpg": "/portfolio/static/media/choropleth-map.a2a5c19eecbe3f6d2580.jpg",
@@ -31,10 +31,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.eab2773d.css.map": "/portfolio/static/css/main.eab2773d.css.map",
-    "main.bd0be7b5.js.map": "/portfolio/static/js/main.bd0be7b5.js.map"
+    "main.18d9f4b3.js.map": "/portfolio/static/js/main.18d9f4b3.js.map"
   },
   "entrypoints": [
     "static/css/main.eab2773d.css",
-    "static/js/main.bd0be7b5.js"
+    "static/js/main.18d9f4b3.js"
   ]
 }
