@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.22ecb72e.css",
-    "main.js": "/portfolio/static/js/main.18d9f4b3.js",
+    "main.js": "/portfolio/static/js/main.915daea7.js",
     "static/media/tree-map.jpg": "/portfolio/static/media/tree-map.513fd664284bfc309f0c.jpg",
     "static/media/ecommerce-website.jpg": "/portfolio/static/media/ecommerce-website.0fb777aa63344efa2f11.jpg",
     "static/media/Mateo Aguilar Resume.pdf": "/portfolio/static/media/Mateo Aguilar Resume.4c6bf113c06b670a962e.pdf",
@@ -14,7 +14,6 @@
     "static/media/javascript-calculator.jpg": "/portfolio/static/media/javascript-calculator.c58a5e8b92010eeefab8.jpg",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.514af485dd4fc82f72fc87fe73bdc378.svg",
     "static/media/babel.svg": "/portfolio/static/media/babel.82b0e7ddd6f772dbcf07900ce5867e12.svg",
-    "static/media/sass.svg": "/portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/d3.svg": "/portfolio/static/media/d3.47c9b7cf0f92028dc72410dad6150dff.svg",
     "static/media/node.svg": "/portfolio/static/media/node.2879fa1876f2b0e8ec70c8bae81f8446.svg",
     "static/media/github.svg": "/portfolio/static/media/github.d5db839804954646a24c4fe54c218be5.svg",
@@ -31,10 +30,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.22ecb72e.css.map": "/portfolio/static/css/main.22ecb72e.css.map",
-    "main.18d9f4b3.js.map": "/portfolio/static/js/main.18d9f4b3.js.map"
+    "main.915daea7.js.map": "/portfolio/static/js/main.915daea7.js.map"
   },
   "entrypoints": [
     "static/css/main.22ecb72e.css",
-    "static/js/main.18d9f4b3.js"
+    "static/js/main.915daea7.js"
   ]
 }
