@@ -7,7 +7,6 @@ import node from "../../assets/icons/node.svg";
 import redux from "../../assets/icons/redux.svg";
 import d3 from "../../assets/icons/d3.svg";
 import bootstrap from "../../assets/icons/bootstrap.svg";
-import sass from "../../assets/icons/sass.svg";
 import git from "../../assets/icons/git.svg";
 import npm from "../../assets/icons/npm.svg";
 import webpack from "../../assets/icons/webpack.svg";
@@ -55,7 +54,6 @@ const skills = [
 	{ icon: redux, name: "Redux" },
 	{ icon: d3, name: "D3" },
 	{ icon: bootstrap, name: "Bootstrap" },
-	{ icon: sass, name: "SASS" },
 	{ icon: git, name: "Git" },
 	{ icon: npm, name: "NPM" },
 	{ icon: webpack, name: "Webpack" },

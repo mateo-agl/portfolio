@@ -106,7 +106,7 @@ const projects = [
 		codeLink: "https://codepen.io/mateoagl/pen/LYWjPLN",
 		name: "Pomodoro Clock",
 		description: "A timer that uses the pomodoro technique to help you be more productive.",
-		technologies: "React, Redux, Sass"
+		technologies: "React, Redux, CSS"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/gORLEyP",
@@ -114,15 +114,15 @@ const projects = [
 		codeLink: "https://codepen.io/mateoagl/pen/gORLEyP",
 		name: "Tree Map",
 		description: "Top 100 most valuable kickstarter pledges grouped by category.",
-		technologies: "D3, REST API, Sass"
+		technologies: "D3, REST API, CSS"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/QWpyrWN",
 		thumbnail: calc,
 		codeLink: "https://codepen.io/mateoagl/pen/QWpyrWN",
 		name: "Javascript Calculator",
-		description: "An standard calculator built with javascript.",
-		technologies: "React, Sass"
+		description: "A standard calculator built with javascript.",
+		technologies: "React, CSS"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/rNweqVw",
@@ -130,7 +130,7 @@ const projects = [
 		codeLink: "https://codepen.io/mateoagl/pen/rNweqVw",
 		name: "Choropleth Map",
 		description: "Map of the United States educational attainment by county.",
-		technologies: "D3, TopoJSON, REST API, Sass"
+		technologies: "D3, TopoJSON, REST API, CSS"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/KKaLBKb",
