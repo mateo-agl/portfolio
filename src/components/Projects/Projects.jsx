@@ -8,6 +8,7 @@ import markdown from "../../assets/thumbnails/markdown-previewer.jpg";
 import messageBoard from "../../assets/thumbnails/message-board.jpg";
 import barChart from "../../assets/thumbnails/bar-chart.jpg";
 import ecomWebsite from "../../assets/thumbnails/ecommerce-website.jpg";
+import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.jpg";
 import "./Projects.css";
 
 export const Projects = () => (
@@ -76,6 +77,14 @@ export const Projects = () => (
 )
 
 const projects = [
+	{
+		appLink: "https://mateo-agl.github.io/sunrise-sunset/",
+		thumbnail: sunriseSunset,
+		codeLink: "https://github.com/mateo-agl/sunrise-sunset",
+		name: "Sunrise Sunset",
+		description: "Sun graph showing daylight information of any city throghout the whole year.",
+		technologies: "React, D3, SunCalc, Axios, CSS"
+	},
 	{
 		appLink: "https://mateo-agl.github.io/ecommerce-website/",
 		thumbnail: ecomWebsite,

@@ -32,4 +32,4 @@ export const Welcome = () => (
 
 const hello = "Hi, I'm";
 const name = "Mateo Aguilar";
-const desc = "A Front End developer living in Argentina, specializing in React.";
+const desc = "A Front End developer living in Argentina.";
