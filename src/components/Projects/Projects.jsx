@@ -5,10 +5,10 @@ import calc from "../../assets/thumbnails/javascript-calculator.jpg";
 import chorMap from "../../assets/thumbnails/choropleth-map.jpg";
 import heatMap from "../../assets/thumbnails/heat-map.jpg";
 import markdown from "../../assets/thumbnails/markdown-previewer.jpg";
-import messageBoard from "../../assets/thumbnails/message-board.jpg";
+import messageBoard from "../../assets/thumbnails/message-board.png";
 import barChart from "../../assets/thumbnails/bar-chart.jpg";
-import ecomWebsite from "../../assets/thumbnails/ecommerce-website.jpg";
-import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.jpg";
+import ecomWebsite from "../../assets/thumbnails/ecommerce-website.png";
+import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.png";
 import "./Projects.css";
 
 export const Projects = () => (
