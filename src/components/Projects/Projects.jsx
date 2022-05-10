@@ -1,14 +1,15 @@
 import React from "react";
-import pClock from "../../assets/thumbnails/pomodoro-clock.jpg";
-import treeMap from "../../assets/thumbnails/tree-map.jpg";
-import calc from "../../assets/thumbnails/javascript-calculator.jpg";
-import chorMap from "../../assets/thumbnails/choropleth-map.jpg";
-import heatMap from "../../assets/thumbnails/heat-map.jpg";
-import markdown from "../../assets/thumbnails/markdown-previewer.jpg";
+import pClock from "../../assets/thumbnails/pomodoro-clock.png";
+import treeMap from "../../assets/thumbnails/tree-map.png";
+import calc from "../../assets/thumbnails/javascript-calculator.png";
+import chorMap from "../../assets/thumbnails/choropleth-map.png";
+import heatMap from "../../assets/thumbnails/heat-map.png";
+import markdown from "../../assets/thumbnails/markdown-previewer.png";
 import messageBoard from "../../assets/thumbnails/message-board.png";
-import barChart from "../../assets/thumbnails/bar-chart.jpg";
+import barChart from "../../assets/thumbnails/bar-chart.png";
 import ecomWebsite from "../../assets/thumbnails/ecommerce-website.png";
 import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.png";
+import scatterplot from "../../assets/thumbnails/scatterplot.png";
 import "./Projects.css";
 
 export const Projects = () => (
@@ -36,7 +37,6 @@ export const Projects = () => (
 									<div className="d-flex position-absolute justify-content-center align-items-center w-100 h-100 overflow-hidden">
 										<img
 											alt={p.name + " thumbnail"}
-											className="h-100"
 											src={p.thumbnail}
 										/>
 									</div>
@@ -118,11 +118,27 @@ const projects = [
 		technologies: "React, Redux, CSS"
 	},
 	{
+		appLink: "https://codepen.io/mateoagl/full/rNweqVw",
+		thumbnail: chorMap,
+		codeLink: "https://codepen.io/mateoagl/pen/rNweqVw",
+		name: "Choropleth Map",
+		description: "Map of the United States educational attainment by county.",
+		technologies: "D3, TopoJSON, REST API, CSS"
+	},
+	{
 		appLink: "https://codepen.io/mateoagl/full/gORLEyP",
 		thumbnail: treeMap,
 		codeLink: "https://codepen.io/mateoagl/pen/gORLEyP",
 		name: "Tree Map",
 		description: "Top 100 most valuable kickstarter pledges grouped by category.",
+		technologies: "D3, REST API, CSS"
+	},
+	{
+		appLink: "https://codepen.io/mateoagl/full/MWmrmRg",
+		thumbnail: scatterplot,
+		codeLink: "https://github.com/mateo-agl/scatterplot-graph",
+		name: "Scatterplot Graph",
+		description: "Professional bicycle riders and doping allegations in Alpe d'Huez, from 1993 to 2014.",
 		technologies: "D3, REST API, CSS"
 	},
 	{
@@ -132,14 +148,6 @@ const projects = [
 		name: "Javascript Calculator",
 		description: "A standard calculator built with javascript.",
 		technologies: "React, CSS"
-	},
-	{
-		appLink: "https://codepen.io/mateoagl/full/rNweqVw",
-		thumbnail: chorMap,
-		codeLink: "https://codepen.io/mateoagl/pen/rNweqVw",
-		name: "Choropleth Map",
-		description: "Map of the United States educational attainment by county.",
-		technologies: "D3, TopoJSON, REST API, CSS"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/KKaLBKb",

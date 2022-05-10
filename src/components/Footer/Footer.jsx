@@ -102,12 +102,12 @@ export const Footer = () => {
 							onChange={handleChange}
 						/>
 					</div>
-					<button 
+					<a 
 						className="send-btn mx-auto px-4 rounded-0" 
 						type="submit"
 					>
 						SEND
-					</button>
+					</a>
 				</div>
 			</form>
 			<Links linksClass="footer-links mx-auto"/>

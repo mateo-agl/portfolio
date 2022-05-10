@@ -15,7 +15,7 @@ import "./Skills.css";
 
 export const Skills = () => (
 	<section
-		className="reveal col-lg-8 col-md-10 col-sm-12 mx-auto"
+		className="reveal col-lg-7 col-md-10 col-sm-12 mx-auto"
 		id="skills"
 	>
 		<h2>Skills</h2>

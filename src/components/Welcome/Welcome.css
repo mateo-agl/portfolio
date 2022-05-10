@@ -21,8 +21,7 @@
 }
 
 .hello, .name {
-    font-family: 'Cousine', monospace;
-    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
 }
 
 .hello {
@@ -34,6 +33,7 @@
 .name {
     color: #8ECAE6;
     font-size: 6em;
+    font-weight: bold;
     animation: .9s ease slideIn;
 }
 

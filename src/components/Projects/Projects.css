@@ -25,6 +25,10 @@
     filter: none;
 }
 
+.thumbnail img {
+    height: 400px;
+}
+
 .proj-art {
     color: #8ECAE6;
 }
@@ -38,9 +42,9 @@
 }
 
 .technologies {
-    font-family: 'Cousine', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
     color: #219EBC;
-    font-weight: bold;
 }
 
 .proj-code {
