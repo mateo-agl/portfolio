@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.22ecb72e.css",
-    "main.js": "/portfolio/static/js/main.354a2b7f.js",
+    "main.css": "/portfolio/static/css/main.1867c626.css",
+    "main.js": "/portfolio/static/js/main.bb514ebb.js",
     "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.37f837adb7122ebfa875.png",
-    "static/media/tree-map.jpg": "/portfolio/static/media/tree-map.513fd664284bfc309f0c.jpg",
+    "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.83f6b82755434e3f97e7.png",
+    "static/media/tree-map.png": "/portfolio/static/media/tree-map.a87729b3fa3266080dca.png",
     "static/media/Mateo Aguilar Resume.pdf": "/portfolio/static/media/Mateo Aguilar Resume.4c6bf113c06b670a962e.pdf",
-    "static/media/heat-map.jpg": "/portfolio/static/media/heat-map.bbcac86e8d97f32928ad.jpg",
-    "static/media/choropleth-map.jpg": "/portfolio/static/media/choropleth-map.a2a5c19eecbe3f6d2580.jpg",
-    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.ff20f8973dc58b6c9878.png",
-    "static/media/markdown-previewer.jpg": "/portfolio/static/media/markdown-previewer.7bb05c7f5ec85f7fed70.jpg",
+    "static/media/markdown-previewer.png": "/portfolio/static/media/markdown-previewer.b9cd51bc1aea71026cb2.png",
+    "static/media/heat-map.png": "/portfolio/static/media/heat-map.50eeff32fa8abed2a7df.png",
+    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.f5360ab5b30b3292a2f7.png",
+    "static/media/pomodoro-clock.png": "/portfolio/static/media/pomodoro-clock.789aabbb7a179733058f.png",
+    "static/media/scatterplot.png": "/portfolio/static/media/scatterplot.4a9eb89c5d9c8b1a1423.png",
+    "static/media/bar-chart.png": "/portfolio/static/media/bar-chart.a79ef71aca867b86a9c5.png",
     "static/media/message-board.png": "/portfolio/static/media/message-board.f3da7d8840cbd526112e.png",
-    "static/media/bar-chart.jpg": "/portfolio/static/media/bar-chart.52b45216dbc0f669ccf8.jpg",
-    "static/media/pomodoro-clock.jpg": "/portfolio/static/media/pomodoro-clock.ef55553ce0eec9164ca9.jpg",
-    "static/media/javascript-calculator.jpg": "/portfolio/static/media/javascript-calculator.c58a5e8b92010eeefab8.jpg",
+    "static/media/javascript-calculator.png": "/portfolio/static/media/javascript-calculator.6d77c5d80db53fb4adf6.png",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.514af485dd4fc82f72fc87fe73bdc378.svg",
     "static/media/babel.svg": "/portfolio/static/media/babel.82b0e7ddd6f772dbcf07900ce5867e12.svg",
     "static/media/d3.svg": "/portfolio/static/media/d3.47c9b7cf0f92028dc72410dad6150dff.svg",
@@ -30,11 +31,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.22ecb72e.css.map": "/portfolio/static/css/main.22ecb72e.css.map",
-    "main.354a2b7f.js.map": "/portfolio/static/js/main.354a2b7f.js.map"
+    "main.1867c626.css.map": "/portfolio/static/css/main.1867c626.css.map",
+    "main.bb514ebb.js.map": "/portfolio/static/js/main.bb514ebb.js.map"
   },
   "entrypoints": [
-    "static/css/main.22ecb72e.css",
-    "static/js/main.354a2b7f.js"
+    "static/css/main.1867c626.css",
+    "static/js/main.bb514ebb.js"
   ]
 }
