@@ -160,7 +160,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/oNWeYOa",
 		thumbnail: barChart,
-		codeLink: "https://github.com/mateo-agl/bar-chart",
+		codeLink: "",
 		name: "Bar Chart",
 		description: "Bar chart of the GDP of the United States per trimester from 1947 to 2015",
 		technologies: "D3, REST API, CSS"
