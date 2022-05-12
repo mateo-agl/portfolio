@@ -104,7 +104,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
 		thumbnail: heatMap,
-		codeLink: "https://codepen.io/mateoagl/pen/GRmaeNj",
+		codeLink: "https://github.com/mateo-agl/heat-map",
 		name: "Heat Map",
 		description: "A map that shows global temperature from each month from 1753 to 2015 and it's variation.",
 		technologies: "D3, REST API, CSS"
@@ -112,7 +112,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/LYWjPLN",
 		thumbnail: pClock,
-		codeLink: "https://codepen.io/mateoagl/pen/LYWjPLN",
+		codeLink: "https://github.com/mateo-agl/pomodoro-clock",
 		name: "Pomodoro Clock",
 		description: "A timer that uses the pomodoro technique to help you be more productive.",
 		technologies: "React, Redux, CSS"
@@ -120,7 +120,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/rNweqVw",
 		thumbnail: chorMap,
-		codeLink: "https://codepen.io/mateoagl/pen/rNweqVw",
+		codeLink: "https://github.com/mateo-agl/choropleth-map",
 		name: "Choropleth Map",
 		description: "Map of the United States educational attainment by county.",
 		technologies: "D3, TopoJSON, REST API, CSS"
@@ -128,7 +128,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/gORLEyP",
 		thumbnail: treeMap,
-		codeLink: "https://codepen.io/mateoagl/pen/gORLEyP",
+		codeLink: "https://github.com/mateo-agl/tree-map",
 		name: "Tree Map",
 		description: "Top 100 most valuable kickstarter pledges grouped by category.",
 		technologies: "D3, REST API, CSS"
@@ -144,7 +144,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/QWpyrWN",
 		thumbnail: calc,
-		codeLink: "https://codepen.io/mateoagl/pen/QWpyrWN",
+		codeLink: "https://github.com/mateo-agl/javascript-calculator",
 		name: "Javascript Calculator",
 		description: "A standard calculator built with javascript.",
 		technologies: "React, CSS"
@@ -152,7 +152,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/KKaLBKb",
 		thumbnail: markdown,
-		codeLink: "https://codepen.io/mateoagl/pen/KKaLBKb",
+		codeLink: "https://github.com/mateo-agl/markdown-previewer",
 		name: "Markdown Previewer",
 		description: "An app that parses and displays the markdown you write.",
 		technologies: "React, CSS, Bootstrap, Marked"
@@ -160,7 +160,7 @@ const projects = [
 	{
 		appLink: "https://codepen.io/mateoagl/full/oNWeYOa",
 		thumbnail: barChart,
-		codeLink: "https://codepen.io/mateoagl/pen/oNWeYOa",
+		codeLink: "https://github.com/mateo-agl/bar-chart",
 		name: "Bar Chart",
 		description: "Bar chart of the GDP of the United States per trimester from 1947 to 2015",
 		technologies: "D3, REST API, CSS"
