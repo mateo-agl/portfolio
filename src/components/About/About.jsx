@@ -15,11 +15,12 @@ export const About = () => (
 					<img alt="my avatar" className="w-100 h-100" src={avatar}/>
 				</div>
 			</div>
-			<article className="about-art col-md-8 col-sm-12 d-flex my-auto">
-				<p className="mt-4">{aboutText}</p>
+			<article className="about-art col-md-8 col-sm-12 my-auto">
+				<p className="mt-4">In september of 2020 I decided to learn about web development on my own while still being in high school. By the end of 2021 I had graduated and
+finished different courses from freeCodeCamp's platform about web design, front end development and the fundamentals of back end and APIs.</p>
+				<p className="mt-2">Since then, I've decided to focus on the front end, being fascinated with the things I can do with frameworks like React or D3.</p>
+				<p className="mt-2">I like challenges and try to make something better everytime I can, and I'm currently open for proposals.</p>
 			</article>
 		</div>
 	</section>
 );
-
-const aboutText = "I started learning web development in 2020 and finished different freeCodeCamp's courses about web design, front end development and the fundamentals of back end and APIs. I've been building different types of interactive applications using React and other tools from JavaScript's echosystem for more than one year. I am in constant learning, trying to make new things and correct errors, with the expectative to be part of a development team soon.";
