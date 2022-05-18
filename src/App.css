@@ -2,7 +2,7 @@
     list-style: none;
 }
 
-a {
+a, button {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -12,6 +12,20 @@ a {
 
 a:hover {
     color: #FB8500;
+}
+
+.btn-theme {
+    display: block;
+    background: #FFB703;
+    text-decoration: none;
+    color: #023047;
+    padding: 15px 36px;
+    border: none;
+}
+
+.btn-theme:hover {
+    color: #023047;
+    background: #FB8500;
 }
 
 svg {
@@ -41,6 +55,7 @@ svg:hover {
 }
 
 body {
+    position: relative;
     background: #023047;
 }
 
@@ -66,4 +81,9 @@ h2 {
 .reveal.active {
     opacity: 1;
     transform: translateX(0);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
 }

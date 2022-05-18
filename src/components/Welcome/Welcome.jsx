@@ -1,9 +1,10 @@
 import React from "react";
 import resume from "../../assets/Mateo Aguilar Resume.pdf";
+import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
 import "./Welcome.css";
 
 export const Welcome = () => (
-	<section className="row vh-100 justify-content-center align-items-center">
+	<section className="row vh-100 justify-content-center align-items-center position-relative">
 		<div className="col">
 			<div className="col-sm-10 col-xsm-12 mx-auto">
 				<h1 className="hello">
@@ -18,7 +19,7 @@ export const Welcome = () => (
 			</div>
 			<div className="d-flex float-end">
 				<a
-					className="resume-btn ms-auto"
+					className="btn-theme resume-btn ms-auto"
 					href={resume}
 					rel="noopener noreferrer"
 					target="_blank"
@@ -27,6 +28,7 @@ export const Welcome = () => (
 				</a>
 			</div>
 		</div>
+		<Arrow className="arrow down"/>
 	</section>
 );
 

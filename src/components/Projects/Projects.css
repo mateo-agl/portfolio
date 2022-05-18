@@ -17,6 +17,7 @@
     top: -15px;
     left: -15px;
     transition: .2s;
+    border: 1px solid #8ECAE6;
 }
 
 .project:hover .thumbnail {

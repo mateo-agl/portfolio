@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import pClock from "../../assets/thumbnails/pomodoro-clock.png";
 import treeMap from "../../assets/thumbnails/tree-map.png";
 import calc from "../../assets/thumbnails/javascript-calculator.png";
@@ -12,69 +12,82 @@ import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.png";
 import scatterplot from "../../assets/thumbnails/scatterplot.png";
 import "./Projects.css";
 
-export const Projects = () => (
-	<section
-		className="reveal col-12 mx-auto position-relative"
-		id="projects"
-	>
-		<h2>My work</h2>
-		<div className="row separator"/>
-		<div className="projects-cont row mt-5 justify-content-center">
-			<ul className="projects-grid p-0 m-0">
-				{
-					projects.map(
-						(p, i) => 
-						<li 
-							className="project d-flex flex-column p-2"
-							key={i}
-						>
-							<div className="thumbnail position-relative">
-								<a
-									href={p.appLink}
-									rel="noopener noreferrer"
-									target="_blank"
-								>
-									<div className="d-flex position-absolute justify-content-center align-items-center w-100 h-100 overflow-hidden">
-										<img
-											alt={p.name + " thumbnail"}
-											src={p.thumbnail}
-										/>
-									</div>
-								</a>
-							</div>
-							<article className="proj-art pt-2">
-								<a
-									href={p.appLink}
-									rel="noopener noreferrer"
-									target="_blank"
-								>
-									<h3 className="proj-title">{p.name}</h3>
-								</a>
-								<div className="overflow-hidden">
-									<p className="proj-desc">{p.description}</p>
+export const Projects = () => {
+	const [quantity, setQuantity] = useState({quant: 3, text: "SHOW ALL"});
+	const handleClick = () => quantity.text === "SHOW ALL"
+		? setQuantity({quant: projects.length, text: "SHOW LESS"})
+		: setQuantity({quant: 3, text: "SHOW ALL"});
+	return (
+		<section
+			className="reveal col-12 mx-auto position-relative"
+			id="projects"
+		>
+			<h2>My work</h2>
+			<div className="row separator"/>
+			<div className="projects-cont row mt-5 justify-content-center">
+				<ul className="projects-grid p-0 m-0">
+					{
+						projects.slice(0,quantity.quant).map(
+							(p, i) => 
+							<li 
+								className="project d-flex flex-column p-2"
+								key={i}
+							>
+								<div className="thumbnail position-relative">
+									<a
+										href={p.appLink}
+										rel="noopener noreferrer"
+										target="_blank"
+									>
+										<div className="d-flex position-absolute justify-content-center align-items-center w-100 h-100 overflow-hidden">
+											<img
+												alt={p.name + " thumbnail"}
+												src={p.thumbnail}
+											/>
+										</div>
+									</a>
 								</div>
-							</article>
-							<div className="mt-auto">
-								<label className="technologies">
-									{p.technologies}
-								</label>
-								<a	
-									className="d-block proj-code ms-auto"
-									href={p.codeLink}
-									rel="noopener noreferrer"
-									target="_blank"
-								>
-									Code
-								</a>
-							</div>
-						</li>
-					)
-				}
-			</ul>
-		</div>
-		
-	</section>
-)
+								<article className="proj-art pt-2">
+									<a
+										href={p.appLink}
+										rel="noopener noreferrer"
+										target="_blank"
+									>
+										<h3 className="proj-title">{p.name}</h3>
+									</a>
+									<div className="overflow-hidden">
+										<p className="proj-desc">{p.description}</p>
+									</div>
+								</article>
+								<div className="mt-auto">
+									<label className="technologies">
+										{p.technologies}
+									</label>
+									<a	
+										className="d-block proj-code ms-auto"
+										href={p.codeLink}
+										rel="noopener noreferrer"
+										target="_blank"
+									>
+										Code
+									</a>
+								</div>
+							</li>
+						)
+					}
+				</ul>
+			</div>
+			<button
+				className="btn-theme mx-auto mt-4"
+				onClick={handleClick}
+				rel="noopener noreferrer"
+				target="_blank"
+			>
+				{quantity.text}
+			</button>
+		</section>
+	);
+};
 
 const projects = [
 	{

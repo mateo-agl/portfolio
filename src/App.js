@@ -35,4 +35,4 @@ window.onscroll = () => {
 			ele.classList.add("active");
 		}
 	});
-}
+};

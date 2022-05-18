@@ -20,6 +20,17 @@
     }
 }
 
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 .hello, .name {
     font-family: 'Cuprum', sans-serif;
 }
@@ -43,17 +54,16 @@
 }
 
 .resume-btn {
-    background: #FFB703;
-    text-decoration: none;
-    color: #023047;
-    padding: 15px 36px;
     animation: 1.2s ease-in btnSlideIn;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.resume-btn:hover {
-    background: #FB8500;
-    color: #023047;
+.arrow.down {
+    height: 5em;
+    width: 5em;
+    opacity: 0;
+    animation: 1.6s ease 1.6s infinite slideDown;
+    left: calc(50% - 32px);
 }
 
 @media (max-width: 1024px) {
