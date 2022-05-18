@@ -96,7 +96,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/sunrise-sunset",
 		name: "Sunrise Sunset",
 		description: "Sun graph showing daylight information of any city throghout the whole year.",
-		technologies: "React, D3, SunCalc, Axios, CSS"
+		technologies: "React, D3, SunCalc, Axios, Luxon, CSS"
 	},
 	{
 		appLink: "https://mateo-agl.github.io/ecommerce-website/",
