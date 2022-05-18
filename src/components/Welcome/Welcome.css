@@ -20,7 +20,7 @@
     }
 }
 
-@keyframes slideDown {
+@keyframes arrowDown {
     0% {
         opacity: 0;
         transform: translateY(-50%);
@@ -62,7 +62,7 @@
     height: 5em;
     width: 5em;
     opacity: 0;
-    animation: 1.6s ease 1.6s infinite slideDown;
+    animation: 1.6s ease 1.6s infinite arrowDown;
     left: calc(50% - 32px);
 }
 
