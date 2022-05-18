@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1867c626.css",
-    "main.js": "/portfolio/static/js/main.6d49ad77.js",
+    "main.css": "/portfolio/static/css/main.1a6f52da.css",
+    "main.js": "/portfolio/static/js/main.79e70f0b.js",
     "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.37f837adb7122ebfa875.png",
     "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.83f6b82755434e3f97e7.png",
     "static/media/tree-map.png": "/portfolio/static/media/tree-map.a87729b3fa3266080dca.png",
@@ -23,6 +23,7 @@
     "index.html": "/portfolio/index.html",
     "static/media/react.svg": "/portfolio/static/media/react.a060cbe85e50deda1d61452cee9de5b2.svg",
     "static/media/codepen.svg": "/portfolio/static/media/codepen.0a2e5387f339defd24ec8d4474c69738.svg",
+    "static/media/arrow-down.svg": "/portfolio/static/media/arrow-down.600ee40a8482d49a28d3a8b68a87282b.svg",
     "static/media/javascript.svg": "/portfolio/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/git.svg": "/portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.787aa301244425e7fe5bdcff7917892f.svg",
@@ -31,11 +32,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.1867c626.css.map": "/portfolio/static/css/main.1867c626.css.map",
-    "main.6d49ad77.js.map": "/portfolio/static/js/main.6d49ad77.js.map"
+    "main.1a6f52da.css.map": "/portfolio/static/css/main.1a6f52da.css.map",
+    "main.79e70f0b.js.map": "/portfolio/static/js/main.79e70f0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.1867c626.css",
-    "static/js/main.6d49ad77.js"
+    "static/css/main.1a6f52da.css",
+    "static/js/main.79e70f0b.js"
   ]
 }
