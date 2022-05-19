@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.daca6efc.css",
+    "main.css": "/portfolio/static/css/main.de76fe3a.css",
     "main.js": "/portfolio/static/js/main.028c9f61.js",
     "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.37f837adb7122ebfa875.png",
     "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.83f6b82755434e3f97e7.png",
@@ -32,11 +32,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.daca6efc.css.map": "/portfolio/static/css/main.daca6efc.css.map",
+    "main.de76fe3a.css.map": "/portfolio/static/css/main.de76fe3a.css.map",
     "main.028c9f61.js.map": "/portfolio/static/js/main.028c9f61.js.map"
   },
   "entrypoints": [
-    "static/css/main.daca6efc.css",
+    "static/css/main.de76fe3a.css",
     "static/js/main.028c9f61.js"
   ]
 }
