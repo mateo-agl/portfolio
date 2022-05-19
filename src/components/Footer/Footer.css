@@ -72,8 +72,7 @@
 
 @media (max-width: 428px) {
     .arrow.up {
-        display: block;
-        position: relative;
-        margin: auto;
+        height: 2em;
+        bottom: 1.2em;
     }
 }
