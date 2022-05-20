@@ -11,6 +11,7 @@ import git from "../../assets/icons/git.svg";
 import npm from "../../assets/icons/npm.svg";
 import webpack from "../../assets/icons/webpack.svg";
 import babel from "../../assets/icons/babel.svg";
+import sass from "../../assets/icons/sass.svg";
 import "./Skills.css";
 
 export const Skills = () => (
@@ -54,6 +55,7 @@ const skills = [
 	{ icon: redux, name: "Redux" },
 	{ icon: d3, name: "D3" },
 	{ icon: bootstrap, name: "Bootstrap" },
+	{ icon: sass, name: "Sass" },
 	{ icon: git, name: "Git" },
 	{ icon: npm, name: "NPM" },
 	{ icon: webpack, name: "Webpack" },
