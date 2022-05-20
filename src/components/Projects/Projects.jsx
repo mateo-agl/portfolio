@@ -104,7 +104,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/ecommerce-website",
 		name: "Ecommerce website",
 		description: "Built entirily with React classes. Users can filter products by category, choose them with especific attributes and add them to their cart.",
-		technologies: "React, React-Router, CSS"
+		technologies: "React, React-Router, Sass"
 	},
 	{
 		appLink: "https://anonymous-message-board.mateo-agl.repl.co/",
