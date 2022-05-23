@@ -104,7 +104,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/ecommerce-website",
 		name: "Ecommerce website",
 		description: "Built entirily with React classes. Users can filter products by category, choose them with especific attributes and add them to their cart.",
-		technologies: "React, React-Router, Sass"
+		technologies: "React, React-Router, Sass, ESlint"
 	},
 	{
 		appLink: "https://anonymous-message-board.mateo-agl.repl.co/",
@@ -112,7 +112,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
 		description: "MERN stack project created with functional components. Users can see each others threads and replies and modifie them using their id and password",
-		technologies: "React, React-Router, CSS, Express, Mongoose, Axios"
+		technologies: "React, React-Router, CSS, Express, Mongoose, Axios, ESlint, Babel"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
