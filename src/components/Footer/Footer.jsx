@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { Links } from "../Links/Links";
-import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
 import "./Footer.css";
 
 export const Footer = () => {
@@ -119,7 +118,6 @@ export const Footer = () => {
 				aguilarmateo.1604@gmail.com
 			</a>
 			<p className="footer-text m-0 py-4">Built by Mateo Aguilar</p>
-			<a href="#"><Arrow className="arrow up"/></a>
 		</footer>
 	);
 };

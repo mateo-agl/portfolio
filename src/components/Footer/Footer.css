@@ -42,14 +42,6 @@
     border-radius: 0px;
 }
 
-.arrow.up {
-    height: 4em;
-    width: 4em;
-    padding: 0 12px;
-    transform: rotate(180deg);
-    right: 0;
-}
-
 @media (max-width: 1024px) {
     .input-cont {
         padding: 0;
@@ -67,12 +59,5 @@
     .send-btn {
         padding: 10px 24px;
         font-size: 14px;
-    }
-}
-
-@media (max-width: 428px) {
-    .arrow.up {
-        height: 2em;
-        bottom: 1.2em;
     }
 }
