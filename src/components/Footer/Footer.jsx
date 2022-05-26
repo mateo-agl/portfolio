@@ -44,7 +44,7 @@ export const Footer = () => {
 	const handleChange = e => setToSend({ ...toSend, [e.target.name]: e.target.value });
 	return (
 		<footer
-			className="reveal col-xxl-8 col-xsm-12 d-flex flex-column vh-100 mx-auto text-center position-relative"
+			className="reveal col-xxl-8 col-xsm-12 d-flex flex-column vh-100 mx-auto text-center"
 			id="contact"
 		>
 			<form

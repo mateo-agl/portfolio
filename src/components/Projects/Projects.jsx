@@ -13,10 +13,10 @@ import scatterplot from "../../assets/thumbnails/scatterplot.png";
 import "./Projects.css";
 
 export const Projects = () => {
-	const [quantity, setQuantity] = useState({quant: 3, text: "SHOW ALL"});
+	const [quantity, setQuantity] = useState({class: "hide", text: "SHOW ALL"});
 	const handleClick = () => quantity.text === "SHOW ALL"
-		? setQuantity({quant: projects.length, text: "SHOW LESS"})
-		: setQuantity({quant: 3, text: "SHOW ALL"});
+		? setQuantity({class: "show", text: "SHOW LESS"})
+		: setQuantity({class: "hide", text: "SHOW ALL"});
 	return (
 		<section
 			className="reveal col-12 mx-auto position-relative"
@@ -24,10 +24,10 @@ export const Projects = () => {
 		>
 			<h2>My work</h2>
 			<div className="row separator"/>
-			<div className="projects-cont row mt-5 justify-content-center">
+			<div className={`projects-cont ${quantity.class} row mt-5 justify-content-center`}>
 				<ul className="projects-grid p-0 m-0">
 					{
-						projects.slice(0,quantity.quant).map(
+						projects.map(
 							(p, i) => 
 							<li 
 								className="project d-flex flex-column p-2"

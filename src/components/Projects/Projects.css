@@ -1,3 +1,15 @@
+.projects-cont {
+    overflow: hidden;
+}
+
+.projects-cont.hide {
+    height: 600px;
+}
+
+.projects-cont.show {
+    height: fit-content;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 404px);
@@ -50,6 +62,18 @@
 
 .proj-code {
     width: fit-content;
+}
+
+@media (max-width: 1540px) {
+    .projects-cont.hide {
+        height: calc(((600px + 48px) * 2) - 48px);
+    }
+}
+
+@media (max-width: 998px) {
+    .projects-cont.hide {
+        height: calc(((600px + 48px) * 3) - 48px);
+    }
 }
 
 @media (max-width: 428px) {
