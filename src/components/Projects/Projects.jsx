@@ -107,7 +107,7 @@ const projects = [
 		technologies: "React, React-Router, Sass, ESlint"
 	},
 	{
-		appLink: "https://anonymous-message-board.mateo-agl.repl.co/",
+		appLink: "https://anon-m-board.herokuapp.com/",
 		thumbnail: messageBoard,
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
