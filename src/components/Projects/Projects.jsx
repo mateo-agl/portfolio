@@ -13,10 +13,16 @@ import scatterplot from "../../assets/thumbnails/scatterplot.png";
 import "./Projects.css";
 
 export const Projects = () => {
-	const [quantity, setQuantity] = useState({class: "hide", text: "SHOW ALL"});
-	const handleClick = () => quantity.text === "SHOW ALL"
-		? setQuantity({class: "show", text: "SHOW LESS"})
-		: setQuantity({class: "hide", text: "SHOW ALL"});
+	const [projState, setProjState] = useState({quantity: 3, text: "SHOW ALL", key: ""});
+
+	const handleDesc = i => !projState.key 
+		? setProjState({...projState, key: i}) 
+		: setProjState({...projState, key: ""});
+
+	const handleProjQuantity = () => projState.text === "SHOW ALL"
+		? setProjState({...projState, quantity: projects.length, text: "SHOW LESS"})
+		: setProjState({...projState, quantity: 3, text: "SHOW ALL"});
+
 	return (
 		<section
 			className="reveal col-12 mx-auto position-relative"
@@ -24,10 +30,10 @@ export const Projects = () => {
 		>
 			<h2>My work</h2>
 			<div className="row separator"/>
-			<div className={`projects-cont ${quantity.class} row mt-5 justify-content-center`}>
+			<div className="projects-cont row mt-5 justify-content-center">
 				<ul className="projects-grid p-0 m-0">
 					{
-						projects.map(
+						projects.slice(0,projState.quantity).map(
 							(p, i) => 
 							<li 
 								className="project d-flex flex-column p-2"
@@ -55,12 +61,24 @@ export const Projects = () => {
 									>
 										<h3 className="proj-title">{p.name}</h3>
 									</a>
-									<div className="overflow-hidden">
-										<p className="proj-desc">{p.description}</p>
-									</div>
+									<p
+										className={
+											i === projState.key
+												? "read-more proj-desc"
+												: "hide proj-desc"
+										}
+										onClick={() => handleDesc(i)}>
+											{p.description}
+									</p>
 								</article>
 								<div className="mt-auto">
-									<label className="technologies">
+									<label
+										className={
+											i === projState.key
+												? "read-more technologies"
+												: "hide technologies"
+										}
+										onClick={() => handleDesc(i)}>
 										{p.technologies}
 									</label>
 									<a	
@@ -79,11 +97,11 @@ export const Projects = () => {
 			</div>
 			<button
 				className="btn-theme mx-auto mt-4"
-				onClick={handleClick}
+				onClick={handleProjQuantity}
 				rel="noopener noreferrer"
 				target="_blank"
 			>
-				{quantity.text}
+				{projState.text}
 			</button>
 		</section>
 	);
@@ -111,7 +129,7 @@ const projects = [
 		thumbnail: messageBoard,
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
-		description: "MERN stack project created with functional components. Users can see each others threads and replies and modifie them using their id and password",
+		description: "MERN stack project. Users can enter a board and see each others threads, create their own, reply, delete or report.",
 		technologies: "React, React-Router, CSS, Express, Mongoose, Axios, ESlint, Babel"
 	},
 	{
