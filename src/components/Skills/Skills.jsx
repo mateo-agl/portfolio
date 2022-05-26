@@ -12,6 +12,8 @@ import npm from "../../assets/icons/npm.svg";
 import webpack from "../../assets/icons/webpack.svg";
 import babel from "../../assets/icons/babel.svg";
 import sass from "../../assets/icons/sass.svg";
+import express from "../../assets/icons/express.svg";
+import mongo from "../../assets/icons/mongodb.svg";
 import "./Skills.css";
 
 export const Skills = () => (
@@ -53,6 +55,8 @@ const skills = [
 	{ icon: react, name: "React" },
 	{ icon: node, name: "Node" },
 	{ icon: redux, name: "Redux" },
+	{ icon: express, name: "Express" },
+	{ icon: mongo, name: "MongoDB" },
 	{ icon: d3, name: "D3" },
 	{ icon: bootstrap, name: "Bootstrap" },
 	{ icon: sass, name: "Sass" },
