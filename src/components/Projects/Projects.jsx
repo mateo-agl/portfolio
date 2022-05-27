@@ -15,7 +15,7 @@ import "./Projects.css";
 export const Projects = () => {
 	const [projState, setProjState] = useState({quantity: 3, text: "SHOW ALL", key: ""});
 
-	const handleDesc = i => !projState.key 
+	const handleTextClick = i => !projState.key || projState.key !== i
 		? setProjState({...projState, key: i}) 
 		: setProjState({...projState, key: ""});
 
@@ -62,23 +62,15 @@ export const Projects = () => {
 										<h3 className="proj-title">{p.name}</h3>
 									</a>
 									<p
-										className={
-											i === projState.key
-												? "read-more proj-desc"
-												: "hide proj-desc"
-										}
-										onClick={() => handleDesc(i)}>
+										className={`${i === projState.key ? "read-more" : "hide"} proj-desc`}
+										onClick={() => handleTextClick(i)}>
 											{p.description}
 									</p>
 								</article>
 								<div className="mt-auto">
 									<label
-										className={
-											i === projState.key
-												? "read-more technologies"
-												: "hide technologies"
-										}
-										onClick={() => handleDesc(i)}>
+										className={`${i === projState.key ? "read-more" : "hide"} technologies`}
+										onClick={() => handleTextClick(i)}>
 										{p.technologies}
 									</label>
 									<a	

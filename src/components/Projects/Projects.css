@@ -38,18 +38,13 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.read-more {
-    height: fit-content;
-}
-
 .proj-desc {
     min-height: 54px;
     font-size: 18px;
-    overflow: hidden;
     cursor: pointer;
 }
 
-.proj-desc.hide {
+.hide.proj-desc {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -65,13 +60,17 @@
     cursor: pointer;
 }
 
-.technologies.hide {
+.hide.technologies {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     line-clamp: 1;
+}
+
+.read-more {
+    height: fit-content;
 }
 
 .proj-code {
