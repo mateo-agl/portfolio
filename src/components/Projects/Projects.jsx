@@ -109,9 +109,9 @@ const projects = [
 		technologies: "React, D3, SunCalc, Axios, Luxon, CSS"
 	},
 	{
-		appLink: "https://mateo-agl.github.io/ecommerce-website/",
+		appLink: "https://ecom-react-site.herokuapp.com/",
 		thumbnail: ecomWebsite,
-		codeLink: "https://ecom-react-site.herokuapp.com/",
+		codeLink: "https://github.com/mateo-agl/ecommerce-website",
 		name: "Ecommerce website",
 		description: "Built entirily with React classes. Users can filter products by category, choose them with especific attributes and add them to their cart.",
 		technologies: "React, React-Router, Sass, ESlint"
