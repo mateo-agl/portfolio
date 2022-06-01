@@ -111,7 +111,7 @@ const projects = [
 	{
 		appLink: "https://mateo-agl.github.io/ecommerce-website/",
 		thumbnail: ecomWebsite,
-		codeLink: "https://github.com/mateo-agl/ecommerce-website",
+		codeLink: "https://ecom-react-site.herokuapp.com/",
 		name: "Ecommerce website",
 		description: "Built entirily with React classes. Users can filter products by category, choose them with especific attributes and add them to their cart.",
 		technologies: "React, React-Router, Sass, ESlint"
