@@ -1,19 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4c54d81d.css",
-    "main.js": "/portfolio/static/js/main.f9656f24.js",
-    "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.37f837adb7122ebfa875.png",
-    "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.83f6b82755434e3f97e7.png",
-    "static/media/tree-map.png": "/portfolio/static/media/tree-map.a87729b3fa3266080dca.png",
-    "static/media/Mateo Aguilar Resume.pdf": "/portfolio/static/media/Mateo Aguilar Resume.dcfd50c90d943ef076d0.pdf",
-    "static/media/markdown-previewer.png": "/portfolio/static/media/markdown-previewer.b9cd51bc1aea71026cb2.png",
-    "static/media/message-board.png": "/portfolio/static/media/message-board.c6fa61ed93944d80fa3a.png",
-    "static/media/heat-map.png": "/portfolio/static/media/heat-map.50eeff32fa8abed2a7df.png",
-    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.f5360ab5b30b3292a2f7.png",
+    "main.css": "/portfolio/static/css/main.e5dab9c5.css",
+    "main.js": "/portfolio/static/js/main.b2baeb13.js",
+    "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.ae1d8c364cc09a0f9450.png",
+    "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.d3a5f99695dac0128a3e.png",
+    "static/media/curriculum.pdf": "/portfolio/static/media/curriculum.4f402a009d1eee70acf9.pdf",
+    "static/media/message-board.png": "/portfolio/static/media/message-board.0ad9a751cf1cc1a5c646.png",
+    "static/media/heat-map.png": "/portfolio/static/media/heat-map.1632d85593899d73016e.png",
+    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.f6eaf463f0a8772b4721.png",
     "static/media/pomodoro-clock.png": "/portfolio/static/media/pomodoro-clock.789aabbb7a179733058f.png",
-    "static/media/scatterplot.png": "/portfolio/static/media/scatterplot.4a9eb89c5d9c8b1a1423.png",
-    "static/media/bar-chart.png": "/portfolio/static/media/bar-chart.a79ef71aca867b86a9c5.png",
-    "static/media/javascript-calculator.png": "/portfolio/static/media/javascript-calculator.6d77c5d80db53fb4adf6.png",
+    "static/media/bar-chart.png": "/portfolio/static/media/bar-chart.91ee9ece4aebe2ca298c.png",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.514af485dd4fc82f72fc87fe73bdc378.svg",
     "static/media/babel.svg": "/portfolio/static/media/babel.82b0e7ddd6f772dbcf07900ce5867e12.svg",
     "static/media/sass.svg": "/portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
@@ -35,11 +31,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.4c54d81d.css.map": "/portfolio/static/css/main.4c54d81d.css.map",
-    "main.f9656f24.js.map": "/portfolio/static/js/main.f9656f24.js.map"
+    "main.e5dab9c5.css.map": "/portfolio/static/css/main.e5dab9c5.css.map",
+    "main.b2baeb13.js.map": "/portfolio/static/js/main.b2baeb13.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c54d81d.css",
-    "static/js/main.f9656f24.js"
+    "static/css/main.e5dab9c5.css",
+    "static/js/main.b2baeb13.js"
   ]
 }
