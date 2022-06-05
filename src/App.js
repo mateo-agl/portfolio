@@ -18,7 +18,7 @@ export const App = () => {
 		const windowHeight = window.innerHeight;
 		const reveals = document.querySelectorAll(".reveal");
 		const arrowUp = document.querySelector(".arrow.up");
-		const about = document.querySelector("#about").getBoundingClientRect().top;
+		const about = document.querySelector("#acerca").getBoundingClientRect().top;
 		if(about < windowHeight) {
 			arrowUp.classList.add("reveal");
 		} else {

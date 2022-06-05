@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/Mateo Aguilar Resume.pdf";
+import resume from "../../assets/curriculum.pdf";
 import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
 import "./Welcome.css";
 
@@ -24,7 +24,7 @@ export const Welcome = () => (
 					rel="noopener noreferrer"
 					target="_blank"
 				>
-					RESUME
+					CURRICULUM
 				</a>
 			</div>
 		</div>
@@ -32,6 +32,6 @@ export const Welcome = () => (
 	</section>
 );
 
-const hello = "Hi, I'm";
+const hello = "Hola, soy";
 const name = "Mateo Aguilar";
-const desc = "A Full Stack developer living in Argentina.";
+const desc = "Desarrollador Full Stack viviendo en Argentina.";

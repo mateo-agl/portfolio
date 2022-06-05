@@ -58,4 +58,4 @@ export const Navbar = () => {
 	)
 }
 
-const nav = ["ABOUT", "SKILLS", "PROJECTS", "CONTACT"];
+const nav = ["ACERCA", "TECNOLOGÍAS", "PROYECTOS", "CONTACTO"];

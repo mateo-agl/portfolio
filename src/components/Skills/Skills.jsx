@@ -19,9 +19,9 @@ import "./Skills.css";
 export const Skills = () => (
 	<section
 		className="reveal col-lg-7 col-md-10 col-sm-12 mx-auto"
-		id="skills"
+		id="tecnologías"
 	>
-		<h2>Skills</h2>
+		<h2>Tecnologías</h2>
 		<div className="row separator"/>
 		<div className="skills-cont row justify-content-center p-3">
 			<ul className="skills-grid p-0 m-0">

@@ -45,7 +45,7 @@ export const Footer = () => {
 	return (
 		<footer
 			className="reveal col-xxl-8 col-xsm-12 d-flex flex-column vh-100 mx-auto text-center"
-			id="contact"
+			id="contacto"
 		>
 			<form
 				className="d-flex flex-column my-auto"
@@ -53,14 +53,14 @@ export const Footer = () => {
 				onSubmit={onSubmit}
 			>
 				<div className="input-cont col-auto m-auto">
-					<h2>Contact Me</h2>
+					<h2>Contactame</h2>
 					<div className="input-group">
 						<div className="mb-2 mx-2">
 							<input
 								className="input rounded-0 p-2"
 								maxLength="100"
 								name="from_name"
-								placeholder="Name"
+								placeholder="Nombre"
 								required
 								type="text"
 								value={toSend.from_name}
@@ -85,7 +85,7 @@ export const Footer = () => {
 							className="input rounded-0 p-2"
 							maxLength="200"
 							name="subject"
-							placeholder="Subject"
+							placeholder="Asunto"
 							required
 							type="text"
 							value={toSend.subject}
@@ -96,7 +96,7 @@ export const Footer = () => {
 						<textarea
 							className="input rounded-0 p-2"
 							name="message"
-							placeholder="Message"
+							placeholder="Mensaje"
 							required
 							value={toSend.message}
 							onChange={handleChange}
@@ -106,7 +106,7 @@ export const Footer = () => {
 						className="btn-theme mx-auto px-4 rounded-0" 
 						type="submit"
 					>
-						SEND
+						ENVIAR
 					</button>
 				</div>
 			</form>
@@ -117,7 +117,7 @@ export const Footer = () => {
 			>
 				aguilarmateo.1604@gmail.com
 			</a>
-			<p className="footer-text m-0 py-4">Built by Mateo Aguilar</p>
+			<p className="footer-text m-0 py-4">Desarrollado por Mateo Aguilar</p>
 		</footer>
 	);
 };
