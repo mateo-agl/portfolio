@@ -12,7 +12,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 
 export const App = () => {
-	useEffect(window.onscroll = e => reveal());
+	useEffect(window.onscroll = () => reveal());
 
 	const reveal = () => {
 		const reveals = document.querySelectorAll(".reveal");
