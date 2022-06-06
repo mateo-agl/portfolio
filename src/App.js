@@ -12,21 +12,16 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 
 export const App = () => {
-	useEffect(window.onscroll = () => reveal());
+	useEffect(window.onscroll = e => reveal());
 
 	const reveal = () => {
-		const windowHeight = window.innerHeight;
 		const reveals = document.querySelectorAll(".reveal");
 		const arrowUp = document.querySelector(".arrow.up");
-		const about = document.querySelector("#acerca").getBoundingClientRect().top;
-		if(about < windowHeight) {
-			arrowUp.classList.add("reveal");
-		} else {
-			arrowUp.classList.remove("reveal");
-		};
-		reveals.forEach(ele => {
+		reveals.forEach((ele, i) => {
 			const revealHeight = ele.getBoundingClientRect().top + 400;
-			if (revealHeight < windowHeight) ele.classList.add("active");
+			return revealHeight < window.innerHeight 
+					? (ele.classList.add("active"), i === 0 ? arrowUp.classList.add("reveal") : "")
+					: i === 0 ? arrowUp.classList.remove("reveal") : "";
 		});
 	};
 
