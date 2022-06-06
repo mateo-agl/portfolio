@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e5dab9c5.css",
-    "main.js": "/portfolio/static/js/main.a50660f0.js",
+    "main.js": "/portfolio/static/js/main.f73c0129.js",
     "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.ae1d8c364cc09a0f9450.png",
     "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.d3a5f99695dac0128a3e.png",
     "static/media/curriculum.pdf": "/portfolio/static/media/curriculum.4f402a009d1eee70acf9.pdf",
@@ -32,10 +32,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.e5dab9c5.css.map": "/portfolio/static/css/main.e5dab9c5.css.map",
-    "main.a50660f0.js.map": "/portfolio/static/js/main.a50660f0.js.map"
+    "main.f73c0129.js.map": "/portfolio/static/js/main.f73c0129.js.map"
   },
   "entrypoints": [
     "static/css/main.e5dab9c5.css",
-    "static/js/main.a50660f0.js"
+    "static/js/main.f73c0129.js"
   ]
 }
