@@ -103,7 +103,7 @@ export const Footer = () => {
 						/>
 					</div>
 					<button 
-						className="btn-theme mx-auto px-4 rounded-0" 
+						className="btn-theme mx-auto px-4" 
 						type="submit"
 					>
 						ENVIAR
