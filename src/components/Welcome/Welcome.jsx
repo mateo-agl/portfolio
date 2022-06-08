@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/curriculum.pdf";
+import resume from "../../assets/Curriculum Vitae Mateo Aguilar.pdf";
 import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
 import "./Welcome.css";
 
