@@ -41,9 +41,9 @@ input:-webkit-autofill:focus {
 }
 
 @media (max-width: 1024px) {
-    .input-cont {
+    .input-cont.border {
         padding: 0;
-        border: none;
+        border: none !important;
     }
 
     .input-cont h2 {
