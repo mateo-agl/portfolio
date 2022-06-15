@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.91723b6f.css",
-    "main.js": "/portfolio/static/js/main.3d13ee89.js",
+    "main.css": "/portfolio/static/css/main.1cc7af45.css",
+    "main.js": "/portfolio/static/js/main.aff843af.js",
     "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.ae1d8c364cc09a0f9450.png",
     "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.d3a5f99695dac0128a3e.png",
     "static/media/Curriculum Vitae Mateo Aguilar.pdf": "/portfolio/static/media/Curriculum Vitae Mateo Aguilar.01d6340fa848b2d74e3e.pdf",
     "static/media/message-board.png": "/portfolio/static/media/message-board.343eaaf8c61a85133f3f.png",
+    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.85eaa6389b0765e007c0.png",
     "static/media/heat-map.png": "/portfolio/static/media/heat-map.1632d85593899d73016e.png",
-    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.8ebc882a788be1333416.png",
     "static/media/pomodoro-clock.png": "/portfolio/static/media/pomodoro-clock.789aabbb7a179733058f.png",
     "static/media/bar-chart.png": "/portfolio/static/media/bar-chart.91ee9ece4aebe2ca298c.png",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.514af485dd4fc82f72fc87fe73bdc378.svg",
     "static/media/babel.svg": "/portfolio/static/media/babel.82b0e7ddd6f772dbcf07900ce5867e12.svg",
     "static/media/sass.svg": "/portfolio/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
-    "static/media/express.svg": "/portfolio/static/media/express.38083924b6bb97ab3b09aec1ac7db36e.svg",
+    "static/media/express.svg": "/portfolio/static/media/express.bfbc2272e5e563459e7315e41060d0ff.svg",
     "static/media/d3.svg": "/portfolio/static/media/d3.47c9b7cf0f92028dc72410dad6150dff.svg",
     "static/media/node.svg": "/portfolio/static/media/node.2879fa1876f2b0e8ec70c8bae81f8446.svg",
     "static/media/github.svg": "/portfolio/static/media/github.d5db839804954646a24c4fe54c218be5.svg",
@@ -31,11 +31,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.91723b6f.css.map": "/portfolio/static/css/main.91723b6f.css.map",
-    "main.3d13ee89.js.map": "/portfolio/static/js/main.3d13ee89.js.map"
+    "main.1cc7af45.css.map": "/portfolio/static/css/main.1cc7af45.css.map",
+    "main.aff843af.js.map": "/portfolio/static/js/main.aff843af.js.map"
   },
   "entrypoints": [
-    "static/css/main.91723b6f.css",
-    "static/js/main.3d13ee89.js"
+    "static/css/main.1cc7af45.css",
+    "static/js/main.aff843af.js"
   ]
 }
