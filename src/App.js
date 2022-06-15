@@ -37,7 +37,7 @@ export const App = () => {
 			</main>
 			<Footer/>
 			<Links linksClass="fixed-links"/>
-			<a href="#top">
+			<a className="arrow-btn" href="#top">
 				<Arrow className="position-fixed arrow up btn-theme"/>
 			</a>
 		</>

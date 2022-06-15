@@ -39,6 +39,10 @@ a:hover {
     background: var(--global-hoover-color);
 }
 
+.border {
+    border-color: var(--global-border-color) !important;
+}
+
 svg {
     fill: var(--global-primary-color);
     transition: .2s;
@@ -97,6 +101,7 @@ h2 {
 .arrow {
     position: absolute;
     bottom: 1em;
+    filter: none;
 }
 
 .arrow.up {
@@ -114,6 +119,6 @@ h2 {
     transform: rotate(180deg) scale(1);
 }
 
-.border {
-    border-color: var(--global-border-color) !important;
+.arrow-btn {
+    filter: none;
 }
