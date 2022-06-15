@@ -1,3 +1,13 @@
+:root {
+    --global-primary-color: #FFB703;
+    --global-hoover-color: #FB8500;
+    --global-title-color: #219EBC;
+    --global-text-color: #8ECAE6;
+    --global-border-color: #004a6e;
+    --global-bg-color: #002a3f;
+    --global-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 * {
     list-style: none;
 }
@@ -6,35 +16,35 @@ a, button {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     text-decoration: none;
-    color: #FFB703;
+    color: var(--global-primary-color);
     transition: .2s;
 }
 
 a:hover {
-    color: #FB8500;
+    color: var(--global-hoover-color);
 }
 
 .btn-theme {
     display: block;
-    background: #FFB703;
+    background: var(--global-primary-color);
     text-decoration: none;
-    color: #023047;
+    color: var(--global-bg-color);
     padding: 15px 20px;
     border: none;
 }
 
 .btn-theme:hover {
-    color: #023047;
-    background: #FB8500;
+    color: var(--global-bg-color);
+    background: var(--global-hoover-color);
 }
 
 svg {
-    fill: #FFB703;
+    fill: var(--global-primary-color);
     transition: .2s;
 }
 
 svg:hover {
-    fill: #FB8500;
+    fill: var(--global-hoover-color);
 }
 
 ::-webkit-scrollbar{
@@ -47,27 +57,27 @@ svg:hover {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #FFB703;
+    background: var(--global-primary-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #FB8500;
+    background: var(--global-hoover-color);
 }
 
 body {
     position: relative;
-    background: #023047;
+    background: var(--global-bg-color);
 }
 
 h2 {
     font-family: 'Cuprum', sans-serif;
-    color: #219EBC;
+    color: var(--global-title-color);
     font-size: 36px;
 }
 
 .separator {
     height: 1px;
-    background: #8ECAE6;
+    background: var(--global-border-color);
     margin-bottom: 1em;
 }
 
@@ -94,11 +104,15 @@ h2 {
     padding: 0 12px;
     right: 1em;
     border-radius: 50px;
-    fill: #023047;
+    fill: var(--global-bg-color);
     transform: rotate(180deg) scale(0);
 }
 
 .arrow.up.reveal {
     opacity: 1;
     transform: rotate(180deg) scale(1);
+}
+
+.border {
+    border-color: var(--global-border-color) !important;
 }

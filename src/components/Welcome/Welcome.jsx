@@ -1,7 +1,7 @@
 import React from "react";
 import resume from "../../assets/Curriculum Vitae Mateo Aguilar.pdf";
 import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
-import "./Welcome.css";
+import "./welcome.styles.css";
 
 export const Welcome = () => (
 	<section className="row vh-100 justify-content-center align-items-center position-relative">
@@ -19,7 +19,7 @@ export const Welcome = () => (
 			</div>
 			<div className="d-flex float-end">
 				<a
-					className="btn-theme resume-btn ms-auto"
+					className="btn-theme resume-btn ms-auto rounded"
 					href={resume}
 					rel="noopener noreferrer"
 					target="_blank"

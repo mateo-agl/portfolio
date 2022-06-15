@@ -9,7 +9,10 @@ import { Links } from "./components/Links/Links.jsx";
 import { ReactComponent as Arrow } from "./assets/icons/arrow-down.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./App.css";
+import "./app.styles.css";
+
+// Usar react components, añadir animaciones, hacer diseño
+// único, probar react-router y mejorar carga de la pagina.
 
 export const App = () => {
 	useEffect(window.onscroll = () => reveal());

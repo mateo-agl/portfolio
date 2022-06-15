@@ -36,13 +36,13 @@
 }
 
 .hello {
-    color: #219EBC;
+    color: var(--global-title-color);
     font-size: 4em;
     animation: .8s ease slideIn;
 }
 
 .name {
-    color: #8ECAE6;
+    color: var(--global-text-color);
     font-size: 6em;
     font-weight: bold;
     animation: .9s ease slideIn;
@@ -55,7 +55,7 @@
 
 .resume-btn {
     animation: 1.2s ease-in btnSlideIn;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: var(--global-shadow);
 }
 
 .arrow.down {

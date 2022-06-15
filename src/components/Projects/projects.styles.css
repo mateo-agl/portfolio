@@ -8,7 +8,6 @@
 .project {
     height: fit-content;
     width: 404px !important;
-    border: 1px #8ECAE6 solid;
 }
 
 .thumbnail {
@@ -17,7 +16,6 @@
     top: -15px;
     left: -15px;
     transition: .2s;
-    border: 1px solid #8ECAE6;
 }
 
 .project:hover .thumbnail {
@@ -31,7 +29,7 @@
 }
 
 .proj-art {
-    color: #8ECAE6;
+    color: var(--global-text-color);
 }
 
 .proj-title, .proj-desc {
@@ -56,7 +54,7 @@
 .technologies {
     font-family: 'Rubik', sans-serif;
     font-style: italic;
-    color: #219EBC;
+    color: var(--global-title-color);
     cursor: pointer;
 }
 
@@ -75,6 +73,7 @@
 
 .proj-code {
     width: fit-content;
+    padding: 1px 5px !important;
 }
 
 @media (max-width: 428px) {

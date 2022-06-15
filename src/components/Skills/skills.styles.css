@@ -1,7 +1,3 @@
-.skill, .skills-cont {
-    border: 1px #8ECAE6 solid
-}
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 80px);
@@ -12,7 +8,7 @@
 .skill {
     width: 80px;
     height: 80px;
-    color: #8ECAE6;
+    color: var(--global-text-color);
     font-family: 'Cuprum', sans-serif;
     font-size: 14px;
     transition: .25s;

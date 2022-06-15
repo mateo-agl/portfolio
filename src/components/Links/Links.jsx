@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as Codepen } from "../../assets/icons/codepen.svg";
 import { ReactComponent as Linkedin } from "../../assets/icons/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/icons/github.svg";
-import "./Links.css";
+import "./links.styles.css";
 
 export const Links = (props) => (
 	<div className={props.linksClass}>

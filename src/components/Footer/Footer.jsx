@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { Links } from "../Links/Links";
-import "./Footer.css";
+import "./footer.styles.css";
 
 export const Footer = () => {
 	const form = useRef();
@@ -52,12 +52,12 @@ export const Footer = () => {
 				ref={form}
 				onSubmit={onSubmit}
 			>
-				<div className="input-cont col-auto m-auto">
+				<div className="input-cont col-auto m-auto border rounded">
 					<h2>Contactame</h2>
 					<div className="input-group">
 						<div className="mb-2 mx-2">
 							<input
-								className="input rounded-0 p-2"
+								className="input border rounded p-2"
 								maxLength="100"
 								name="from_name"
 								placeholder="Nombre"
@@ -69,7 +69,7 @@ export const Footer = () => {
 						</div>
 						<div className="mb-2 mx-2">
 							<input
-								className="input rounded-0 p-2"
+								className="input border rounded p-2"
 								maxLength="200"
 								name="reply_to"
 								placeholder="Email"
@@ -82,7 +82,7 @@ export const Footer = () => {
 					</div>
 					<div className="mb-2 mx-2">
 						<input
-							className="input rounded-0 p-2"
+							className="input border rounded p-2"
 							maxLength="200"
 							name="subject"
 							placeholder="Asunto"
@@ -94,7 +94,7 @@ export const Footer = () => {
 					</div>
 					<div className="mb-2 mx-2">
 						<textarea
-							className="input rounded-0 p-2"
+							className="input border rounded p-2"
 							name="message"
 							placeholder="Mensaje"
 							required
@@ -103,7 +103,7 @@ export const Footer = () => {
 						/>
 					</div>
 					<button 
-						className="btn-theme mx-auto px-4" 
+						className="btn-theme mx-auto px-4 rounded" 
 						type="submit"
 					>
 						ENVIAR

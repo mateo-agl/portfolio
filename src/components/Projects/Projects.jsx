@@ -6,24 +6,21 @@ import messageBoard from "../../assets/thumbnails/message-board.png";
 import barChart from "../../assets/thumbnails/bar-chart.png";
 import ecomWebsite from "../../assets/thumbnails/ecommerce-website.png";
 import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.png";
-import "./Projects.css";
+import "./projects.styles.css";
 
 export const Projects = () => {
 	const [projState, setProjState] = useState({quantity: 3, text: "VER MÁS", key: ""});
 
-	const handleTextClick = i => !projState.key || projState.key !== i
+	const handleTextClick = i => projState.key === "" || projState.key !== i
 		? setProjState({...projState, key: i}) 
 		: setProjState({...projState, key: ""});
 
 	const handleProjQuantity = () => projState.text === "VER MÁS"
 		? setProjState({...projState, quantity: projects.length, text: "VER MENOS"})
 		: setProjState({...projState, quantity: 3, text: "VER MÁS"});
-
+	
 	return (
-		<section
-			className="reveal col-12 mx-auto position-relative"
-			id="proyectos"
-		>
+		<section className="reveal col-12 mx-auto position-relative" id="proyectos">
 			<h2>Mis proyectos</h2>
 			<div className="row separator"/>
 			<div className="projects-cont row mt-5 justify-content-center">
@@ -32,10 +29,10 @@ export const Projects = () => {
 						projects.slice(0,projState.quantity).map(
 							(p, i) => 
 							<li 
-								className="project d-flex flex-column p-2"
+								className="project d-flex flex-column p-2 border rounded"
 								key={i}
 							>
-								<div className="thumbnail position-relative">
+								<div className="thumbnail position-relative border rounded">
 									<a
 										href={p.appLink}
 										rel="noopener noreferrer"
@@ -70,7 +67,7 @@ export const Projects = () => {
 										{p.technologies}
 									</label>
 									<a	
-										className="d-block proj-code ms-auto"
+										className="d-block proj-code ms-auto btn-theme rounded"
 										href={p.codeLink}
 										rel="noopener noreferrer"
 										target="_blank"
@@ -84,7 +81,7 @@ export const Projects = () => {
 				</ul>
 			</div>
 			<button
-				className="btn-theme mx-auto mt-4"
+				className="btn-theme mx-auto mt-4 rounded"
 				onClick={handleProjQuantity}
 				rel="noopener noreferrer"
 				target="_blank"

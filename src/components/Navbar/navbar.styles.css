@@ -19,7 +19,7 @@
 
 .nav-item {
     padding: .8em 2em;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: var(--global-shadow);
 }
 
 .nav-btn {
@@ -30,7 +30,7 @@
 .nav-btn::after {
     content: "";
     display: block;
-    background: #FB8500;
+    background: var(--global-hoover-color);
     height: 3px;
     width: 0%;
     transition: .2s;
@@ -41,13 +41,13 @@
 }
 
 .selected {
-    color: #FB8500;
+    color: var(--global-hoover-color);
 }
 
 .selected::after {
     content: "";
     display: block;
-    background: #FB8500;
+    background: var(--global-hoover-color);
     height: 3px;
     width: 100%;
 }
@@ -69,7 +69,7 @@
     display: block;
     width: 24px;
     height: 2px;
-    background: #FFB703;
+    background: var(--global-primary-color);
 }
 
 .hamburger::before,
@@ -78,7 +78,7 @@
     position: absolute;
     width: 24px;
     height: 2px;
-    background: #FFB703;
+    background: var(--global-primary-color);
 }
 
 .hamburger::before {
@@ -94,7 +94,7 @@
 .close {
     width: 24px;
     height: 2px;
-    background: #FFB703;
+    background: var(--global-primary-color);
     transform: rotate(-45deg);
 }
 
@@ -102,7 +102,7 @@
     content: "";
     width: 24px;
     height: 2px;
-    background: #FFB703;
+    background: var(--global-primary-color);
     position: absolute;
     transform: rotate(90deg);
     left: 0;
@@ -118,12 +118,12 @@
 button:hover ::after,
 button:hover ::before,
 button:hover div {
-    background: #FB8500;
+    background: var(--global-hoover-color);
 }
 
 .offcanvas {
     width: fit-content !important;
-    background: #023047 !important;
+    background: var(--global-bg-color) !important;
 }
 
 @media (max-width: 991px) {
@@ -141,6 +141,6 @@ button:hover div {
         padding: 0 2em;
         align-items: center;
         justify-content: center;
-        border-top: 1px solid #024363;
+        border-top: 1px solid var(--global-border-color);
     }
 }

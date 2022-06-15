@@ -14,7 +14,7 @@ import babel from "../../assets/icons/babel.svg";
 import sass from "../../assets/icons/sass.svg";
 import express from "../../assets/icons/express.svg";
 import mongo from "../../assets/icons/mongodb.svg";
-import "./Skills.css";
+import "./skills.styles.css";
 
 export const Skills = () => (
 	<section
@@ -23,13 +23,13 @@ export const Skills = () => (
 	>
 		<h2>Tecnologías</h2>
 		<div className="row separator"/>
-		<div className="skills-cont row justify-content-center p-3">
+		<div className="skills-cont row justify-content-center p-3 border rounded">
 			<ul className="skills-grid p-0 m-0">
 				{
 					skills.map(
 						(obj, i) =>
 						<li
-							className="p-1 skill"
+							className="p-1 skill border rounded"
 							key={i}
 						>
 							<img
@@ -45,6 +45,7 @@ export const Skills = () => (
 				}
 			</ul>
 		</div>
+		
 	</section>
 );
 
