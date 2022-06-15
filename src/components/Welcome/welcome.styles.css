@@ -55,7 +55,6 @@
 
 .resume-btn {
     animation: 1.2s ease-in btnSlideIn;
-    filter: var(--global-shadow);
 }
 
 .arrow.down {

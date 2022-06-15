@@ -2,6 +2,7 @@
     background: var(--global-title-color);
     border-radius: 50%;
     overflow: hidden;
+    border: 1px var(--global-border-color) solid;
 }
 
 .about-art {

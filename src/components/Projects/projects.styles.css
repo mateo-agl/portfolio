@@ -18,10 +18,13 @@
     transition: .2s;
 }
 
+.thumbnail a {
+    filter: none;
+}
+
 .project:hover .thumbnail {
     top: 0;
     left: 0;
-    filter: none;
 }
 
 .thumbnail img {

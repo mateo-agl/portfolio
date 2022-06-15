@@ -19,7 +19,6 @@
 
 .nav-item {
     padding: .8em 2em;
-    filter: var(--global-shadow);
 }
 
 .nav-btn {

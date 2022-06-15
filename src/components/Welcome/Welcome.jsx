@@ -4,7 +4,10 @@ import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
 import "./welcome.styles.css";
 
 export const Welcome = () => (
-	<section className="row vh-100 justify-content-center align-items-center position-relative">
+	<section
+		className="row vh-100 justify-content-center align-items-center position-relative"
+		id="top"
+	>
 		<div className="col">
 			<div className="col-sm-10 col-xsm-12 mx-auto">
 				<h1 className="hello">

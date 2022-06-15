@@ -23,7 +23,7 @@ export const Skills = () => (
 	>
 		<h2>Tecnologías</h2>
 		<div className="row separator"/>
-		<div className="skills-cont row justify-content-center p-3 border rounded">
+		<div className="row justify-content-center p-3 border rounded">
 			<ul className="skills-grid p-0 m-0">
 				{
 					skills.map(
