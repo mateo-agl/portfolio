@@ -94,7 +94,7 @@ export const Projects = () => {
 
 const projects = [
 	{
-		appLink: "https://mateo-agl.github.io/sunrise-sunset/",
+		appLink: "https://sunrise-sunset-data.herokuapp.com/",
 		thumbnail: sunriseSunset,
 		codeLink: "https://github.com/mateo-agl/sunrise-sunset",
 		name: "Sunrise Sunset",
