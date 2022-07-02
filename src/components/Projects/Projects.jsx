@@ -99,7 +99,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/sunrise-sunset",
 		name: "Sunrise Sunset",
 		description: "Aplicación para saber la cantidad de luz solar que recibe una localidad en un año.",
-		technologies: "React, D3, SunCalc, Axios, Luxon, React-Bootstrap, CSS"
+		technologies: "React, D3, SunCalc, Axios, Luxon, TypeScript, Express, React-Bootstrap, CSS"
 	},
 	{
 		appLink: "https://ecom-react-site.herokuapp.com/",
