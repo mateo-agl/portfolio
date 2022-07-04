@@ -115,7 +115,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
 		name: "Anonymous message board",
 		description: "Proyecto creado con el stack MERN. Los usuarios pueden ver comentarios según el board o tópico, comentar, responder, reportar o eliminar.",
-		technologies: "React, React-Router, CSS, Express, Mongoose, Axios, ESlint, Babel"
+		technologies: "React, React-Router, CSS, Express, Mongoose, Axios, ESlint, Babel, Helmet, Mocha/Chai"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
