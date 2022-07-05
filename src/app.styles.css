@@ -1,10 +1,15 @@
+@font-face {
+    font-family: Consolas;
+    src: url("./assets/Fonts/CONSOLA.TTF");
+}
+
 :root {
-    --global-primary-color: #FFB703;
-    --global-hoover-color: #FB8500;
-    --global-title-color: #219EBC;
-    --global-text-color: #8ECAE6;
+    --global-primary-color: #ffd15d;
+    --global-hoover-color: #eeab00;
+    --global-title-color: #0075b9;
+    --global-text-color: #9ee0ff;
     --global-border-color: #004a6e;
-    --global-bg-color: #002a3f;
+    --global-bg-color: #1b1b1b;
     --global-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, .4));
 }
 
@@ -13,11 +18,10 @@
 }
 
 a, button {
-    font-family: 'Rubik', sans-serif;
+    font-family: Consolas, monospace;
     font-weight: 500;
     text-decoration: none;
     color: var(--global-primary-color);
-    filter: var(--global-shadow);
     transition: .2s;
 }
 
@@ -27,16 +31,17 @@ a:hover {
 
 .btn-theme {
     display: block;
-    background: var(--global-primary-color);
     text-decoration: none;
-    color: var(--global-bg-color);
+    color: var(--global-primary-color);
     padding: 15px 20px;
-    border: none;
+    background: none;
+    border: 1px solid var(--global-primary-color);
 }
 
 .btn-theme:hover {
     color: var(--global-bg-color);
     background: var(--global-hoover-color);
+    border-color: var(--global-hoover-color);;
 }
 
 .border {
@@ -53,7 +58,7 @@ svg:hover {
 }
 
 ::-webkit-scrollbar{
-    width: 7.25px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track{
@@ -63,6 +68,7 @@ svg:hover {
 
 ::-webkit-scrollbar-thumb{
     background: var(--global-primary-color);
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -74,10 +80,10 @@ body {
     background: var(--global-bg-color);
 }
 
-h2 {
-    font-family: 'Cuprum', sans-serif;
-    color: var(--global-title-color);
+h1, h2 {
+    font-family: Calibri, sans-serif;
     font-size: 36px;
+    color: var(--global-title-color);
 }
 
 .separator {
@@ -101,7 +107,6 @@ h2 {
 .arrow {
     position: absolute;
     bottom: 1em;
-    filter: none;
 }
 
 .arrow.up {
@@ -110,7 +115,7 @@ h2 {
     padding: 0 12px;
     right: 1em;
     border-radius: 50px;
-    fill: var(--global-bg-color);
+    fill: var(--global-primary-color);
     transform: rotate(180deg) scale(0);
 }
 
@@ -119,6 +124,6 @@ h2 {
     transform: rotate(180deg) scale(1);
 }
 
-.arrow-btn {
-    filter: none;
+.arrow.up:hover {
+    fill: var(--global-bg-color);
 }

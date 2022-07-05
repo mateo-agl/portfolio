@@ -1,6 +1,5 @@
 import React from "react";
 import resume from "../../assets/Curriculum Vitae Mateo Aguilar.pdf";
-import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
 import "./welcome.styles.css";
 
 export const Welcome = () => (
@@ -16,9 +15,9 @@ export const Welcome = () => (
 				<h1 className="name">
 					{name}
 				</h1>
-				<h2 className="desc">
+				<h1 className="desc">
 					{desc}
-				</h2>
+				</h1>
 			</div>
 			<div className="d-flex float-end">
 				<a
@@ -27,11 +26,10 @@ export const Welcome = () => (
 					rel="noopener noreferrer"
 					target="_blank"
 				>
-					CURRICULUM
+					Currículum
 				</a>
 			</div>
 		</div>
-		<Arrow className="arrow down"/>
 	</section>
 );
 

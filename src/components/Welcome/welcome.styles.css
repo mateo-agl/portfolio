@@ -20,75 +20,24 @@
     }
 }
 
-@keyframes arrowDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
-.hello, .name {
-    font-family: 'Cuprum', sans-serif;
-}
-
 .hello {
     color: var(--global-title-color);
-    font-size: 4em;
+    font-size: clamp(1.2em, 3.5vw, 4em);
     animation: .8s ease slideIn;
 }
 
 .name {
     color: var(--global-text-color);
-    font-size: 6em;
-    font-weight: bold;
+    font-size: clamp(2em, 6vw, 6em);
     animation: .9s ease slideIn;
 }
 
 .desc {
-    font-size: 3em;
+    color: var(--global-title-color);
+    font-size: clamp(1.2em, 2.5vw, 3em);
     animation: 1s ease slideIn;
 }
 
 .resume-btn {
     animation: 1.2s ease-in btnSlideIn;
-}
-
-.arrow.down {
-    height: 5em;
-    width: 5em;
-    opacity: 0;
-    animation: 1.6s ease 1.6s infinite arrowDown;
-    left: calc(50% - 32px);
-}
-
-@media (max-width: 1144px) {
-    .hello {
-        font-size: 3em;
-    }
-    .name {
-        font-size: 4em;
-    }
-    .desc {
-        font-size: 2em;
-    }
-}
-
-@media (max-width: 512px) {
-    .hello {
-        font-size: 2em;
-    }
-    .name {
-        font-size: 3em;
-    }
-    .desc {
-        font-size: 1.3em;
-    }
-    .btn-theme.resume-btn {
-        font-size: 10px;
-        padding: 10px;
-    }
 }

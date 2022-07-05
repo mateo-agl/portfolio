@@ -1,16 +1,16 @@
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 80px);
+    grid-template-columns: repeat(auto-fill, 140px);
     width: fit-content !important;
-    gap: 15px;
+    gap: 20px;
 }
 
 .skill {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     color: var(--global-text-color);
-    font-family: 'Cuprum', sans-serif;
-    font-size: 14px;
+    font-family: Consolas, monospace;
+    font-size: 1.2em;
     transition: .25s;
 }
 
@@ -19,6 +19,25 @@
 }
 
 .skill img {
-    height: 48px;
-    width: 48px;
+    height: 96px;
+    width: 96px;
+}
+
+.skill img.sm {
+    padding: 12px;
+}
+
+@media (max-width: 976px) {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    .grid-cont.border {
+        overflow-x: scroll;
+        border: none !important;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(17, 140px);
+    }
 }

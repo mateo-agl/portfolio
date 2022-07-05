@@ -4,7 +4,6 @@
 }
 
 .input-cont h2 {
-    font-weight: bold;
     font-size: 64px;
 }
 
@@ -12,7 +11,7 @@
     display: block;
     width: 100%;
     background: none;
-    font-family: 'Cousine', monospace;
+    font-family: Consolas, monospace;
     font-size: 18px;
     transition: .2s;
 }
@@ -37,7 +36,7 @@ input:-webkit-autofill:focus {
 
 .footer-text {
     color: var(--global-text-color);
-    font-family: 'Rubik', sans-serif;
+    font-family: Calibri, sans-serif;
 }
 
 @media (max-width: 1024px) {
@@ -52,10 +51,5 @@ input:-webkit-autofill:focus {
 
     .input-cont div {
         flex-direction: column;
-    }
-
-    .send-btn {
-        padding: 10px 24px;
-        font-size: 14px;
     }
 }

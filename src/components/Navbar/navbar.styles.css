@@ -140,6 +140,6 @@ button:hover div {
         padding: 0 2em;
         align-items: center;
         justify-content: center;
-        border-top: 1px solid var(--global-border-color);
+        border-top: 1px solid rgb(39, 39, 39);
     }
 }

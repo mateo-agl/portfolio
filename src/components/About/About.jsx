@@ -5,7 +5,7 @@ import "./about.styles.css";
 export const About = () => (
 	<section 
 		className="reveal col-lg-7 col-md-10 col-sm-12 mx-auto"
-		id="acerca"
+		id="sobre mí"
 	>
 		<h2>Acerca de mí...</h2>
 		<div className="row separator"/>

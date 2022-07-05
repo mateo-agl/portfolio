@@ -6,18 +6,19 @@ import messageBoard from "../../assets/thumbnails/message-board.png";
 import barChart from "../../assets/thumbnails/bar-chart.png";
 import ecomWebsite from "../../assets/thumbnails/ecommerce-website.png";
 import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.png";
+import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
 import "./projects.styles.css";
 
 export const Projects = () => {
-	const [projState, setProjState] = useState({quantity: 3, text: "VER MÁS", key: ""});
+	const [projState, setProjState] = useState({quantity: 3, text: "Ver más", key: ""});
 
 	const handleTextClick = i => projState.key === "" || projState.key !== i
 		? setProjState({...projState, key: i}) 
 		: setProjState({...projState, key: ""});
 
-	const handleProjQuantity = () => projState.text === "VER MÁS"
-		? setProjState({...projState, quantity: projects.length, text: "VER MENOS"})
-		: setProjState({...projState, quantity: 3, text: "VER MÁS"});
+	const handleProjQuantity = () => projState.text === "Ver más"
+		? setProjState({...projState, quantity: projects.length, text: "Ver menos"})
+		: setProjState({...projState, quantity: 3, text: "Ver más"});
 	
 	return (
 		<section className="reveal col-12 mx-auto position-relative" id="proyectos">
@@ -54,27 +55,31 @@ export const Projects = () => {
 									>
 										<h3 className="proj-title">{p.name}</h3>
 									</a>
-									<p
-										className={`${i === projState.key ? "read-more" : "hide"} proj-desc`}
-										onClick={() => handleTextClick(i)}>
-											{p.description}
-									</p>
+									<div className={`info-cont ${i === projState.key ? "read-more" : "hide"}`}>
+										<p className="proj-desc">
+												{p.description}
+										</p>
+										<label className="technologies">
+											{p.technologies}
+										</label>
+										<div className="mt-auto">
+											<a	
+												className="d-block proj-code ms-auto btn-theme rounded"
+												href={p.codeLink}
+												rel="noopener noreferrer"
+												target="_blank"
+											>
+												Repo
+											</a>
+										</div>
+									</div>
 								</article>
-								<div className="mt-auto">
-									<label
-										className={`${i === projState.key ? "read-more" : "hide"} technologies`}
-										onClick={() => handleTextClick(i)}>
-										{p.technologies}
-									</label>
-									<a	
-										className="d-block proj-code ms-auto btn-theme rounded"
-										href={p.codeLink}
-										rel="noopener noreferrer"
-										target="_blank"
-									>
-										Repo
-									</a>
-								</div>
+								<button
+									className={`proj-text-btn mx-auto ${i === projState.key ? "up" : ""} rounded`}
+									onClick={() => handleTextClick(i)}
+								>
+									<Arrow />
+								</button>
 							</li>
 						)
 					}
@@ -83,8 +88,6 @@ export const Projects = () => {
 			<button
 				className="btn-theme mx-auto mt-4 rounded"
 				onClick={handleProjQuantity}
-				rel="noopener noreferrer"
-				target="_blank"
 			>
 				{projState.text}
 			</button>
