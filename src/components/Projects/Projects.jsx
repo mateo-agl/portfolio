@@ -61,16 +61,14 @@ export const Projects = () => {
 										<label className="technologies">
 											{p.technologies}
 										</label>
-										<div className="mt-auto">
-											<a	
-												className="d-block proj-code ms-auto btn-theme rounded"
-												href={p.codeLink}
-												rel="noopener noreferrer"
-												target="_blank"
-											>
-												Repo
-											</a>
-										</div>
+										<a	
+											className="d-block proj-code ms-auto mt-2 btn-theme rounded"
+											href={p.codeLink}
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											Repo
+										</a>
 									</div>
 								</article>
 								<button
