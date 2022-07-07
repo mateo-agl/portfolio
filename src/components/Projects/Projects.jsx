@@ -96,12 +96,20 @@ export const Projects = () => {
 
 const projects = [
 	{
+		appLink: "https://anon-m-board.herokuapp.com/",
+		thumbnail: messageBoard,
+		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
+		name: "Anonymous message board",
+		description: "Proyecto creado con el stack MERN. Los usuarios pueden ver comentarios según el board o tópico, comentar, responder, reportar o eliminar.",
+		technologies: "React, React-Router, Express, Mongoose, CSS, Axios, ESlint, Babel, Helmet, Mocha/Chai"
+	},
+	{
 		appLink: "https://sunrise-sunset-data.herokuapp.com/",
 		thumbnail: sunriseSunset,
 		codeLink: "https://github.com/mateo-agl/sunrise-sunset",
 		name: "Sunrise Sunset",
 		description: "Aplicación para saber la cantidad de luz solar que recibe una localidad en un año.",
-		technologies: "React, D3, SunCalc, Axios, Luxon, TypeScript, Express, React-Bootstrap, CSS"
+		technologies: "React, TypeScript, Express, React-Bootstrap, D3, SunCalc, Axios, Luxon, CSS"
 	},
 	{
 		appLink: "https://ecom-react-site.herokuapp.com/",
@@ -110,14 +118,6 @@ const projects = [
 		name: "Ecommerce website",
 		description: "Aplicación hecha con React, imitando distintas tiendas online. Los usuarios pueden filtrar productos por categoría, elegir sus atributos y agregarlos al carro de compras.",
 		technologies: "React, React-Router, Sass, ESlint, Express, Axios, REST API"
-	},
-	{
-		appLink: "https://anon-m-board.herokuapp.com/",
-		thumbnail: messageBoard,
-		codeLink: "https://github.com/mateo-agl/anonymous-message-board",
-		name: "Anonymous message board",
-		description: "Proyecto creado con el stack MERN. Los usuarios pueden ver comentarios según el board o tópico, comentar, responder, reportar o eliminar.",
-		technologies: "React, React-Router, CSS, Express, Mongoose, Axios, ESlint, Babel, Helmet, Mocha/Chai"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
