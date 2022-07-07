@@ -3,7 +3,6 @@ import pClock from "../../assets/thumbnails/pomodoro-clock.png";
 import chorMap from "../../assets/thumbnails/choropleth-map.png";
 import heatMap from "../../assets/thumbnails/heat-map.png";
 import messageBoard from "../../assets/thumbnails/message-board.png";
-import barChart from "../../assets/thumbnails/bar-chart.png";
 import ecomWebsite from "../../assets/thumbnails/ecommerce-website.png";
 import sunriseSunset from "../../assets/thumbnails/sunrise-sunset.png";
 import { ReactComponent as Arrow } from "../../assets/icons/arrow-down.svg";
@@ -143,13 +142,5 @@ const projects = [
 		name: "Choropleth Map",
 		description: "Mapa de los Estados Unidos, hecho con los datos de nivel educativo de los adultos de cada condado, el nombre del condado y nombre del estado al que pertenece.",
 		technologies: "D3, TopoJSON, REST API, CSS"
-	},
-	{
-		appLink: "https://codepen.io/mateoagl/full/oNWeYOa",
-		thumbnail: barChart,
-		codeLink: "https://github.com/mateo-agl/bar-chart",
-		name: "Bar Chart",
-		description: "Gráfico de barras hecho con el PIB de los Estados Unidos por cada trimestre desde 1947 hasta 2015.",
-		technologies: "D3, REST API, CSS"
 	}
 ];  
