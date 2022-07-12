@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.08a770d8.css",
-    "main.js": "/portfolio/static/js/main.6ce90161.js",
+    "main.js": "/portfolio/static/js/main.7db0f121.js",
     "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.ae1d8c364cc09a0f9450.png",
     "static/media/CONSOLA.TTF": "/portfolio/static/media/CONSOLA.252a062087ec8913016e.TTF",
     "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.d3a5f99695dac0128a3e.png",
-    "static/media/Curriculum Vitae Mateo Aguilar.pdf": "/portfolio/static/media/Curriculum Vitae Mateo Aguilar.01d6340fa848b2d74e3e.pdf",
+    "static/media/Curriculum Vitae Mateo Aguilar.pdf": "/portfolio/static/media/Curriculum Vitae Mateo Aguilar.0f8074732bc172f04e09.pdf",
     "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.85eaa6389b0765e007c0.png",
     "static/media/heat-map.png": "/portfolio/static/media/heat-map.1632d85593899d73016e.png",
     "static/media/message-board.png": "/portfolio/static/media/message-board.c9cb86dec318a1bc86ee.png",
@@ -34,10 +34,10 @@
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.08a770d8.css.map": "/portfolio/static/css/main.08a770d8.css.map",
-    "main.6ce90161.js.map": "/portfolio/static/js/main.6ce90161.js.map"
+    "main.7db0f121.js.map": "/portfolio/static/js/main.7db0f121.js.map"
   },
   "entrypoints": [
     "static/css/main.08a770d8.css",
-    "static/js/main.6ce90161.js"
+    "static/js/main.7db0f121.js"
   ]
 }
