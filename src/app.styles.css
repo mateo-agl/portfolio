@@ -3,9 +3,23 @@
     src: url("./assets/Fonts/CONSOLA.TTF");
 }
 
+@keyframes rotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
 :root {
     --global-primary-color: #ffd15d;
-    --global-hoover-color: #eeab00;
+    --global-hover-color: #eeab00;
     --global-title-color: #0075b9;
     --global-text-color: #9ee0ff;
     --global-border-color: #004a6e;
@@ -26,7 +40,7 @@ a, button {
 }
 
 a:hover {
-    color: var(--global-hoover-color);
+    color: var(--global-hover-color);
 }
 
 .btn-theme {
@@ -40,8 +54,8 @@ a:hover {
 
 .btn-theme:hover {
     color: var(--global-bg-color);
-    background: var(--global-hoover-color);
-    border-color: var(--global-hoover-color);;
+    background: var(--global-hover-color);
+    border-color: var(--global-hover-color);;
 }
 
 .border {
@@ -54,7 +68,7 @@ svg {
 }
 
 svg:hover {
-    fill: var(--global-hoover-color);
+    fill: var(--global-hover-color);
 }
 
 ::-webkit-scrollbar{
@@ -72,7 +86,7 @@ svg:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--global-hoover-color);
+    background: var(--global-hover-color);
 }
 
 body {
