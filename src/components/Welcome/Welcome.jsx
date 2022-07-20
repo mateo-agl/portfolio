@@ -4,7 +4,7 @@ import "./welcome.styles.css";
 
 export const Welcome = () => (
 	<section
-		className="row vh-100 justify-content-center align-items-center position-relative"
+		className="row vh-100 justify-content-center align-items-center"
 		id="top"
 	>
 		<div className="col">

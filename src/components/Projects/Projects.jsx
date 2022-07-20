@@ -20,7 +20,7 @@ export const Projects = () => {
 		: setProjState({...projState, quantity: 3, text: "Ver más"});
 	
 	return (
-		<section className="reveal col-12 mx-auto position-relative" id="proyectos">
+		<section className="reveal col-12 mx-auto" id="proyectos">
 			<h2>Mis proyectos</h2>
 			<div className="row separator"/>
 			<div className="projects-cont row mt-5 justify-content-center">

@@ -34,6 +34,20 @@ export const App = () => {
 				<About/>
 				<Skills/>
 				<Projects/>
+				<div className="area">
+					<ul className="circles">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+					</ul>
+				</div>
 			</main>
 			<Footer/>
 			<Links linksClass="fixed-links"/>

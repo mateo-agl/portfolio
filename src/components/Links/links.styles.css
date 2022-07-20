@@ -18,6 +18,7 @@
     position: fixed;
     top: 35%;
     animation: 1.4s ease-in linkSlideIn;
+    z-index: 1;
 }
 
 .footer-links {
