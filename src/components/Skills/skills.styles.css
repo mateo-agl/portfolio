@@ -28,13 +28,13 @@
 }
 
 @media (max-width: 976px) {
-    ::-webkit-scrollbar{
-        display: none;
-    }
-
     .grid-cont.border {
         overflow-x: scroll;
         border: none !important;
+    }
+
+    .grid-cont.border::-webkit-scrollbar{
+        display: none;
     }
 
     .skills-grid {
