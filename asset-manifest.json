@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.08a770d8.css",
-    "main.js": "/portfolio/static/js/main.09a31fb0.js",
+    "main.css": "/portfolio/static/css/main.1daa4a1b.css",
+    "main.js": "/portfolio/static/js/main.d26dbaea.js",
     "static/media/ecommerce-website.png": "/portfolio/static/media/ecommerce-website.ae1d8c364cc09a0f9450.png",
     "static/media/CONSOLA.TTF": "/portfolio/static/media/CONSOLA.252a062087ec8913016e.TTF",
     "static/media/choropleth-map.png": "/portfolio/static/media/choropleth-map.d3a5f99695dac0128a3e.png",
+    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.c4463f6d85654b522e02.png",
     "static/media/Curriculum Vitae Mateo Aguilar.pdf": "/portfolio/static/media/Curriculum Vitae Mateo Aguilar.8008ec67f5f9640ade1b.pdf",
-    "static/media/sunrise-sunset.png": "/portfolio/static/media/sunrise-sunset.85eaa6389b0765e007c0.png",
     "static/media/heat-map.png": "/portfolio/static/media/heat-map.1632d85593899d73016e.png",
     "static/media/message-board.png": "/portfolio/static/media/message-board.c9cb86dec318a1bc86ee.png",
     "static/media/pomodoro-clock.png": "/portfolio/static/media/pomodoro-clock.789aabbb7a179733058f.png",
@@ -33,11 +33,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.08a770d8.css.map": "/portfolio/static/css/main.08a770d8.css.map",
-    "main.09a31fb0.js.map": "/portfolio/static/js/main.09a31fb0.js.map"
+    "main.1daa4a1b.css.map": "/portfolio/static/css/main.1daa4a1b.css.map",
+    "main.d26dbaea.js.map": "/portfolio/static/js/main.d26dbaea.js.map"
   },
   "entrypoints": [
-    "static/css/main.08a770d8.css",
-    "static/js/main.09a31fb0.js"
+    "static/css/main.1daa4a1b.css",
+    "static/js/main.d26dbaea.js"
   ]
 }
