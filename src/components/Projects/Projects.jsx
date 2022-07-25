@@ -115,7 +115,7 @@ const projects = [
 		codeLink: "https://github.com/mateo-agl/ecommerce-website",
 		name: "Ecommerce website",
 		description: "Aplicación hecha con React, imitando distintas tiendas online. Los usuarios pueden filtrar productos por categoría, elegir sus atributos y agregarlos al carro de compras.",
-		technologies: "React, React-Router, Sass, ESlint, Express, Axios, REST API"
+		technologies: "React, React-Router, Redux, Redux-saga, Sass, ESlint, Express, Axios, REST API"
 	},
 	{
 		appLink: "https://codepen.io/mateoagl/full/GRmaeNj",
